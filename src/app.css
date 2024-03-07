@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	/* background-color: #ebebeb; */
+	/* background-color: #e5e3db; */
+}
+
 .page-heading {
-	@apply font-display tracking-wider text-3xl hidden lg:block;
+	@apply font-display font-bold tracking-wider text-3xl hidden lg:block mb-8;
+}
+
+p a {
+	@apply underline underline-offset-4 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+}
+
+.social-icon {
+	@apply transition duration-200 text-gray-400 hover:text-gray-700 h-5 w-5;
 }
