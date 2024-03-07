@@ -1,9 +1,6 @@
 <script>
-	import { MetaTags } from 'svelte-meta-tags';
 	import Icon from '@iconify/svelte';
 </script>
-
-<MetaTags title="cheesetosht" />
 
 <Icon class="h-14 w-14 mb-8 rotate-45" icon="ic:baseline-bug-report" />
 <h1
