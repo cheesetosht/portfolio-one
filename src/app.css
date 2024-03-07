@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-heading {
+	@apply font-display tracking-wider text-3xl hidden lg:block;
+}

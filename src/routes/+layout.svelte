@@ -1,0 +1,18 @@
+<script>
+	import '@fontsource/manrope';
+	import '../font.css';
+	import '../app.css';
+	import Nav from '../components/nav.svelte';
+</script>
+
+<div class="transition-all duration-200 container">
+	<div class="grid grid-cols-4 gap-x-5 lg:grid-cols-12">
+		<Nav />
+		<main
+			id="content"
+			class="col-span-4 col-start-1 lg:col-start-4 pt-6 lg:pt-24 pb-6 lg:col-span-6"
+		>
+			<slot />
+		</main>
+	</div>
+</div>
