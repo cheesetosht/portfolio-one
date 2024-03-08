@@ -3,7 +3,7 @@
 
 	const email = `mailto:${import.meta.env.VITE_EMAIL}`;
 	const github = 'https://www.github.com/cheesetosht';
-	const linkedin = 'https://www.linkedin.com/u/cheesetosht';
+	const linkedin = 'https://www.linkedin.com/in/cheesetosht';
 	const instagram = 'https://www.instagram.com/cheesetosht';
 	const twitter = 'https://www.x.com/vraj_sh';
 </script>
