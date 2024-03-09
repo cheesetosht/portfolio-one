@@ -35,13 +35,14 @@
 		<SocialLinks />
 		<p class="my-4 text-sm text-right text-gray-400">Bengaluru, IN</p>
 	</div>
+
 	<!-- mobile -->
 	<div class="lg:hidden text-sm tracking-wide font-bold font-display">
 		<button class="flex gap-1 items-center" on:click={() => toggleNavbar()}>
 			<span>{active_route}</span>
-			<div class="h-4 w-4 transition-all duration-300" class:rotate-90={expanded}>
+			<!-- <div class="h-4 w-4 transition-all duration-300" class:rotate-90={expanded}>
 				<Icon height="100%" width="100%" icon="carbon:chevron-right" />
-			</div>
+			</div> -->
 		</button>
 
 		{#if expanded}

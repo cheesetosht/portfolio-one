@@ -5,7 +5,7 @@
 	const github = 'https://www.github.com/cheesetosht';
 	const linkedin = 'https://www.linkedin.com/in/cheesetosht';
 	const instagram = 'https://www.instagram.com/cheesetosht';
-	const twitter = 'https://www.x.com/vraj_sh';
+	const twitter = 'https://www.x.com/cheesetosht';
 </script>
 
 <div class="flex gap-2 items-center justify-end">
