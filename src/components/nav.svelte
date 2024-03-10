@@ -7,7 +7,7 @@
 
 	const ROUTES = {
 		'/': 'cheesetosht'
-		// '/work': 'work',
+		// '/work': 'work'
 		// '/library': 'library'
 	};
 

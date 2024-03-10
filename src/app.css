@@ -8,7 +8,7 @@ body {
 }
 
 .page-heading {
-	@apply font-display font-bold tracking-wider text-3xl hidden lg:block mb-8;
+	@apply font-display font-bold tracking-wider text-3xl hidden lg:block mb-6;
 }
 
 p a {
