@@ -2,9 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--dark-gray: #a5a4a1;
+}
+
 body {
 	/* background-color: #ebebeb; */
 	/* background-color: #e5e3db; */
+}
+
+body::-webkit-scrollbar {
+	width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--dark-gray);
+	border-radius: 8px;
+}
+
+*::selection {
+	background-color: var(--dark-gray);
 }
 
 .page-heading {

@@ -11,8 +11,8 @@
 	an unreason<span
 		class="inline-block transition origin-left duration-200 lg:rotate-12 lg:group-hover:rotate-0"
 		>a</span
-	>ble en<span class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0"
-		>g</span
+	>ble <br class="2xl:hidden" />en<span
+		class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0">g</span
 	>ineer
 </h1>
 <p class="text-sm mb-4">
