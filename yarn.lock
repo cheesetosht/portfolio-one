@@ -167,15 +167,30 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@fontsource-variable/libre-franklin@^5.0.18":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/libre-franklin/-/libre-franklin-5.0.18.tgz#46c5a533096f6bf214e1e8b9a146ab7c6add9e1a"
-  integrity sha512-iecnBGHLEy8aIbDuOjDelY/1GR2wUMLcpNfKsrQiP4tnIfzjER8doH2HtmFe9+GIguNW2Fft1s79icFIgYvdfQ==
+"@fontsource/inter@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.17.tgz#43fb1bc6bcfbfbfc3a9d19a59a4a7ab99fc1c645"
+  integrity sha512-2meBGx1kt7u5LwzGc5Sz5rka6ZDrydg6nT3x6Wkt310vHXUchIywrO8pooWMzZdHYcyFY/cv4lEpJZgMD94bCg==
 
-"@fontsource-variable/open-sans@^5.0.27":
+"@fontsource/libre-franklin@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/libre-franklin/-/libre-franklin-5.0.17.tgz#dd5e3d52555e47fcb6087d71e238c2f476c2b97d"
+  integrity sha512-+Ef0/t43ewzcDgX75X8bD1yCbaKz2Itr2gysDWexB/NIQ/+uL5cuPRozlh+mbqdPmcpUDFE/LERW1+IynTaqNg==
+
+"@fontsource/manrope@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@fontsource/manrope/-/manrope-5.0.19.tgz#f3b4170dad4214e0c7a922895261c96f86b36864"
+  integrity sha512-5AbXsYyl9pwc60VnfWcWoq7gNggaByqINfD/hTBUrvqpm2AzZTqqpkQzfff3SMWR6mJIXQjBgrn/OzR9wPkcdg==
+
+"@fontsource/montserrat@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.17.tgz#ea8003b028dc41d5baab1ab7765193fd342548c3"
+  integrity sha512-3V3F8GqeN8wawLmAkAfTCYsBYRKu+JLm6ivWWX/v0dCYYPcwtQX0h5Z8j68N1YumuT75MqrghqU42w9DnFHojQ==
+
+"@fontsource/open-sans@^5.0.27":
   version "5.0.27"
-  resolved "https://registry.yarnpkg.com/@fontsource-variable/open-sans/-/open-sans-5.0.27.tgz#93b6e23c6b4cfd60275780479d79369aad7dc19c"
-  integrity sha512-zc1qEyxQEOp1ZPfBEzT4BWmPrtJI7JhgELzuJ23M+utqw0f6CvcafxJyCvy6qUW0YMBCBPJlBnQ06MU4Anvaug==
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-5.0.27.tgz#d9c18de6d1bc95e263df92ef77432ac3638c9a0b"
+  integrity sha512-tFTqx2TE9srmM3pMEHldw0lTglqhKwFX6PVDEL0OF9xNT0x5W9brsezFHhV/U36pQV9So7S0vo4yVpnLzBBQew==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"

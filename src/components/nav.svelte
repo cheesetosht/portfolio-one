@@ -19,7 +19,7 @@
 <aside id="nav" class={`${$$restProps.class} pt-6 lg:pt-24 pb-6`}>
 	<!-- desktop -->
 	<div class="hidden select-none lg:block">
-		<ul class="space-y-2 tracking-wider text-right font-bold text-2xl font-display mb-4">
+		<ul class="space-y-2 text-right font-bold text-xl font-display mb-4">
 			{#each Object.entries(ROUTES) as route}
 				{@const active = route[0] == $page.url.pathname}
 				<li class="flex items-center justify-end" class:text-gray-400={!active}>
@@ -28,15 +28,15 @@
 			{/each}
 		</ul>
 		<SocialLinks />
-		<p class="my-4 text-sm text-right">Bengaluru, IN</p>
+		<h5 class="my-4 text-sm text-right font-display font-semibold text-ivory-600">Bengaluru, IN</h5>
 	</div>
 
 	<!-- mobile -->
-	<div class="lg:hidden text-sm tracking-wide font-bold font-display">
+	<div class="lg:hidden font-bold font-display">
 		<button class="flex gap-1 items-center" on:click={() => toggleNavbar()}>
-			<span>{active_route}</span>
-			<div class="h-4 w-4 transition-all duration-300" class:rotate-90={expanded}>
-				<Icon height="100%" width="100%" icon="carbon:chevron-right" />
+			<span class="pb-1">{active_route}</span>
+			<div class="w-4 transition-all text-ivory-900 duration-300" class:rotate-90={expanded}>
+				<Icon height="100%" width="100%" icon="ph:caret-right-duotone" />
 			</div>
 		</button>
 

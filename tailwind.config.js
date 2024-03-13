@@ -4,7 +4,7 @@ export default {
 	theme: {
 		fontFamily: {
 			display: ['"Gustavo"', 'serif'],
-			sans: ['"Libre Franklin"', 'sans-serif']
+			sans: ['"Manrope"', 'serif']
 		},
 		extend: {
 			container: {

@@ -8,7 +8,7 @@
 	<hr />
 	<div class="py-6 flex justify-between items-start">
 		<SocialLinks />
-		<ul class="space-y-2 text-right tracking-wider text-xs font-bold font-display mb-4">
+		<ul class="space-y-2 text-right text-sm font-bold font-display mb-4">
 			{#each Object.entries(ROUTES) as route}
 				{@const active = route[0] == $page.url.pathname}
 				{#if !active}

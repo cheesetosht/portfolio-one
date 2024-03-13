@@ -1,7 +1,7 @@
 <h1 class="page-heading">work</h1>
 <p class="text-sm mb-8">a brief summary of my work so far</p>
 <div class="space-y-3 [&_p]:text-sm mb-6">
-	<h4 class="tracking-wider font-semibold font-display leading-relaxed">
+	<h4 class="font-semibold font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://www.bluelearn.in/?utm_source=cheesetosht">bluelearn</a
@@ -44,8 +44,8 @@
 		<li></li>
 	</ul> -->
 </div>
-<div class="space-y-3 [&_p]:leading-relaxed [&_p]:text-sm mb-6">
-	<h4 class="tracking-wider font-semibold font-display leading-relaxed">
+<div class="space-y-3 [&_p]:text-sm mb-6">
+	<h4 class="font-semibold font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://presentstorie.vercel.app/">presentstorie</a
