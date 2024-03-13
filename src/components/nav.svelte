@@ -4,12 +4,7 @@
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
 	import SocialLinks from './social-links.svelte';
-
-	const ROUTES = {
-		'/': 'cheesetosht',
-		'/work': 'work'
-		// '/library': 'library'
-	};
+	import { ROUTES } from '../lib/constants';
 
 	// @ts-ignore
 	$: active_route = ROUTES[$page.url.pathname];
@@ -28,7 +23,7 @@
 			{#each Object.entries(ROUTES) as route}
 				{@const active = route[0] == $page.url.pathname}
 				<li class="flex items-center justify-end" class:text-gray-400={!active}>
-					<a href={route[0]} on:click={() => toggleNavbar()}>{route[1]}</a>
+					<a href={route[0]}>{route[1]}</a>
 				</li>
 			{/each}
 		</ul>

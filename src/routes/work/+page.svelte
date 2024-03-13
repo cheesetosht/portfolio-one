@@ -1,6 +1,6 @@
 <h1 class="page-heading">work</h1>
 <p class="text-sm mb-8">a brief summary of my work so far</p>
-<div class="space-y-3 [&_p]:leading-relaxed [&_p]:text-sm mb-6">
+<div class="space-y-3 [&_p]:text-sm mb-6">
 	<h4 class="tracking-wider font-display leading-relaxed">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
@@ -73,7 +73,7 @@
 </div>
 
 <hr class="mb-2 border-dashed" />
-<p class="italic text-gray-500 text-sm">
+<p class="italic text-sm">
 	didn't manage to document rest of my projects, feel free to drop by on my <a
 		href="https://github.com/cheesetosht">GitHub</a
 	>.
