@@ -1,5 +1,5 @@
 <script>
-	import '@fontsource/manrope';
+	import '@fontsource-variable/libre-franklin';
 	import '../font.css';
 	import '../app.css';
 	import Nav from '../components/nav.svelte';

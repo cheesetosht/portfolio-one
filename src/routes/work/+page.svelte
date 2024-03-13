@@ -1,7 +1,7 @@
 <h1 class="page-heading">work</h1>
 <p class="text-sm mb-8">a brief summary of my work so far</p>
 <div class="space-y-3 [&_p]:text-sm mb-6">
-	<h4 class="tracking-wider font-display leading-relaxed">
+	<h4 class="tracking-wider font-semibold font-display leading-relaxed">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://www.bluelearn.in/?utm_source=cheesetosht">bluelearn</a
@@ -45,7 +45,7 @@
 	</ul> -->
 </div>
 <div class="space-y-3 [&_p]:leading-relaxed [&_p]:text-sm mb-6">
-	<h4 class="tracking-wider font-display leading-relaxed">
+	<h4 class="tracking-wider font-semibold font-display leading-relaxed">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://presentstorie.vercel.app/">presentstorie</a
@@ -53,8 +53,8 @@
 		&bull; <br class="sm:hidden" />2020 - 2021 <span class="text-xs">(freelance)</span>
 	</h4>
 	<p>
-		Presentstorie, a gifting e-commerce startup that never launched :'(, presented several exciting
-		"firsts" for me. It was my first freelance project and the second major project after my
+		A gifting e-commerce startup that never launched :'(, presented several exciting "firsts" for
+		me. It was my first freelance project and the second major project after my
 		<a href="https://thevrajshah.pages.dev" target="_blank">prev. portfolio website</a>, where I had
 		to build frontends for buyer and vendor webapps based on figma designs.
 	</p>

@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 p {
-	@apply leading-relaxed text-ivory-900;
+	@apply text-ivory-900;
 }
 
 p a {

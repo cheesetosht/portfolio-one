@@ -3,9 +3,8 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			display: ['"Unknown Display"', 'serif'],
-			presicav: ['"Presicav"', 'serif'],
-			sans: ['"Unknown Mono"', 'sans-serif']
+			display: ['"Gustavo"', 'serif'],
+			sans: ['"Libre Franklin"', 'sans-serif']
 		},
 		extend: {
 			container: {

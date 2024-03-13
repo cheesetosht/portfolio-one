@@ -1,53 +1,15 @@
 @font-face {
-	font-family: 'Presicav';
-	font-weight: 400;
-	src:
-		url('/fonts/presicav400.woff') format('woff'),
-		url('/fonts/presicav400.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Presicav';
+	font-family: 'Gustavo';
 	font-weight: 700;
-	src:
-		url('/fonts/presicav700.woff') format('woff'),
-		url('/fonts/presicav700.woff2') format('woff2');
+	src: url('/fonts/gustavo-700.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Presicav';
-	font-weight: 900;
-	src:
-		url('/fonts/presicav900.woff') format('woff'),
-		url('/fonts/presicav900.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'BN Meero Rounded';
+	font-family: 'HAL Matex Book';
 	font-weight: 400;
-	src:
-		url('/fonts/bn-meero-rounded.woff') format('woff'),
-		url('/fonts/bn-meero-rounded.woff2') format('woff2');
+	src: url('/fonts/hal-matex-book.woff2') format('woff2');
 }
 
-@font-face {
-	font-family: 'JetBrains Mono';
-	font-weight: 500;
-	src:
-		url('/fonts/jetbrains-mono500.woff') format('woff'),
-		url('/fonts/jetbrains-mono500.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Unknown Display';
-	font-weight: 400;
-	src: url('/fonts/unknown-display-400.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Unknown Display';
-	font-weight: 700;
-	src: url('/fonts/unknown-display-700.woff2') format('woff2');
-}
 @font-face {
 	font-family: 'Unknown Mono';
 	font-weight: 400;

@@ -19,7 +19,7 @@
 <aside id="nav" class={`${$$restProps.class} pt-6 lg:pt-24 pb-6`}>
 	<!-- desktop -->
 	<div class="hidden select-none lg:block">
-		<ul class="space-y-2 tracking-wider text-right font-bold font-display mb-4">
+		<ul class="space-y-2 tracking-wider text-right font-bold text-2xl font-display mb-4">
 			{#each Object.entries(ROUTES) as route}
 				{@const active = route[0] == $page.url.pathname}
 				<li class="flex items-center justify-end" class:text-gray-400={!active}>
