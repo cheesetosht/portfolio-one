@@ -32,10 +32,14 @@ body::-webkit-scrollbar-thumb {
 	@apply font-display font-bold tracking-wider text-3xl hidden lg:block mb-6;
 }
 
+p {
+	@apply text-ivory-900;
+}
+
 p a {
 	@apply underline underline-offset-4 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
 }
 
 .social-icon {
-	@apply transition duration-200 text-gray-400 hover:text-gray-700 h-5 w-5;
+	@apply transition duration-200 text-ivory-900 hover:text-gray-900 h-5 w-5;
 }

@@ -33,7 +33,7 @@
 			{/each}
 		</ul>
 		<SocialLinks />
-		<p class="my-4 text-sm text-right text-gray-400">Bengaluru, IN</p>
+		<p class="my-4 text-sm text-right">Bengaluru, IN</p>
 	</div>
 
 	<!-- mobile -->

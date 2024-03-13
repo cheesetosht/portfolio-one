@@ -15,7 +15,7 @@
 		class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0">g</span
 	>ineer
 </h1>
-<p class="text-sm mb-4">
+<p class="text-sm b-4">
 	breaking and making stuff on the web since 4 years. currently working at <a
 		href="https://www.bluelearn.in/?utm_source=cheesetosht"
 		target="_blank">bluelearn</a

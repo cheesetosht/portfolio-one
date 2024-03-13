@@ -3,7 +3,8 @@
 </script>
 
 <footer class={`${$$restProps.class}`}>
-	<div class="py-6 border-t border-gray-300">
+	<hr />
+	<div class="py-6">
 		<SocialLinks />
 	</div>
 </footer>
