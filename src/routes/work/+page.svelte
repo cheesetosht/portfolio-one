@@ -1,5 +1,5 @@
 <h1 class="page-heading">work</h1>
-<p class="text-sm mb-8">a brief summary of my work so far</p>
+<p class="text-sm mb-6">a brief summary of my work so far</p>
 <div class="space-y-3 [&_p]:text-sm mb-6">
 	<h4 class="font-semibold font-display">
 		<a

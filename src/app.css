@@ -14,7 +14,7 @@ body {
 body::-webkit-scrollbar {
 	width: 4px;
 	letter-spacing: 0.05em;
-	line-height: 1.625;
+	line-height: 1.8;
 }
 
 body::-webkit-scrollbar-track {
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-heading {
-	@apply font-display font-bold text-3xl hidden lg:block mb-6;
+	@apply font-display font-bold text-3xl hidden lg:block mb-3;
 }
 
 p {

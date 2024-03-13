@@ -11,7 +11,7 @@
 		<Nav class="col-span-4 lg:col-span-2 lg:col-start-2" />
 		<main
 			id="content"
-			class="relative col-span-4 col-start-1 lg:col-start-5 pt-2 lg:pt-24 pb-6 lg:col-span-6"
+			class="relative col-span-4 col-start-1 lg:col-start-5 lg:pt-24 pb-6 lg:col-span-6"
 		>
 			<slot />
 		</main>
