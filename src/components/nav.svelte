@@ -31,7 +31,7 @@
 			{/each}
 		</ul>
 		<SocialLinks />
-		<h5 class="my-4 text-sm text-right font-display font-semibold text-ivory-600">Bengaluru, IN</h5>
+		<h5 class="my-4 text-sm text-right font-medium text-ivory-700">Bengaluru, IN</h5>
 	</div>
 
 	<!-- mobile -->
