@@ -16,10 +16,7 @@
 	beforeNavigate(() => toggleNavbar(false));
 </script>
 
-<aside
-	id="nav"
-	class={`${$$restProps.class} pt-6 lg:pt-24 pb-4 sticky top-0 lg:static bg-ivory-50 z-10`}
->
+<aside id="nav" class={`${$$restProps.class} pt-6 lg:pt-24 pb-4 sticky top-0 bg-ivory-50 z-10`}>
 	<!-- desktop -->
 	<div class="hidden select-none lg:block">
 		<ul class="space-y-2 text-right font-bold text-xl font-display mb-4">

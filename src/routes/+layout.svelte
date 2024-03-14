@@ -7,7 +7,7 @@
 </script>
 
 <div class="transition-all duration-200 container">
-	<div class="grid grid-cols-4 gap-x-5 lg:grid-cols-12">
+	<div class="grid grid-cols-4 items-start gap-x-5 lg:grid-cols-12">
 		<Nav class="col-span-4 lg:col-span-2 lg:col-start-2" />
 		<main
 			id="content"
