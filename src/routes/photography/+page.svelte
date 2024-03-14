@@ -9,9 +9,9 @@
 	{#each PHOTOS as photo}
 		<div class="overflow-hidden">
 			<img
-				class="hover:scale-105 mb-6 saturate-50 w-full transition duration-500 hover:saturate-100"
+				class="lg:hover:scale-100 scale-105 mb-6 lg:saturate-50 transition duration-700 lg:hover:saturate-100"
 				loading="eager"
-				src={`https://${photo}?w=160`}
+				src={`https://${photo}?w=180`}
 				alt=""
 			/>
 		</div>
