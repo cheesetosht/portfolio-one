@@ -28,5 +28,12 @@
 	design is of atmost importance to me, be it on the frontend, backend or even at the times i pickup
 	figma.
 </p>
+<p class="text-sm mb-4">
+	this site is built on <a href="https://kit.svelte.dev/">sveltekit</a> and
+	<a href="https://tailwindcss.com/">tailwind</a>. the
+	<a href="/photography">photography section</a>
+	uses data from a <a href="https://go.dev/">golang</a> script that takes all the photos I post on
+	my <a href="https://vsco.co/cheesetosht">VSCO</a>.
+</p>
 
-<!-- TODO: - photography section - hobbies section - about the page -->
+<!-- TODO: hobbies section -->
