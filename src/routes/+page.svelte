@@ -22,7 +22,8 @@
 	<a
 		class="underline decoration-dotted italic"
 		href="https://www.urbandictionary.com/define.php?term=Techbro">techbro</a
-	> where i get to craft artsy frontends and overengineer the backend at startup pace.
+	> where i get to craft artsy frontends, overengineer the backend, act for reels & sometimes fix the
+	wifi at startup pace.
 </p>
 <p class="text-sm mb-4">
 	design is of atmost importance to me, be it on the frontend, backend or even at the times i pickup

@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 *::selection {
-	background-color: var(--dark-gray);
+	background-color: #ccccc3;
 }
 
 .page-heading {

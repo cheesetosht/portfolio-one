@@ -1,6 +1,6 @@
 <h1 class="page-heading">work</h1>
 <p class="text-sm lg:text-base mb-6">a brief summary of my work so far</p>
-<div class="space-y-3 [&_p]:text-sm lg:[&_p]:text-base mb-6">
+<div class="space-y-3 [&_p]:text-sm mb-6">
 	<h4 class="font-semibold text-lg font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
@@ -44,7 +44,7 @@
 		<li></li>
 	</ul> -->
 </div>
-<div class="space-y-3 [&_p]:text-sm lg:[&_p]:text-base mb-6">
+<div class="space-y-3 [&_p]:text-sm mb-6">
 	<h4 class="font-semibold text-lg font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
@@ -73,7 +73,7 @@
 </div>
 
 <hr class="mb-2 border-dashed" />
-<p class="italic text-sm lg:[&_p]:text-base">
+<p class="italic text-sm">
 	didn't manage to document rest of my projects, feel free to drop by on my <a
 		href="https://github.com/cheesetosht"
 		target="_blank">github</a
