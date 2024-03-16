@@ -9,12 +9,12 @@
 body {
 	/* background-color: #ebebeb; */
 	/* background-color: #e5e3db; */
+	letter-spacing: 0.04em;
+	line-height: 1.2;
 }
 
 body::-webkit-scrollbar {
 	width: 4px;
-	letter-spacing: 0.05em;
-	line-height: 1.8;
 }
 
 body::-webkit-scrollbar-track {
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-heading {
-	@apply font-display font-bold text-3xl hidden lg:block mb-3;
+	@apply font-display font-bold text-4xl hidden lg:block mb-3;
 }
 
 p {

@@ -1,7 +1,7 @@
 <h1 class="page-heading">work</h1>
-<p class="text-sm mb-6">a brief summary of my work so far</p>
-<div class="space-y-3 [&_p]:text-sm mb-6">
-	<h4 class="font-semibold font-display">
+<p class="text-sm lg:text-base mb-6">a brief summary of my work so far</p>
+<div class="space-y-3 [&_p]:text-sm lg:[&_p]:text-base mb-6">
+	<h4 class="font-semibold text-lg font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://www.bluelearn.in/?utm_source=cheesetosht">bluelearn</a
@@ -44,13 +44,13 @@
 		<li></li>
 	</ul> -->
 </div>
-<div class="space-y-3 [&_p]:text-sm mb-6">
-	<h4 class="font-semibold font-display">
+<div class="space-y-3 [&_p]:text-sm lg:[&_p]:text-base mb-6">
+	<h4 class="font-semibold text-lg font-display">
 		<a
 			class="underline decoration-dotted underline-offset-4 decoration-gray-400"
 			href="https://presentstorie.vercel.app/">presentstorie</a
 		>
-		&bull; <br class="sm:hidden" />2020 - 2021 <span class="text-xs">(freelance)</span>
+		&bull; <br class="sm:hidden" />2020 - 2021 <span class="text-sm">(freelance)</span>
 	</h4>
 	<p>
 		A gifting e-commerce startup that never launched :'(, presented several exciting "firsts" for
@@ -73,8 +73,11 @@
 </div>
 
 <hr class="mb-2 border-dashed" />
-<p class="italic text-sm">
+<p class="italic text-sm lg:[&_p]:text-base">
 	didn't manage to document rest of my projects, feel free to drop by on my <a
-		href="https://github.com/cheesetosht">GitHub</a
+		href="https://github.com/cheesetosht"
+		target="_blank">github</a
 	>.
+	<br />
+	if you're a recuiter, here's my <a href="/resume.pdf" target="_blank">resume</a>.
 </p>
