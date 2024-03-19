@@ -8,7 +8,7 @@
 	const twitter = 'https://www.x.com/cheesetosht';
 </script>
 
-<div class="flex gap-2 items-center justify-end">
+<div class="flex gap-1 items-center justify-end [&_a]:p-1 lg:[&_a]:p-0.5">
 	<a title={`say ${email}`} target="_blank" href={`mailto:${email}`}>
 		<Icon class="social-icon" icon="ph:envelope-simple-open-duotone" />
 	</a>
