@@ -4,6 +4,32 @@ export const ROUTES = {
 	'/photography': 'photography'
 };
 
+export const EXPERIENCES = [
+	{
+		company_or_project: 'bluelearn',
+		start_year: 2021,
+		end_year: null,
+		url: 'https://www.bluelearn.in/?utm_source=cheesetosht',
+		description: [
+			'I joined bluelearn as a web dev intern around the time when it was just 5 people working from a flat in Goa.',
+			'Over time, I gained full ownership of the web frontend. This allowed me to lay the foundation for the core web infrastructure, right from the design system to deployment pipelines. I also got a chance to iterate on the web frontend infrastructure through 5 major versions. Each iteration focused on optimizing various aspects, including UX, performance, development-time, Dx or sometimes just to try out a new piece of tech. While managing a team of 2-4 members on and off, I also spearheaded the iteration process.',
+			"Soon enough, I expanded my skillset by diving into backend development. I started with building basic CRUD operations for internal tools. Since then, I've owned several features, taking them from database design all the way to production, while also building the corresponding frontend. At this point, PostgreSQL & Redis are my favourite toys."
+		]
+	},
+	{
+		company_or_project: 'presentstorie',
+		start_year: 2020,
+		end_year: 2021,
+		url: 'https://presentstorie.vercel.app/',
+		tag: 'freelance',
+		description: [
+			`A gifting e-commerce startup that never launched :'(, presented several exciting "firsts" for me. It was my first freelance project and the second major project after my <a href='https://thevrajshah.pages.dev' target='_blank'>prev. portfolio website</a>, where I had to build frontends for buyer and vendor webapps based on figma designs.`,
+			"While I had a strong foundation in CSS and some React experience, I decided to build it with Next.js which I learnt omw. Here's when I realised the need of some sort of a <i>design system</i>, so i built a very barebones version of mine using SCSS. I was very proud when I was able to acheive close to 99% design accuracy :).",
+			"This was also my first time working with a backend, that's where I learnt UX intricacies of production-grade frontends. I also got a glimpse of backend development & typescript while working with my backend peer."
+		]
+	}
+];
+
 export const PHOTOS = [
 	'im.vsco.co/aws-us-west-2/6310a9/51936585/6552656049a0d4433a000001/690c93a7-7567-4fc4-9d75-e45a64c693547491087778897817603.jpg',
 	'im.vsco.co/aws-us-west-2/6310a9/51936585/652974ff49a0d42f61000001/a9bbf412-4ca3-45ab-a2fe-565c0b902fa46056981399383596238.jpg',

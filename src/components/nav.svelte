@@ -4,7 +4,7 @@
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
 	import SocialLinks from './social-links.svelte';
-	import { ROUTES } from '../lib/constants';
+	import { ROUTES } from '$lib/constants';
 
 	// @ts-ignore
 	$: active_route = ROUTES[$page.url.pathname];
