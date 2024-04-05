@@ -6,6 +6,7 @@
 	import Nav from '../components/nav.svelte';
 	import Footer from '../components/footer.svelte';
 	import { onMount } from 'svelte';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	const MS_CLARITY_ID = import.meta.env.VITE_MS_CLARITY_ID;
 	onMount(() => {
@@ -24,6 +25,17 @@
 	});
 </script>
 
+<MetaTags
+	title="cheesetosht"
+	titleTemplate="%s • cheesetosht"
+	description="unreasonable engineer"
+	openGraph={{
+		title: 'cheesetosht',
+		description: 'unreasonable engineer',
+		images: [{ url: '/images/og-img.jpeg' }]
+	}}
+	keywords={['cheesetosht', 'cheesetoast', 'vraj shah', 'cheese toast']}
+/>
 <div class="transition-all duration-200 container">
 	<div class="grid grid-cols-4 items-start gap-x-5 lg:grid-cols-12">
 		<Nav class="col-span-4 lg:col-span-2 lg:col-start-2" />

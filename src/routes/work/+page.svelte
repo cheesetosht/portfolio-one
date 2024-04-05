@@ -1,7 +1,9 @@
 <script>
 	import { EXPERIENCES } from '$lib/constants';
+	import { MetaTags } from 'svelte-meta-tags';
 </script>
 
+<MetaTags title="work" />
 <h1 class="page-heading">work</h1>
 <p class="text-sm mb-6">a brief summary of my work so far</p>
 {#each EXPERIENCES as experience}

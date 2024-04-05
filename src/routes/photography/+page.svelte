@@ -1,10 +1,11 @@
 <script>
+	import { MetaTags } from 'svelte-meta-tags';
 	import { PHOTOS } from '$lib/constants';
 </script>
 
+<MetaTags title="photography" />
 <h1 class="page-heading">photography</h1>
 <p class="text-sm mb-6">aesthetik</p>
-
 <div class="columns-2 lg:columns-3">
 	{#each PHOTOS as photo}
 		<div class="overflow-hidden mb-4">
