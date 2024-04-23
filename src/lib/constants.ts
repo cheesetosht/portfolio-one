@@ -1,6 +1,7 @@
 export const ROUTES = {
 	'/': 'cheesetosht',
 	'/work': 'work',
+	'/shelf': 'shelf',
 	'/photography': 'photography'
 };
 
@@ -27,6 +28,13 @@ export const EXPERIENCES = [
 			"While I had a strong foundation in CSS and some React experience, I decided to build it with Next.js which I learnt omw. Here's when I realised the need of some sort of a <i>design system</i>, so i built a very barebones version of mine using SCSS. I was very proud when I was able to acheive close to 99% design accuracy :).",
 			"This was also my first time working with a backend, that's where I learnt UX intricacies of production-grade frontends. I also got a glimpse of backend development & typescript while working with my backend peer."
 		]
+	}
+];
+
+export const LIBRARY = [
+	{
+		title: 'Write a compiler in Go',
+		url: 'https://www.freecodecamp.org/news/write-a-compiler-in-go-quick-guide-30d2f33ac6e0/'
 	}
 ];
 

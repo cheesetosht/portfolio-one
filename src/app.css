@@ -45,3 +45,27 @@ p a {
 .social-icon {
 	@apply transition duration-200 text-ivory-900 hover:text-gray-900 h-5 w-5;
 }
+
+.shelf {
+	line-height: 1.6;
+}
+
+.shelf h1 {
+	font-size: 1.424rem;
+}
+
+.shelf h2 {
+	font-size: 1.266rem;
+}
+
+.shelf h3 {
+	font-size: 1.125rem;
+}
+
+.shelf p {
+	font-size: 1rem;
+}
+
+.shelf a {
+	@apply underline underline-offset-4 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+}

@@ -6,12 +6,14 @@
 <MetaTags title="cheesetosht" />
 <Icon class="h-14 w-14 mb-8 rotate-45" icon="ic:baseline-bug-report" />
 <h1 class="font-display font-bold text-xl group lg:text-3xl select-none cursor-default mb-6">
-	an unreason<span
+	en<span class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0"
+		>g</span
+	>ineering
+	<br class="xl:hidden" />
+	unreason<span
 		class="inline-block transition origin-left duration-200 lg:rotate-12 lg:group-hover:rotate-0"
 		>a</span
-	>ble <br class="2xl:hidden" />en<span
-		class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0">g</span
-	>ineer
+	>blely
 </h1>
 <p class="text-sm mb-4">
 	breaking and making stuff on the web since 4 years. currently working at <a
