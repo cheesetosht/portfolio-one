@@ -35,8 +35,9 @@
 	this site is built on <a href="https://kit.svelte.dev/">sveltekit</a> and
 	<a href="https://tailwindcss.com/">tailwind</a>. the
 	<a href="/photography">photography section</a>
-	uses data from a small <a href="https://go.dev/">golang</a> script i wrote to fetch all the photos
-	I post on my <a href="https://vsco.co/cheesetosht">VSCO</a>.
+	uses data from a small
+	<a href="https://github.com/cheesetosht/go-scripts/blob/main/crawlers/main.go">golang script</a>
+	i wrote to fetch all the photos I post on my <a href="https://vsco.co/cheesetosht">VSCO</a>.
 </p>
 
 <!-- TODO: hobbies section -->
