@@ -1,7 +1,7 @@
 export const ROUTES = {
 	'/': 'cheesetosht',
 	'/work': 'work',
-	'/shelf': 'shelf',
+	// '/shelf': 'shelf',
 	'/photography': 'photography'
 };
 
