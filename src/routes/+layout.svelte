@@ -7,6 +7,7 @@
 	import Footer from '../components/footer.svelte';
 	import { onMount } from 'svelte';
 	import { MetaTags } from 'svelte-meta-tags';
+	import Icon from '@iconify/svelte';
 
 	const MS_CLARITY_ID = import.meta.env.VITE_MS_CLARITY_ID;
 	onMount(() => {
@@ -46,5 +47,10 @@
 			<slot />
 		</main>
 		<Footer class="lg:hidden col-span-4 col-start-1" />
+		<!-- <div
+			class="col-span-4 col-start-1 lg:col-start-5 text-center lg:text-left text-gray-400 text-xs pb-4 lg:col-span-6"
+		>
+			built with <strong>svelte<Icon class="inline-block" icon="carbon:logo-svelte" /></strong>
+		</div> -->
 	</div>
 </div>

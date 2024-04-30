@@ -28,7 +28,16 @@
 			{/each}
 		</ul>
 		<SocialLinks />
-		<h5 class="my-4 text-sm text-right font-medium text-ivory-700">Bengaluru, IN</h5>
+		<h5 class="mt-4 text-sm text-right font-medium text-ivory-700">Bengaluru, IN</h5>
+		<!-- <h5 class="mt-4 text-sm text-right font-medium text-ivory-700">
+			Open to work
+			<span class="relative align-middle inline-flex h-2.5 w-2.5 items-center justify-center">
+				<span
+					class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ivory-400 opacity-75"
+				></span>
+				<span class="relative inline-flex rounded-full h-2 w-2 bg-ivory-500"></span>
+			</span>
+		</h5> -->
 	</div>
 
 	<!-- mobile -->

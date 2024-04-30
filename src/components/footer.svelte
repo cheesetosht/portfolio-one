@@ -6,7 +6,7 @@
 
 <footer class={`${$$restProps.class}`}>
 	<hr />
-	<div class="py-6 flex justify-between items-start">
+	<div class="pt-6 flex justify-between items-start">
 		<SocialLinks />
 		<ul class="text-right text-sm font-bold font-display mb-4">
 			{#each Object.entries(ROUTES) as route}
