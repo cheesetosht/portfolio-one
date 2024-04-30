@@ -29,10 +29,10 @@
 <MetaTags
 	title="cheesetosht"
 	titleTemplate="%s • cheesetosht"
-	description="unreasonable engineer"
+	description="i'm vraj, an engineer. i like my tech crafted than built"
 	openGraph={{
 		title: 'cheesetosht',
-		description: 'unreasonable engineer',
+		description: "i'm vraj, an engineer. i like my tech crafted than built",
 		images: [{ url: '/images/og-img.jpeg' }]
 	}}
 	keywords={['cheesetosht', 'cheesetoast', 'vraj shah', 'cheese toast']}
