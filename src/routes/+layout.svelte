@@ -33,7 +33,7 @@
 	openGraph={{
 		title: 'cheesetosht',
 		description: "i'm vraj, an engineer. i like my tech crafted than built",
-		images: [{ url: '/images/og-img.jpeg' }]
+		images: [{ url: '/images/og-img.webp' }]
 	}}
 	keywords={['cheesetosht', 'cheesetoast', 'vraj shah', 'cheese toast']}
 />

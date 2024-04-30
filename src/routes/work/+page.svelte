@@ -5,7 +5,7 @@
 
 <MetaTags title="work" />
 <h1 class="page-heading">work</h1>
-<p class="text-sm mb-6">a brief summary of my work so far</p>
+<p class="text-sm mb-4">a brief summary of my work so far</p>
 {#each EXPERIENCES as experience}
 	<div class="space-y-3 [&_p]:text-sm mb-6">
 		<h4 class="font-semibold text-lg font-display">
