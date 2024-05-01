@@ -95,11 +95,11 @@ export const FINDS = [
 	{
 		title: 'PostgreSQL is not just a DB',
 		url: 'https://www.youtube.com/watch?v=VEWXmdjzIpQ',
-		date: '05.04.2024'
+		date: '05.04.24'
 	},
 	{
 		title: 'Lexical Scanning in Go - Rob Pike',
 		url: 'https://www.youtube.com/watch?v=HxaD_trXwRE',
-		date: '07.04.2024'
+		date: '07.04.24'
 	}
 ];
