@@ -43,7 +43,7 @@ p {
 }
 
 p a {
-	@apply underline underline-offset-4 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+	@apply underline underline-offset-2 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
 }
 
 .social-icon {
@@ -71,5 +71,5 @@ p a {
 }
 
 .shelf a {
-	@apply underline underline-offset-4 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+	@apply underline underline-offset-2 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
 }

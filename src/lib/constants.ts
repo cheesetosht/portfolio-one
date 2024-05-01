@@ -1,8 +1,8 @@
 export const ROUTES = {
 	'/': 'cheesetosht',
 	'/work': 'work',
-	// '/shelf': 'shelf',
-	'/photography': 'photography'
+	'/finds': 'finds',
+	'/images': 'images'
 };
 
 export const EXPERIENCES = [
@@ -69,4 +69,37 @@ export const PHOTOS = [
 	'im.vsco.co/aws-us-west-2/6310a9/51936585/628aa10313bd90252e000007/f134d60a-3d53-48a8-88d1-ecbb0c5859986036345142814366036.jpg',
 	'im.vsco.co/aws-us-west-2/6310a9/51936585/628aa0df13bd90252e000005/8af8ffb4-e763-4f97-ac09-3937749cfe046902009448361482868.jpg',
 	'im.vsco.co/aws-us-west-2/6310a9/51936585/628aa09113bd90252e000003/544d23dd-dd87-48da-afa5-ec16b3e64d178814416955618988065.jpg'
+];
+
+export const FINDS = [
+	{
+		title: 'Teach Yourself Programming in Ten Years',
+		url: 'https://norvig.com/21-days.html',
+		date: '12.05.22'
+	},
+	{
+		title: "Let's build a simple compiler - Ruslan Spivak",
+		url: 'https://ruslanspivak.com/lsbasi-part1/',
+		date: '28.07.22'
+	},
+	{
+		title: 'Let’s Build A Web Server - Ruslan Spivak',
+		url: 'https://ruslanspivak.com/lsbaws-part1/',
+		date: '28.07.22'
+	},
+	{
+		title: 'Google I/O 2012 - Go Concurrency Patterns',
+		url: 'https://www.youtube.com/watch?v=f6kdp27TYZs',
+		date: '20.03.24'
+	},
+	{
+		title: 'PostgreSQL is not just a DB',
+		url: 'https://www.youtube.com/watch?v=VEWXmdjzIpQ',
+		date: '05.04.2024'
+	},
+	{
+		title: 'Lexical Scanning in Go - Rob Pike',
+		url: 'https://www.youtube.com/watch?v=HxaD_trXwRE',
+		date: '07.04.2024'
+	}
 ];
