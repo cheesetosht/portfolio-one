@@ -10,11 +10,12 @@
 <div class="resume mt-1 mb-6">
 	<ResumeContent />
 </div>
-<div class="text-center mx-auto w-fit">
+<div class="print:hidden text-center mx-auto w-fit">
 	<button
-		class="print:hidden mb-2 text-gray-900 text-lg font-display underline decoration-dashed decoration-gray-300 underline-offset-2 block mx-auto"
+		class="mb-2 text-gray-900 text-lg font-display underline decoration-dashed decoration-gray-300 underline-offset-2 mx-auto"
 		on:click={() => window.print()}>Download resume</button
 	>
+	&nbsp;
 	<kbd
 		class="px-2 py-1 text-xs font-semibold text-gray-50 bg-gray-800 ring-2 ring-gray-300 rounded-lg"
 		>Cmd</kbd

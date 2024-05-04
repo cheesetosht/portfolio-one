@@ -115,6 +115,7 @@ p a {
 .resume ul {
 	list-style-type: disc;
 	padding-left: 1.4em;
+	margin-bottom: 0.4em;
 }
 
 .resume ol {
