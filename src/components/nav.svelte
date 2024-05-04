@@ -43,7 +43,7 @@
 	<!-- mobile -->
 	<div class="lg:hidden font-bold font-display">
 		<button class="flex gap-1 items-center" on:click={() => toggleNavbar()}>
-			<span class="pb-1">{active_route}</span>
+			<span class="pb-1">{active_route || 'cheesetosht'}</span>
 			<div class="w-4 transition-all text-ivory-900 duration-300" class:rotate-90={expanded}>
 				<Icon height="100%" width="100%" icon="ph:caret-right-duotone" />
 			</div>

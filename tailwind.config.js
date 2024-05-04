@@ -2,11 +2,12 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		fontFamily: {
-			display: ['"Gustavo"', 'serif'],
-			sans: ['"Manrope"', 'sans-serif']
-		},
 		extend: {
+			fontFamily: {
+				display: ['"Gustavo"', 'serif'],
+				sans: ['"Manrope"', 'sans-serif'],
+				serif: ['Georgia', 'serif']
+			},
 			container: {
 				center: true,
 				padding: {

@@ -2,7 +2,7 @@ export const ROUTES = {
 	'/': 'cheesetosht',
 	'/work': 'work',
 	'/finds': 'finds',
-	'/images': 'images'
+	'/photography': 'photography'
 };
 
 export const EXPERIENCES = [

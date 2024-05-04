@@ -43,7 +43,7 @@ p {
 }
 
 p a {
-	@apply underline underline-offset-2 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+	@apply underline underline-offset-2 decoration-gray-900/20 hover:decoration-gray-900/30 transition duration-300;
 }
 
 .social-icon {
@@ -72,4 +72,123 @@ p a {
 
 .shelf a {
 	@apply underline underline-offset-2 decoration-gray-300 hover:decoration-gray-500 transition duration-300;
+}
+
+/* resume styles start */
+.resume {
+	--accent-color: 33 33 33;
+	@apply text-sm text-ivory-900;
+}
+
+.resume h1,
+.resume h2,
+.resume h3 {
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+	@apply font-display text-gray-900;
+}
+
+.resume h1 {
+	font-size: 1.5em;
+}
+
+.resume h2 {
+	border-bottom: 1px solid rgb(var(--accent-color) / 0.2);
+	padding-bottom: 0.2em;
+	font-size: 1.25em;
+}
+
+.resume h3 {
+	display: flex;
+	width: 100%;
+	font-size: 1em;
+}
+
+.resume p {
+	/* margin-bottom: 1em; */
+}
+
+.resume a {
+	@apply underline underline-offset-2 decoration-gray-900/20 hover:decoration-gray-900/20 transition duration-300;
+}
+
+.resume ul {
+	list-style-type: disc;
+	padding-left: 1.4em;
+}
+
+.resume ol {
+	list-style-type: decimal;
+	padding-left: 1.5em;
+}
+
+.resume li {
+	/* margin-bottom: 0.5em; */
+}
+
+.resume .span-end {
+	flex: 1;
+	text-align: right;
+}
+
+.resume blockquote {
+	border-left: 4px solid #ccc;
+	padding-left: 1em;
+	color: #666;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+.resume code {
+	font-family: 'Courier New', monospace;
+	background-color: #f4f4f4;
+	padding: 2px 4px;
+}
+
+.resume pre {
+	background-color: #f4f4f4;
+	padding: 1em;
+	overflow-x: auto;
+}
+
+.resume img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* resume styles end */
+
+@media only print {
+	aside#nav,
+	footer {
+		display: none !important;
+	}
+	body {
+		padding: 24px;
+	}
+	.resume {
+		--accent-color: 0 107 112;
+		font-family: 'Helvetica', sans-serif !important;
+		font-size: 12px;
+		line-height: 1.35;
+	}
+	.resume h1,
+	.resume h2,
+	.resume h3 {
+		font-family: 'Georgia', serif;
+		margin-top: 0.1em;
+		margin-bottom: 0.2em;
+	}
+
+	.resume h2 {
+		color: rgb(var(--accent-color));
+		border-bottom: 1px solid rgb(var(--accent-color) / 0.4);
+	}
+
+	.resume a {
+		text-decoration: underline rgba(var(--accent-color) / 0.6);
+		text-underline-offset: 2px;
+	}
 }

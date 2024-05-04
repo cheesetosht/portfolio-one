@@ -7,7 +7,6 @@
 	import Footer from '../components/footer.svelte';
 	import { onMount } from 'svelte';
 	import { MetaTags } from 'svelte-meta-tags';
-	import Icon from '@iconify/svelte';
 
 	const MS_CLARITY_ID = import.meta.env.VITE_MS_CLARITY_ID;
 	onMount(() => {
