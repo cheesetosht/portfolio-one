@@ -5,7 +5,7 @@
 ### _Founding Engineer_ <span class='span-end'>**10/2021 - Present**</span>
 
 - Established and led a five-member web development team, mentoring new hires while successfully managing 5 concurrent projects and overseeing recruitment efforts (screening, interviewing, onboarding).
-
+  ・
 - Architected scalable web infrastructure (Docker, AWS ECR, Lambda, CloudFront, API Gateway, Terraform), defining tech stack, tooling, coding standards, and DevOps processes. This enabled the deployment of Next.js micro-frontends, handling 500k+ traffic surges with sub-100ms global load times.
 - Built a modular Tailwind framework (w/ Shadcn, Framer Motion, Matter.js, GSAP) to rapidly create visually dynamic landing pages, cutting development time from days to hours.
 - Rapidly prototyped experimental solutions under 1-2 day deadlines, accelerating the company's path to initial revenue.
@@ -26,3 +26,7 @@
 - Developed production-grade frontends with animations and polished UX for a gifting startup's e-commerce and vendor portals.
 - Established a **custom SCSS design system** to achieve pixel-perfect interfaces and streamline development.
 - Learnt and implemented Next.js on the fly to meet project requirements.
+
+## **Skills**
+
+\*\*Programming Languages: Javascript/Typescript, , Golang, Python, Ruby, HTML, CSS
