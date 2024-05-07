@@ -19,7 +19,7 @@
 	></path></svg
 >
 <h1 class="font-display font-bold text-xl group lg:text-3xl select-none cursor-default mb-4">
-	i'm vraj, an engineer. <br />i like my tech crafted than built
+	i'm vraj, an engineer. <br />i like my tech crafted than built.
 </h1>
 <!-- <h1 class="font-display font-bold text-xl group lg:text-3xl select-none cursor-default mb-6">
 	en<span class="inline-block transition duration-200 lg:-rotate-12 lg:group-hover:-rotate-0"
@@ -31,22 +31,23 @@
 		>a</span
 	>blely
 </h1> -->
+
+<!-- <h4 class="font-semibold text-base font-display">currently:</h4> -->
 <p class="text-sm mb-4">
-	breaking and making stuff on the web since 4 years. currently working at <a
+	building and breaking frontends, backends & wifi at <a
 		href="https://www.bluelearn.in/?utm_source=cheesetosht"
 		target="_blank">bluelearn</a
-	>
-	as a
-	<a
-		class="underline decoration-dotted italic"
-		href="https://www.urbandictionary.com/define.php?term=Techbro">techbro</a
-	> where i get to craft artsy frontends, overengineer the backend, act for reels & sometimes fix the
-	wifi at startup pace.
+	>.
 </p>
 <p class="text-sm mb-4">
-	design is of atmost importance to me, be it on the frontend, backend or even at the times i pickup
-	figma.
+	like to play around with linuxes, computer networks, frontends and databases.
 </p>
+<p class="text-sm mb-4">overengineering is my goto way of learning.</p>
+<h5
+	class="font-display font-bold group text-base lg:text-lg select-none cursor-default mb-1 text-gray-500"
+>
+	about this site
+</h5>
 <p class="text-sm mb-4">
 	this site is built on <a href="https://kit.svelte.dev/">sveltekit</a> and
 	<a href="https://tailwindcss.com/">tailwind</a>. the
