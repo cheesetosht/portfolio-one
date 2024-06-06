@@ -24,7 +24,7 @@ export const EXPERIENCES = [
 		url: 'https://presentstorie.vercel.app/',
 		tag: 'freelance',
 		description: [
-			`A gifting e-commerce startup that never launched :'(, presented several exciting "firsts" for me. It was my first freelance project and the second major project after my <a href='https://thevrajshah.pages.dev' target='_blank'>prev. portfolio website</a>, where I had to build frontends for buyer and vendor webapps based on figma designs.`,
+			`A gifting e-commerce startup that never launched :(, presented several exciting "firsts" for me. It was my first freelance project and the second major project after my <a href='https://thevrajshah.pages.dev' target='_blank'>prev. portfolio website</a>, where I had to build frontends for buyer and vendor webapps based on figma designs.`,
 			"While I had a strong foundation in CSS and some React experience, I decided to build it with Next.js which I learnt omw. Here's when I realised the need of some sort of a <i>design system</i>, so i built a very barebones version of mine using SCSS. I was very proud when I was able to acheive close to 99% design accuracy :).",
 			"This was also my first time working with a backend, that's where I learnt UX intricacies of production-grade frontends. I also got a glimpse of backend development & typescript while working with my backend peer."
 		]
