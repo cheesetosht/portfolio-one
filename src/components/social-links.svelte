@@ -12,16 +12,16 @@
 	<a title={`say ${email}`} target="_blank" href={`mailto:${email}`}>
 		<Icon class="social-icon" icon="ph:envelope-simple-open-duotone" />
 	</a>
-	<!-- <a target="_blank" href={instagram}>
-		<Icon class="social-icon" icon="ph:instagram-logo-duotone" />
-	</a> -->
+	<a title="github" target="_blank" href={github}>
+		<Icon class="social-icon" icon="ph:github-logo-duotone" />
+	</a>
 	<a title="linkedin" target="_blank" href={linkedin}>
 		<Icon class="social-icon" icon="ph:linkedin-logo-duotone" />
 	</a>
 	<a title="the bird app" target="_blank" href={twitter}>
 		<Icon class="social-icon" icon="ph:twitter-logo-duotone" />
 	</a>
-	<a title="github" target="_blank" href={github}>
-		<Icon class="social-icon" icon="ph:github-logo-duotone" />
+	<a title="instagram" target="_blank" href={instagram}>
+		<Icon class="social-icon" icon="ph:instagram-logo-duotone" />
 	</a>
 </div>
