@@ -7,14 +7,23 @@ export const ROUTES = {
 
 export const EXPERIENCES = [
 	{
+		company_or_project: 'loop',
+		start_year: 2024,
+		end_year: null,
+		url: 'https://www.loophealth.com/?utm_source=cheesetosht',
+		description: [
+			'Considerably larger team than my last one. Getting to learn processes and risks that come with scale.'
+		]
+	},
+	{
 		company_or_project: 'bluelearn',
 		start_year: 2021,
-		end_year: null,
+		end_year: 2024,
 		url: 'https://www.bluelearn.in/?utm_source=cheesetosht',
 		description: [
 			'I joined bluelearn as a web dev intern around the time when it was just 5 people working from a flat in Goa.',
 			'Over time, I gained full ownership of the web frontend. This allowed me to lay the foundation for the core web infrastructure, right from the design system to deployment pipelines. I also got a chance to iterate on the web frontend infrastructure through 5 major versions. Each iteration focused on optimizing various aspects, including UX, performance, development-time, Dx or sometimes just to try out a new piece of tech. While managing a team of 2-4 members on and off, I also spearheaded the iteration process.',
-			"Soon enough, I expanded my skillset by diving into backend development. I started with building basic CRUD operations for internal tools. Since then, I've owned several features, taking them from database design all the way to production, while also building the corresponding frontend. At this point, PostgreSQL & Redis are my favourite toys."
+			"Soon enough, I expanded my skillset by diving into backend development. I started with building basic CRUD operations for internal tools. Since then, I've owned several features, taking them from database design all the way to production, while also building the corresponding frontend. Currently, PostgreSQL & Redis are my favourite toys here."
 		]
 	},
 	{

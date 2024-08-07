@@ -33,14 +33,11 @@
 </h1> -->
 
 <!-- <h4 class="font-semibold text-base font-display">currently:</h4> -->
+<!-- <p class="text-sm mb-4">
+	currently: exploring.
+</p> -->
 <p class="text-sm mb-4">
-	building and breaking frontends, backends & wifi at <a
-		href="https://www.bluelearn.in/?utm_source=cheesetosht"
-		target="_blank">bluelearn</a
-	>.
-</p>
-<p class="text-sm mb-4">
-	like to play around with linuxes, computer networks, frontends and databases.
+	i like to play around with linuxes, computer networks, frontends and databases.
 </p>
 <p class="text-sm mb-4">overengineering is my goto way of learning.</p>
 <h5
