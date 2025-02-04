@@ -6,6 +6,12 @@
 	--dark-gray: #a5a4a1;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	/* background-color: #ebebeb; */
 	/* background-color: #e5e3db; */
