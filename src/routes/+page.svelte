@@ -1,6 +1,5 @@
 <script>
 	import { MetaTags } from 'svelte-meta-tags';
-	import Icon from '@iconify/svelte';
 </script>
 
 <MetaTags title="cheesetosht" />
@@ -36,10 +35,7 @@
 <!-- <p class="text-sm mb-4">
 	currently: exploring.
 </p> -->
-<p class="text-sm mb-4">
-	i like to play around with linuxes, computer networks, frontends and databases.
-</p>
-<p class="text-sm mb-4">overengineering is my goto way of learning.</p>
+<p class="text-sm mb-4">enterprise software engineer by day, unhinged builder by night</p>
 <h5
 	class="font-display font-bold group text-base lg:text-lg select-none cursor-default mb-1 text-gray-500"
 >
