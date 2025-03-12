@@ -1,0 +1,74 @@
+#home_grid {
+	display: grid;
+	padding: 8px;
+	gap: 6px;
+	place-items: stretch;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+		'eyes logo'
+		'intro music'
+		'projects blogs'
+		'projects work'
+		'socials about'
+		'other about';
+}
+
+.grid-box {
+	@apply border-carmine-600;
+	border-width: 2px;
+	padding: 8px;
+	box-sizing: border-box;
+	aspect-ratio: 1;
+}
+
+.grid-box h2 {
+	@apply text-xl font-medium text-carmine-600 mb-2;
+}
+
+#eyes {
+	grid-area: eyes;
+}
+#logo {
+	grid-area: logo;
+}
+#about {
+	grid-area: about;
+	aspect-ratio: unset;
+}
+#projects {
+	grid-area: projects;
+	aspect-ratio: unset;
+}
+#intro {
+	grid-area: intro;
+}
+#music {
+	grid-area: music;
+}
+#work {
+	grid-area: work;
+}
+#blogs {
+	grid-area: blogs;
+}
+#socials {
+	grid-area: socials;
+}
+#other {
+	grid-area: other;
+}
+@media only screen and (min-width: 640px) {
+	#home_grid {
+		padding: 24px;
+		gap: 12px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			'eyes logo about'
+			'projects intro about'
+			'projects music work'
+			'socials blogs other';
+	}
+	.grid-box {
+		padding: 12px;
+	}
+}

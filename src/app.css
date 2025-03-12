@@ -13,11 +13,20 @@
 }
 
 body {
+	background-color: #fff2d3;
 	letter-spacing: 0.02em;
 	line-height: 1.25;
 }
 
+p,
+ul {
+	@apply text-carmine-600;
 	font-size: 1rem;
+	@media (min-width: 640px) {
+		font-size: 0.875rem;
 	}
+}
 
+p a {
+	@apply underline decoration-dashed underline-offset-2 decoration-carmine-600/60 hover:decoration-carmine-600/80 transition duration-300;
 }

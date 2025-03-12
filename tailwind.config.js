@@ -5,7 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
 				display: ['"Gustavo"', 'serif'],
-				sans: ['"Manrope"', 'sans-serif'],
+				sans: ['"Barlow"', 'sans-serif'],
 				serif: ['Georgia', 'serif']
 			},
 			container: {
@@ -39,6 +39,32 @@ export default {
 					700: '#898C86',
 					800: '#7C8079',
 					900: '#6F736D'
+				},
+				carmine: {
+					50: '#fdf3f3',
+					100: '#fbe5e5',
+					200: '#f9cfcf',
+					300: '#f3aeae',
+					400: '#ea7f7f',
+					500: '#de5555',
+					600: '#ba3232',
+					700: '#a92c2c',
+					800: '#8c2828',
+					900: '#752727',
+					950: '#3f1010'
+				},
+				oasis: {
+					50: '#fff9ed',
+					100: '#fff2d3',
+					200: '#fee2aa',
+					300: '#fdcc74',
+					400: '#fbab3c',
+					500: '#f99116',
+					600: '#ea760c',
+					700: '#c2590c',
+					800: '#9a4612',
+					900: '#7c3b12',
+					950: '#431c07'
 				}
 			}
 		}

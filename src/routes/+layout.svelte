@@ -1,5 +1,7 @@
 <script>
 	import '@fontsource/manrope';
+	import '@fontsource/barlow';
+	import '@fontsource/barlow/500';
 	import '../font.css';
 	import '../app.css';
 	import { MetaTags } from 'svelte-meta-tags';
@@ -15,6 +17,6 @@
 	}}
 	keywords={['cheesetosht', 'cheesetoast', 'vraj shah', 'cheese toast']}
 />
-<div class="transition-all duration-200 max-w-screen-sm mx-auto">
+<div class="transition-all duration-200 font-mono max-w-screen-md mx-auto">
 	<slot />
 </div>
