@@ -2,7 +2,6 @@
 	import '@fontsource/manrope';
 	import '@fontsource/barlow';
 	import '@fontsource/barlow/500';
-	import '../font.css';
 	import '../app.css';
 	import { MetaTags } from 'svelte-meta-tags';
 </script>
