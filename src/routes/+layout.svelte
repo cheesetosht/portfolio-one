@@ -11,8 +11,7 @@
 	description="i'm vraj, an engineer. i like my tech crafted than built"
 	openGraph={{
 		title: 'cheesetosht',
-		description: "i'm vraj, an engineer. i like my tech crafted than built.",
-		images: [{ url: '/images/og-img.webp' }]
+		description: "i'm vraj, an engineer. i like my tech crafted than built."
 	}}
 	keywords={['cheesetosht', 'cheesetoast', 'vraj shah', 'cheese toast']}
 />
