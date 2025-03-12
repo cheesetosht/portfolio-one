@@ -4,9 +4,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				display: ['"Gustavo"', 'serif'],
-				sans: ['"Barlow"', 'sans-serif'],
-				serif: ['Georgia', 'serif']
+				sans: ['"Karla"', 'sans-serif'],
+				serif: ['Georgia', 'serif'],
+				barlow: ['"Barlow"', 'sans-serif']
 			},
 			container: {
 				center: true,

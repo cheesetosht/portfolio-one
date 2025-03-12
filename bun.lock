@@ -5,7 +5,7 @@
       "name": "portfolio-one",
       "dependencies": {
         "@fontsource/barlow": "^5.2.5",
-        "@fontsource/manrope": "^5.0.19",
+        "@fontsource/karla": "^5.2.5",
         "@iconify/svelte": "^3.1.6",
         "svelte-icons": "^2.1.0",
       },
@@ -102,7 +102,7 @@
 
     "@fontsource/barlow": ["@fontsource/barlow@5.2.5", "", {}, "sha512-p+2XXEM7v85kbn0Dh8g0YLMjTCDiRCAi9nHik6w/2owZ9CkT1yYGGgaUMshJRqykh7efv1gE0QxAkOhZHd8tEg=="],
 
-    "@fontsource/manrope": ["@fontsource/manrope@5.2.5", "", {}, "sha512-4mYUAhsuF8KoXseG8T9woWUc/foznUVluFtE6fCKAqe76WM3kmDNedaINWjzWB73+wly0duFvVpDBma3NXXT0g=="],
+    "@fontsource/karla": ["@fontsource/karla@5.2.5", "", {}, "sha512-gTAWnl7XCJZ0EhSTTfwFWgRmIsq+EP/qXUUFCeO/ZbCDpcCP8Q03xH30Ts62S8sT9MMfmLhTi6CgLF1ozMMg1g=="],
 
     "@humanwhocodes/config-array": ["@humanwhocodes/config-array@0.13.0", "", { "dependencies": { "@humanwhocodes/object-schema": "^2.0.3", "debug": "^4.3.1", "minimatch": "^3.0.5" } }, "sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw=="],
 

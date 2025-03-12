@@ -22,7 +22,8 @@
 }
 
 .grid-box h2 {
-	@apply text-xl font-medium text-carmine-600 mb-2;
+	@apply font-medium text-xl text-carmine-600;
+	margin-bottom: 0.5rem;
 }
 
 #eyes {

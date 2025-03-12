@@ -1,7 +1,7 @@
 <script lang="ts">
+	import './page.css';
 	import { MetaTags } from 'svelte-meta-tags';
 	import Eyes from '../components/eyes.svelte';
-	import './page.css';
 </script>
 
 <MetaTags title="cheesetosht" />
@@ -12,7 +12,7 @@
 		id="logo"
 		class="grid-box group relative flex flex-col justify-center items-center text-center bg-carmine-600 text-oasis-100 [&_h1]:text-4xl"
 	>
-		<div class="relative cursor-pointer">
+		<div class="relative cursor-pointer font-barlow">
 			<h1>CHEESE</h1>
 			<h1 style="letter-spacing: 0.16em; text-indent: 0.16em;">TOSHT</h1>
 			<div

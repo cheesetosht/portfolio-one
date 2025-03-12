@@ -45,7 +45,7 @@
 	},
 	"dependencies": {
 		"@fontsource/barlow": "^5.2.5",
-		"@fontsource/manrope": "^5.0.19",
+		"@fontsource/karla": "^5.2.5",
 		"@iconify/svelte": "^3.1.6",
 		"svelte-icons": "^2.1.0"
 	}
