@@ -4,9 +4,8 @@
 	"private": true,
 	"type": "module",
 	"engines": {
-		"node": ">=18.16.0",
-		"yarn": "<2",
-		"npm": "please-use-yarn"
+		"node": ">=20.15.0",
+		"npm": ">=10.7.0"
 	},
 	"scripts": {
 		"dev": "vite dev --port 3030",

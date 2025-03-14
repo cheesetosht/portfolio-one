@@ -56,7 +56,7 @@
 <div
 	bind:this={container}
 	id="eyes"
-	class="grid-box flex justify-center items-center text-carmine-600"
+	class="grid-box flex justify-center items-center text-brick-600"
 >
 	<svg
 		class="overflow-visible"

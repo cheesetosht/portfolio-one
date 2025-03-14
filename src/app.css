@@ -12,20 +12,54 @@
 	box-sizing: border-box;
 }
 
+:root {
+	font-size: 16px;
+}
+
 body {
 	background-color: #fff2d3;
-	line-height: 1.25;
+	line-height: 1.3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	cursor: pointer;
+}
+
+b {
+	font-weight: 600;
+}
+
+h4,
+h5,
+h6,
 p,
+small,
 ul {
-	@apply text-carmine-600;
-	font-size: 1rem;
-	@media (min-width: 640px) {
-		font-size: 0.875rem;
-	}
+	@apply text-tan-950;
 }
 
-p a {
-	@apply underline decoration-dashed underline-offset-2 decoration-carmine-600/60 hover:decoration-carmine-600/80 transition duration-300;
+p a,
+ul a {
+	@apply decoration-tan-800/40 hover:decoration-tan-800;
+	transition: ease-in-out 300ms;
+	text-decoration-thickness: 0.8px;
+	text-underline-offset: 2px;
+	text-decoration-line: underline;
+	/* text-decoration-style: dashed; */
+}
+
+small {
+	@apply text-sm;
+	display: inline-block;
+}
+
+@media only screen and (min-width: 640px) {
+	:root {
+		/* font-size: 14px; */
+	}
 }
