@@ -127,3 +127,7 @@
 		</div>
 	</div>
 </main>
+<footer class="flex justify-between items-end px-2 pb-2 sm:px-6 sm:pb-6">
+	<small>glad you visited :&#41;</small>
+	<small>&copy; 2025 &bull; cheesetosht. all rights reserved.</small>
+</footer>
