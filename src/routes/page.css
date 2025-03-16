@@ -1,6 +1,6 @@
 #home_grid {
 	display: grid;
-	padding: 0.5rem;
+	padding: 0.75rem;
 	gap: 0.5rem;
 	place-items: stretch;
 	grid-template-columns: repeat(2, 1fr);
@@ -45,6 +45,10 @@
 
 #eyes {
 	grid-area: eyes;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 #logo {
 	grid-area: logo;
@@ -111,7 +115,7 @@
 		@apply text-4xl;
 	}
 	.grid-box {
-		padding: 12px;
+		padding: 0.75rem;
 	}
 	.grid-box h3 {
 		margin-bottom: 0.5rem;

@@ -53,11 +53,7 @@
 
 <svelte:window on:mousemove={debouncedMouseMove} />
 
-<div
-	bind:this={container}
-	id="eyes"
-	class="grid-box flex justify-center items-center text-brick-600"
->
+<div bind:this={container} id="eyes" class="grid-box text-brick-600">
 	<svg
 		class="overflow-visible"
 		width="100px"

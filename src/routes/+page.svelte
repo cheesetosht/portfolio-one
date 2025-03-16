@@ -20,7 +20,7 @@
 		<p class="mb-2">
 			a generalist product engineer based out of India with 5 years of full-stack experience.
 		</p>
-		<div class="absolute left-8 -bottom-20 sm:left-8 right-0 text-brick-600">
+		<div class="-z-10 absolute left-8 -bottom-20 sm:left-8 right-0 text-brick-600">
 			<Dots />
 		</div>
 	</div>
@@ -122,12 +122,12 @@
 			<!-- <a target="_blank" href="https://bsky.app/profile/cheesetosht.bsky.social">bluesky</a> -->
 			<a target="_blank" href="https://linkedin.com/in/cheesetosht">linkedin</a>
 		</p>
-		<div class="absolute left-8 -bottom-16 sm:left-8 right-0 text-brick-600">
+		<div class="-z-10 absolute left-8 -bottom-16 sm:left-8 right-0 text-brick-600">
 			<Dots />
 		</div>
 	</div>
 </main>
-<footer class="flex justify-between items-end px-2 pb-2 sm:px-6 sm:pb-6">
+<footer class="flex justify-between items-end px-3 pb-3 sm:px-6 sm:pb-6">
 	<small>glad you visited :&#41;</small>
 	<small>&copy; 2025 &bull; cheesetosht. all rights reserved.</small>
 </footer>
