@@ -12,7 +12,8 @@ export const EXPERIENCES = [
 		end_year: null,
 		url: 'https://www.loophealth.com/?utm_source=cheesetosht',
 		description: [
-			'Considerably larger team than my last one. Getting to learn processes and risks that come with scale.'
+			'Considerably larger team than my previous one.',
+			'Coming from a raw startup environment, I got to learn a lot about things that come with maintaining a larger-sized product. Two sides to this, I got to learn a lot about the importance of documentation, testing, and code reviews. On the other hand, I was also able to deliver considerably faster due lack of bias for processes.'
 		]
 	},
 	{
