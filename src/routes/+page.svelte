@@ -129,5 +129,5 @@
 </main>
 <footer class="flex justify-between items-end px-3 pb-3 sm:px-6 sm:pb-6">
 	<small>glad you visited :&#41;</small>
-	<small>&copy; 2025 &bull; cheesetosht. all rights reserved.</small>
+	<small>&copy; 2025 &bull; cheesetosht</small>
 </footer>
