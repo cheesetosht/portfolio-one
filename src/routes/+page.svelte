@@ -51,7 +51,7 @@
 				a privacy-focused neighborhood security system
 			</li>
 			<li>
-				> <a target="_blank" href="https://github.com/cheesetosht/portfolio-one/tree/2024">
+				> <a target="_blank" href="https://9c8106af.portfolio-one-6z5.pages.dev/">
 					previous version of this website
 				</a>
 			</li>
