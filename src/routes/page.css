@@ -34,12 +34,12 @@
 	@apply bg-tan-100 text-brick-600 font-serif border border-brick-600 -rotate-3 group-hover:-rotate-1;
 	position: absolute;
 	font-size: 0.667rem;
-	width: 6rem;
+	width: 3.6rem;
 	border-radius: 9999px;
 	font-style: italic;
 	transition: ease-in-out 300ms;
-	top: 92%;
-	left: 16%;
+	top: 94%;
+	left: 50%;
 	box-shadow: 0 0 0 2px #fff2d3;
 }
 
@@ -108,8 +108,7 @@
 	}
 	#hero-tag {
 		font-size: 0.75rem;
-		width: 7rem;
-		left: 40%;
+		width: 4.2rem;
 	}
 	#logo h1 {
 		@apply text-4xl;

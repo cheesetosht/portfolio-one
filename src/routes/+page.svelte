@@ -11,14 +11,14 @@
 		<div class="relative cursor-pointer font-barlow">
 			<h1>CHEESE</h1>
 			<h1 style="letter-spacing: 0.16em; text-indent: 0.16em;">TOSHT</h1>
-			<div id="hero-tag">product engineer</div>
+			<div id="hero-tag">engineer</div>
 		</div>
 	</div>
 	<Eyes />
 	<div id="intro" class="grid-box relative overflow-hidden">
 		<h3>hey, i'm vraj!</h3>
 		<p class="mb-2">
-			a generalist product engineer based out of India with 5 years of full-stack experience.
+			a creative engineer based out of India with 5 years of full-stack experience.
 		</p>
 		<div class="-z-10 absolute left-8 -bottom-20 sm:left-8 right-0 text-brick-600">
 			<Dots />
@@ -31,9 +31,10 @@
 			it videos, designs or software.
 		</p>
 		<p class="mb-2">
-			spent my time in college configuring linux distros (arch btw), participating in &amp;
-			organising hackathons, rest of the time I was building bluelearn (no, i didn't attend
-			classes). and now i work at loop.
+			spent my time in college playing with linux distros (arch btw), participating in &amp;
+			organising hackathons, rest of the time I was building
+			<a target="_blank" href="https://bluelearn.in">bluelearn</a> (no, i didn't attend classes).
+			and now i work at <a target="_blank" href="https://loophealth.com">loop</a>.
 		</p>
 		<p>
 			having worked at diverse scales, i always prioritise user experience, delivery and
