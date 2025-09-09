@@ -18,7 +18,7 @@
 	<div id="intro" class="grid-box relative overflow-hidden">
 		<h3>hey, i'm vraj!</h3>
 		<p class="mb-2">
-			a creative engineer based out of India with 5 years of full-stack experience.
+			a creative engineer based out of India with 6 years of full-stack experience.
 		</p>
 		<div class="-z-10 absolute left-8 -bottom-20 sm:left-8 right-0 text-brick-600">
 			<Dots />
@@ -78,19 +78,23 @@
 	</div>
 	<div id="career" class="grid-box [&_h4]:font-semibold">
 		<h3>career</h3>
+		<h4><b>fullstack engineer</b></h4>
+		<p class="mb-1 sm:mb-2">
+			<a target="_blank" href="https://induced.ai">induced</a> &middot; 2025—present
+		</p>
 		<h4><b>software engineer</b></h4>
 		<p class="mb-1 sm:mb-2">
-			<a target="_blank" href="https://loophealth.com">loop health</a> &middot; 2024—present
+			<a target="_blank" href="https://loophealth.com">loop health</a> &middot; 2024—25
 		</p>
 		<h4><b>founding engineer</b></h4>
-		<p class="mb-4 sm:mb-8">
+		<p class="mb-1 sm:mb-2">
 			<a target="_blank" href="https://bluelearn.in">bluelearn</a> &middot; 2020—24
 		</p>
-		<h4><b>consulting & freelance</b></h4>
+		<!-- <h4><b>consulting & freelance</b></h4>
 		<p>
 			<a target="_blank" href="https://hypersift.ai">hypersift</a> &middot;
 			<a target="_blank" href="https://enclave.money">enclave money</a>
-		</p>
+		</p> -->
 	</div>
 	<div id="vouch" class="grid-box">
 		<h3 class="!mb-1">i've worked with them, you should too</h3>
