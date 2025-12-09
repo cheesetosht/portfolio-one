@@ -9,9 +9,10 @@
 	onMount(() => {
 		// Check for saved preference or system preference
 		const savedTheme = localStorage.getItem('theme');
-		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		// const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-		isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+		isDark = savedTheme === 'dark';
+		// || (!savedTheme && prefersDark);
 		updateTheme();
 	});
 
