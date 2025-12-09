@@ -7,7 +7,7 @@
 	let eyes: SVGGElement;
 	let container: HTMLDivElement;
 
-	const eyeMovementFactor: number = 0.1;
+	const eyeMovementFactor: number = 0.05;
 	const maxPupilMovement: number = 20;
 	let containerRect: DOMRect;
 
@@ -53,11 +53,11 @@
 
 <svelte:window on:mousemove={debouncedMouseMove} />
 
-<div bind:this={container} id="eyes" class="grid-box text-brick-600">
+<div bind:this={container} id="eyes" class="text-foreground">
 	<svg
 		class="overflow-visible"
-		width="100px"
-		height="100px"
+		width="72px"
+		height="72px"
 		viewBox="0 0 351 282"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"

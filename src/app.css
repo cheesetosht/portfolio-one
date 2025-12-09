@@ -1,65 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import '@fontsource-variable/quicksand';
+@import '@fontsource/montserrat/800.css';
+@import '@fontsource/geist-mono/400.css';
+@import '@fontsource/geist-mono/500.css';
 
+@theme {
+	--text-2xs: 0.625rem;
+
+	--font-sans: 'Quicksand', sans-serif;
+	--font-heading: 'Clash Grotesk', sans-serif;
+	--font-mono: 'Geist Mono', monospace;
+	--font-geist: 'Geist', sans-serif;
+	--color-sage-950: #00311F;
+	--color-sage-900: #174935;
+	--color-sage-800: #2E604A;
+	--color-sage-700: #45765F;
+	--color-sage-600: #5C8B74;
+	--color-sage-500: #739F88;
+	--color-sage-400: #8AB19C;
+	--color-sage-300: #A1C3B0;
+	--color-sage-200: #B8D3C4;
+	--color-sage-100: #CFE2D7;
+	--color-sage-50:  #E6F1EA;
+
+	--color-stone-950: #66665D;
+	--color-stone-900: #75756C;
+	--color-stone-800: #85857A;
+	--color-stone-700: #949489;
+	--color-stone-600: #A3A397;
+	--color-stone-500: #B3B3A6;
+	--color-stone-400: #C2C2B4;
+	--color-stone-300: #D1D1C3;
+	--color-stone-200: #E0E0D2;
+	--color-stone-100: #EEEEE1;
+	--color-stone-50: #FDFDF0;
+
+	/* Define semantic colors in theme so Tailwind generates utilities */
+	--color-bg: var(--color-stone-50);
+	--color-fg: var(--color-sage-950);
+	--color-fg-secondary: var(--color-sage-950);
+	--color-muted-fg: var(--color-stone-500);
+	--color-link-fg: var(--color-sage-600);
+	--color-border: var(--color-stone-200);
+}
+
+/* Theme colors - override for dark mode */
 :root {
-	--dark-gray: #a5a4a1;
+	--color-bg: var(--color-stone-50);
+	--color-fg: var(--color-sage-950);
+	--color-fg-secondary: color-mix(in srgb, var(--color-sage-950) 80%, transparent);
+	--color-muted-fg: var(--color-stone-500);
+	--color-link-fg: var(--color-sage-600);
+	--color-border: var(--color-stone-200);
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+:root.dark {
+	--color-bg: var(--color-sage-950);
+	--color-fg: var(--color-stone-50);
+	--color-fg-secondary: var(--color-stone-100);
+	--color-muted-fg: var(--color-sage-400);
+	--color-link-fg: var(--color-stone-400);
+	--color-border: var(--color-sage-800);
 }
-
-:root {
-	font-size: 16px;
-}
-
 body {
-	background-color: #fff2d3;
-	line-height: 1.3;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-sans);
+	line-height: 1.75;
+	letter-spacing: 0.04em;
+	transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	cursor: pointer;
+::selection {
+	background-color: var(--color-sage-200);
 }
 
-b {
-	font-weight: 600;
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-heading);
 }
 
-h4,
-h5,
-h6,
-p,
-small,
-ul {
-	@apply text-tan-950;
+a {
+	color: var(--color-link-fg);
+	transition: all 0.3s ease-in-out;
 }
 
-p a,
-ul a {
-	@apply decoration-tan-800/40 hover:decoration-tan-800;
-	transition: ease-in-out 300ms;
-	text-decoration-thickness: 0.8px;
-	text-underline-offset: 2px;
-	text-decoration-line: underline;
-	/* text-decoration-style: dashed; */
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.25em;
+	/* text-decoration-thickness: 0.5px; */
 }
 
-small {
-	@apply text-sm;
-	display: inline-block;
+
+code {
+	font-family: var(--font-mono);
 }
 
-@media only screen and (min-width: 640px) {
-	:root {
-		/* font-size: 14px; */
-	}
-}

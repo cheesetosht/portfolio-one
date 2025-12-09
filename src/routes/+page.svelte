@@ -1,138 +1,224 @@
-<script lang="ts">
-	import './page.css';
-	import { MetaTags } from 'svelte-meta-tags';
+<script>
+	import { onMount } from 'svelte';
+	import { EXPERIENCE, TOOLS } from '$lib/constants';
+	import Icon from '@iconify/svelte';
 	import Eyes from '../components/eyes.svelte';
-	import Dots from '../components/dots.svelte';
+
+	let isDark = false;
+
+	onMount(() => {
+		// Check for saved preference or system preference
+		const savedTheme = localStorage.getItem('theme');
+		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+		isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+		updateTheme();
+	});
+
+	function updateTheme() {
+		if (isDark) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	}
+
+	function toggleDark() {
+		isDark = !isDark;
+		localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		updateTheme();
+	}
 </script>
 
-<MetaTags title="cheesetosht" />
-<main id="home_grid">
-	<div id="logo" role="group" class="grid-box group bg-brick-600 text-tan-100">
-		<div class="relative cursor-pointer font-barlow">
-			<h1>CHEESE</h1>
-			<h1 style="letter-spacing: 0.16em; text-indent: 0.16em;">TOSHT</h1>
-			<div id="hero-tag">engineer</div>
+<header class="relative border-b border-border border-dashed py-6 sm:py-8 px-4 sm:px-6">
+	<div class="flex items-start gap-2">
+		<div class="pl-1 sm:pl-2 py-4 sm:py-6 flex-1 flex items-center gap-3">
+			<Eyes />
+			<span class="hint-fade text-2xs text-muted-fg italic sm:hidden">tap anywhere to move</span>
 		</div>
+		<button
+			on:click={toggleDark}
+			class="rounded-full border border-border p-1.5 hover:bg-border/20"
+			aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+		>
+			{#if isDark}
+				<Icon icon="fluent:weather-sunny-32-regular" class="size-3 text-muted-fg" />
+			{:else}
+				<Icon icon="fluent:weather-moon-32-regular" class="size-3 text-muted-fg" />
+			{/if}
+		</button>
 	</div>
-	<Eyes />
-	<div id="intro" class="grid-box relative overflow-hidden">
-		<h3>hey, i'm vraj!</h3>
-		<p class="mb-2">
-			a creative engineer based out of India with 6 years of full-stack experience.
-		</p>
-		<div class="-z-10 absolute left-8 -bottom-20 sm:left-8 right-0 text-brick-600">
-			<Dots />
-		</div>
-	</div>
-	<div id="about" class="grid-box">
-		<h3>about me</h3>
-		<p class="mb-2">
-			i grew up tinkering with slow pcs with no internet. creating is what i've always enjoyed, be
-			it videos, designs or software.
-		</p>
-		<p class="mb-2">
-			spent my time in college playing with linux distros (arch btw), participating in &amp;
-			organising hackathons, rest of the time I was building
-			<a target="_blank" href="https://bluelearn.in">bluelearn</a> (no, i didn't attend classes).
-			and now i work at <a target="_blank" href="https://loophealth.com">loop</a>.
-		</p>
-		<p>
-			having worked at diverse scales, i always prioritise user experience, delivery and
-			maintainability over standards or frameworks.
-		</p>
-	</div>
-	<div id="projects" class="grid-box">
-		<h3>projects</h3>
-		<ul class="space-y-1">
-			<li>
-				> <a target="_blank" href="https://github.com/cheesetosht/portfolio-one">this website</a>
-			</li>
-			<li>
-				> <a target="_blank" href="https://github.com/cheesetosht/dooreye-backend">dooreye</a> &middot;
-				a privacy-focused neighborhood security system
-			</li>
-			<li>
-				> <a target="_blank" href="https://9c8106af.portfolio-one-6z5.pages.dev/">
-					previous version of this website
-				</a>
-			</li>
-			<li>
-				> <a target="_blank" href="https://hack-svit.pages.dev/">hacksvit</a> &middot; organised a national
-				level hackathon from scratch
-			</li>
-			<li>
-				> <a target="_blank" href="https://thevrajshah.pages.dev/"> og version of this website </a>
-			</li>
-		</ul>
-	</div>
-	<div id="blog" class="grid-box flex flex-col justify-between">
-		<div>
-			<h3>blog</h3>
-			<p>coming soon...</p>
-		</div>
-		<p>
-			<i>"Patience is the art of hoping."</i>
+	<div class="flex justify-between items-start mb-2">
+		<h1
+			class="select-none cursor-default text-2xl sm:text-4xl font-semibold tracking-wide leading-none"
+		>
+			vraj shah
+		</h1>
+		<p class="text-right text-2xs sm:text-xs leading-normal text-muted-fg font-mono">
+			(bengaluru, india)
 			<br />
-			<small class="mt-1 opacity-60">Luc de Clapiers</small>
+			<!-- local indian time -->
+			<span class="uppercase text-2xs sm:text-xs text-muted-fg font-mono">
+				<Icon icon="fluent:clock-12-regular" class="size-3 -mr-0.5 mb-0.5 inline-block" />
+				{new Date().toLocaleString('en-IN', {
+					timeZone: 'Asia/Kolkata',
+					hour: '2-digit',
+					minute: '2-digit'
+				})}
+			</span>
 		</p>
 	</div>
-	<div id="career" class="grid-box [&_h4]:font-semibold">
-		<h3>career</h3>
-		<h4><b>fullstack engineer</b></h4>
-		<p class="mb-1 sm:mb-2">
-			<a target="_blank" href="https://induced.ai">induced</a> &middot; 2025—present
+	<p class="cursor-default sm:text-lg select-none text-fg-secondary">
+		i craft soulful products, fast.
+	</p>
+</header>
+<main class="space-y-4 sm:space-y-6 py-6 sm:py-8 px-4 sm:px-6">
+	<section>
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+			what i do
+		</h2>
+		<p class="text-fg-secondary">
+			i'm currently a software engineer at <a href="https://www.induced.ai" target="_blank"
+				>induced.ai</a
+			>, building ai-powered products for high-stakes industries. i build frontends, architect
+			backends, configure databases, and deploy infrastructure at intense speeds. craft is the only
+			thing consistent about my work.
 		</p>
-		<h4><b>software engineer</b></h4>
-		<p class="mb-1 sm:mb-2">
-			<a target="_blank" href="https://loophealth.com">loop health</a> &middot; 2024—25
-		</p>
-		<h4><b>founding engineer</b></h4>
-		<p class="mb-1 sm:mb-2">
-			<a target="_blank" href="https://bluelearn.in">bluelearn</a> &middot; 2020—24
-		</p>
-		<!-- <h4><b>consulting & freelance</b></h4>
-		<p>
-			<a target="_blank" href="https://hypersift.ai">hypersift</a> &middot;
-			<a target="_blank" href="https://enclave.money">enclave money</a>
-		</p> -->
-	</div>
-	<div id="vouch" class="grid-box">
-		<h3 class="!mb-1">i've worked with them, you should too</h3>
-		<small class="mb-2">if you're in search of some crazy talent to collaborate with...</small>
-		<ul class="space-y-1">
+	</section>
+	<section>
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+			background
+		</h2>
+		<div class="space-y-2 sm:space-y-3">
+			<p class="text-fg-secondary">
+				i started my career as one of the first engineers at <a
+					href="https://web.archive.org/web/20250117144119/https://www.bluelearn.in/"
+					target="_blank">bluelearn</a
+				>, where i built the entire platform from scratch - infrastructure, APIs, frontends, and
+				everything in between. grew and led a team of 4 engineers, learning management the hard way:
+				hiring, firing, mentoring, and running way too many interviews. it was the perfect place for
+				a generalist: i got to deploy to prod from day one, architect systems handling 500k+ users,
+				and ship (then scrap, then rebuild) several products in rapid succession.
+			</p>
+			<p class="text-fg-secondary">
+				after bluelearn shut down, i joined <a href="https://www.loophealth.com" target="_blank"
+					>loop health</a
+				>, a series-b healthtech with real stakes. built tools that saved thousands of agent hours,
+				designed claim processing services integrated with 10+ third parties, and learned how to
+				ship quality code under pressure when bugs actually cost money.
+			</p>
+			<p class="text-fg-secondary">
+				currently at induced.ai, where i'm building ai-powered products across wildly different
+				domains - research tools that turn weeks into minutes, healthcare platforms serving multi-
+				state operations, and security infrastructure processing production ai traffic. full
+				ownership: product thinking, design, code, deployment.
+			</p>
+		</div>
+	</section>
+	<section>
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
+			experience
+		</h2>
+		{#each EXPERIENCE as experience}
+			<div class="flex items-baseline gap-2 sm:gap-4 py-2 cursor-pointer select-none">
+				<div class="text-xs text-muted-fg font-mono">{experience.year}</div>
+				<div class="flex-1 text-fg-secondary">{experience.company}</div>
+				<div class="text-xs text-muted-fg text-right">{experience.title}</div>
+			</div>
+		{/each}
+	</section>
+	<section>
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+			side-quests & projects
+		</h2>
+		<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
+			<li>i like tinkering with server infra & linux distros</li>
 			<li>
-				<a href="https://www.behance.net/disha-dsgn">disha</a> &middot; visual designer
+				<a href="https://hack-svit.pages.dev/" target="_blank">hack svit</a> - organized a national level
+				hackathon impacting 1000+ builders
 			</li>
-			<li><a href="https://dhrumil.framer.website/">dhrumil</a> &middot; product designer</li>
-			<li><a href="https://github.com/LOLwierd">ayaan</a> &middot; engineer</li>
+			<li>
+				<a href="https://github.com/cheesetosht/hackathon-backend" target="_blank"
+					>hackathon checkin app</a
+				> - a react native x go app to power qr-based checkins for our hackathons
+			</li>
 		</ul>
-	</div>
-	<div id="other" class="grid-box">
-		<h3>want to hire me?</h3>
-		<p class="mb-2">
-			well, first of all, I'm flattered. secondly, here's my email -
-			<a target="_blank" href="mailto:cheesetosht@gmail.com" class="break-all inline-block">
-				cheesetosht@gmail.com
-			</a>
-		</p>
-		<p>
-			in case you're a resume person, here's mine - <a target="_blank" href="/resume.pdf">resume</a>
-		</p>
-	</div>
-	<div id="links" class="grid-box relative overflow-hidden">
-		<h3>linksss</h3>
-		<p class="[&_a]:block text-xl">
-			<a target="_blank" href="https://github.com/cheesetosht">github</a>
-			<a target="_blank" href="https://x.com/cheesetosht">the bird app</a>
-			<!-- <a target="_blank" href="https://bsky.app/profile/cheesetosht.bsky.social">bluesky</a> -->
-			<a target="_blank" href="https://linkedin.com/in/cheesetosht">linkedin</a>
-		</p>
-		<div class="-z-10 absolute left-8 -bottom-16 sm:left-8 right-0 text-brick-600">
-			<Dots />
+	</section>
+</main>
+<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
+	<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
+		<div class="marquee-content space-x-1.5 sm:space-x-3">
+			{#each TOOLS as tool}
+				<span>{tool.name}</span>
+				<span>&#10033;</span>
+			{/each}
+		</div>
+		<div class="marquee-content space-x-1.5 sm:space-x-3" aria-hidden="true">
+			{#each TOOLS as tool}
+				<span>{tool.name}</span>
+				<span>&#10033;</span>
+			{/each}
 		</div>
 	</div>
-</main>
-<footer class="flex justify-between items-end px-3 pb-3 sm:px-6 sm:pb-6">
-	<small>glad you visited :&#41;</small>
-	<small>&copy; 2025 &bull; cheesetosht</small>
+</section>
+<section class="py-6 sm:py-8 px-4 sm:px-6">
+	<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
+		links
+	</h2>
+	<div class="text-xs font-mono font-medium leading-normal">
+		<a href="https://github.com/cheesetosht" target="_blank">github</a>
+		&middot;
+		<a href="https://x.com/cheesetosht" target="_blank">twitter/x</a>
+		&middot;
+		<a href="https://www.linkedin.com/in/cheesetosht" target="_blank">linkedin</a>
+	</div>
+</section>
+<footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
+	<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
 </footer>
+
+<style>
+	.hint-fade {
+		animation: hintFade 3s ease-out forwards;
+	}
+
+	@keyframes hintFade {
+		0% {
+			opacity: 0;
+		}
+		15% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.marquee {
+		cursor: pointer;
+		display: flex;
+		width: max-content;
+		animation: marquee 20s linear infinite;
+	}
+
+	.marquee:hover {
+		animation-play-state: paused;
+	}
+
+	.marquee-content {
+		display: flex;
+		flex-shrink: 0;
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+</style>
