@@ -43,7 +43,10 @@
 		"wrangler": "^4.36.0"
 	},
 	"dependencies": {
+		"@fontsource-variable/bricolage-grotesque": "^5.2.10",
 		"@fontsource-variable/quicksand": "^5.2.10",
+		"@fontsource-variable/work-sans": "^5.2.8",
+		"@fontsource/fragment-mono": "^5.2.8",
 		"@fontsource/geist-mono": "^5.2.7",
 		"@fontsource/montserrat": "^5.2.8",
 		"@iconify/svelte": "^3.1.6",

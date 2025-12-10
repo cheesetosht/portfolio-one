@@ -3,129 +3,57 @@
 	import { EXPERIENCE, TOOLS } from '$lib/constants';
 	import Icon from '@iconify/svelte';
 	import Eyes from '../components/eyes.svelte';
-
-	let isDark = false;
-
-	onMount(() => {
-		// Check for saved preference or system preference
-		const savedTheme = localStorage.getItem('theme');
-		// const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-		isDark = savedTheme === 'dark';
-		// || (!savedTheme && prefersDark);
-		updateTheme();
-	});
-
-	function updateTheme() {
-		if (isDark) {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	}
-
-	function toggleDark() {
-		isDark = !isDark;
-		localStorage.setItem('theme', isDark ? 'dark' : 'light');
-		updateTheme();
-	}
+	import ExperienceItem from '../components/experience-item.svelte';
 </script>
 
-<header class="relative border-b border-border border-dashed py-6 sm:py-8 px-4 sm:px-6">
-	<div class="flex items-start gap-2">
-		<div class="pl-1 sm:pl-2 py-4 sm:py-6 flex-1 flex items-center gap-3">
-			<Eyes />
-			<span class="hint-fade text-2xs text-muted-fg italic sm:hidden">tap anywhere to move</span>
-		</div>
-		<button
-			on:click={toggleDark}
-			class="rounded-full border border-border p-1.5 hover:bg-border/20"
-			aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-		>
-			{#if isDark}
-				<Icon icon="fluent:weather-sunny-32-regular" class="size-3 text-muted-fg" />
-			{:else}
-				<Icon icon="fluent:weather-moon-32-regular" class="size-3 text-muted-fg" />
-			{/if}
-		</button>
+<header class="border-y border-border border-dashed flex h-20 sm:h-24 mt-16 sm:mt-32">
+	<div class="size-20 sm:size-24">
+		<img
+			src="/illustration.png"
+			alt="illustration"
+			class="size-full object-cover mix-blend-multiply"
+		/>
 	</div>
-	<div class="flex justify-between items-start mb-2">
+	<div
+		class="flex-1 border-x border-border border-dashed px-4 sm:px-6 flex flex-col justify-center"
+	>
 		<h1
-			class="select-none cursor-default text-2xl sm:text-4xl font-semibold tracking-wide leading-none"
+			class="select-none cursor-default text-lg sm:text-xl font-semibold tracking-wide leading-none"
 		>
 			vraj shah
 		</h1>
-		<p class="text-right text-2xs sm:text-xs leading-normal text-muted-fg font-mono">
-			(bengaluru, india)
-			<br />
-			<!-- local indian time -->
-			<span class="uppercase text-2xs sm:text-xs text-muted-fg font-mono">
-				<Icon icon="fluent:clock-12-regular" class="size-3 -mr-0.5 mb-0.5 inline-block" />
-				{new Date().toLocaleString('en-IN', {
-					timeZone: 'Asia/Kolkata',
-					hour: '2-digit',
-					minute: '2-digit'
-				})}
-			</span>
-		</p>
+		<p class="cursor-default select-none text-fg-secondary">product engineer</p>
 	</div>
-	<p class="cursor-default sm:text-lg select-none text-fg-secondary">
-		i craft soulful products, fast.
-	</p>
+	<div class="relative flex justify-center items-center size-20 sm:size-24">
+		<Eyes />
+		<span
+			class="hint-fade text-right w-40 absolute top-1/2 -translate-y-1/2 -left-44 text-2xs text-muted-fg italic sm:hidden"
+			>tap anywhere</span
+		>
+	</div>
 </header>
 <main class="space-y-4 sm:space-y-6 py-6 sm:py-8 px-4 sm:px-6">
 	<section>
-		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
 			what i do
-		</h2>
+		</h2> -->
 		<p class="text-fg-secondary">
-			i'm currently a software engineer at <a href="https://www.induced.ai" target="_blank"
-				>induced.ai</a
-			>, building ai-powered products for high-stakes industries. i build frontends, architect
-			backends, configure databases, and deploy infrastructure at intense speeds. craft is the only
-			thing consistent about my work.
+			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
 		</p>
-	</section>
-	<section>
-		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
-			background
-		</h2>
-		<div class="space-y-2 sm:space-y-3">
-			<p class="text-fg-secondary">
-				i started my career as one of the first engineers at <a
-					href="https://web.archive.org/web/20250117144119/https://www.bluelearn.in/"
-					target="_blank">bluelearn</a
-				>, where i built the entire platform from scratch - infrastructure, APIs, frontends, and
-				everything in between. grew and led a team of 4 engineers, learning management the hard way:
-				hiring, firing, mentoring, and running way too many interviews. it was the perfect place for
-				a generalist: i got to deploy to prod from day one, architect systems handling 500k+ users,
-				and ship (then scrap, then rebuild) several products in rapid succession.
-			</p>
-			<p class="text-fg-secondary">
-				after bluelearn shut down, i joined <a href="https://www.loophealth.com" target="_blank"
-					>loop health</a
-				>, a series-b healthtech with real stakes. built tools that saved thousands of agent hours,
-				designed claim processing services integrated with 10+ third parties, and learned how to
-				ship quality code under pressure when bugs actually cost money.
-			</p>
-			<p class="text-fg-secondary">
-				currently at induced.ai, where i'm building ai-powered products across wildly different
-				domains - research tools that turn weeks into minutes, healthcare platforms serving multi-
-				state operations, and security infrastructure processing production ai traffic. full
-				ownership: product thinking, design, code, deployment.
-			</p>
-		</div>
+		<!-- <p class="text-fg-secondary text-xs font-mono">web, ai, infrastructure</p> -->
 	</section>
 	<section>
 		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
 			experience
 		</h2>
 		{#each EXPERIENCE as experience}
-			<div class="flex items-baseline gap-2 sm:gap-4 py-2 cursor-pointer select-none">
-				<div class="text-xs text-muted-fg font-mono">{experience.year}</div>
-				<div class="flex-1 text-fg-secondary">{experience.company}</div>
-				<div class="text-xs text-muted-fg text-right">{experience.title}</div>
-			</div>
+			<ExperienceItem
+				year={experience.year}
+				company={experience.company}
+				title={experience.title}
+				description={experience.description}
+				link={experience.link}
+			/>
 		{/each}
 	</section>
 	<section>
@@ -176,6 +104,7 @@
 </section>
 <footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
 	<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
+	<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-09)</small>
 </footer>
 
 <style>

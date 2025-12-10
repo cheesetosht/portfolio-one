@@ -7,12 +7,13 @@
 	let eyes: SVGGElement;
 	let container: HTMLDivElement;
 
-	const eyeMovementFactor: number = 0.05;
+	const eyeMovementFactorX: number = 0.05;
+	const eyeMovementFactorY: number = 0.05;
 	const maxPupilMovement: number = 20;
 	let containerRect: DOMRect;
 
-	const eyePosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.25 });
-	const pupilPosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.25 });
+	const eyePosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.3 });
+	const pupilPosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.3 });
 
 	function calculateEyeMovement(mouseX: number, mouseY: number) {
 		const containerCenterX: number = containerRect.left + containerRect.width / 2;
@@ -26,8 +27,8 @@
 		const pupilX: number = Math.cos(angle) * maxPupilMovement;
 		const pupilY: number = Math.sin(angle) * maxPupilMovement;
 
-		const eyeX: number = normalizedX * containerRect.width * eyeMovementFactor;
-		const eyeY: number = normalizedY * containerRect.height * eyeMovementFactor;
+		const eyeX: number = normalizedX * containerRect.width * eyeMovementFactorX;
+		const eyeY: number = normalizedY * containerRect.height * eyeMovementFactorY;
 
 		return { pupilX, pupilY, eyeX, eyeY };
 	}
@@ -44,7 +45,7 @@
 		pupilPosition.set({ x: pupilX, y: pupilY });
 	}
 
-	const debouncedMouseMove = debounce(handleMouseMove, 10);
+	const debouncedMouseMove = debounce(handleMouseMove, 5);
 
 	onMount(() => {
 		containerRect = container.getBoundingClientRect();
@@ -55,9 +56,7 @@
 
 <div bind:this={container} id="eyes" class="text-foreground">
 	<svg
-		class="overflow-visible"
-		width="72px"
-		height="72px"
+		class="overflow-visible size-8 sm:size-10"
 		viewBox="0 0 351 282"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"

@@ -1,73 +1,78 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/quicksand';
+@import '@fontsource-variable/work-sans';
+@import '@fontsource-variable/bricolage-grotesque';
 @import '@fontsource/montserrat/800.css';
-@import '@fontsource/geist-mono/400.css';
-@import '@fontsource/geist-mono/500.css';
+@import '@fontsource/fragment-mono/400.css';
 
 @theme {
 	--text-2xs: 0.625rem;
 
-	--font-sans: 'Quicksand', sans-serif;
-	--font-heading: 'Clash Grotesk', sans-serif;
-	--font-mono: 'Geist Mono', monospace;
+	/* --font-sans: 'Quicksand Variable', sans-serif; */
+	--font-sans: 'Work Sans Variable', sans-serif;
+	--font-heading: 'Bricolage Grotesque Variable', sans-serif;
+	--font-mono: 'Fragment Mono', monospace;
 	--font-geist: 'Geist', sans-serif;
-	--color-sage-950: #00311F;
-	--color-sage-900: #174935;
-	--color-sage-800: #2E604A;
-	--color-sage-700: #45765F;
-	--color-sage-600: #5C8B74;
-	--color-sage-500: #739F88;
-	--color-sage-400: #8AB19C;
-	--color-sage-300: #A1C3B0;
-	--color-sage-200: #B8D3C4;
-	--color-sage-100: #CFE2D7;
-	--color-sage-50:  #E6F1EA;
 
-	--color-stone-950: #66665D;
-	--color-stone-900: #75756C;
-	--color-stone-800: #85857A;
-	--color-stone-700: #949489;
-	--color-stone-600: #A3A397;
-	--color-stone-500: #B3B3A6;
-	--color-stone-400: #C2C2B4;
-	--color-stone-300: #D1D1C3;
-	--color-stone-200: #E0E0D2;
-	--color-stone-100: #EEEEE1;
-	--color-stone-50: #FDFDF0;
+	--color-forest-50: oklch(0.965 0.012 161);
+	--color-forest-100: oklch(0.932 0.022 160.5);
+	--color-forest-200: oklch(0.872 0.038 160);
+	--color-forest-300: oklch(0.788 0.055 159.5);
+	--color-forest-400: oklch(0.678 0.068 159);
+	--color-forest-500: oklch(0.588 0.072 158.5);
+	--color-forest-600: oklch(0.508 0.066 158);
+	--color-forest-700: oklch(0.428 0.058 157.5);
+	--color-forest-800: oklch(0.348 0.052 157);
+	--color-forest-900: oklch(0.278 0.048 156.5);
+	--color-forest-950: oklch(0.228 0.046 162.5);
+
+	--color-charcoal-50: oklch(0.985 0 0);
+	--color-charcoal-100: oklch(0.967 0.001 60);
+	--color-charcoal-200: oklch(0.92 0.004 58);
+	--color-charcoal-300: oklch(0.871 0.006 56);
+	--color-charcoal-400: oklch(0.705 0.015 54);
+	--color-charcoal-500: oklch(0.552 0.016 52);
+	--color-charcoal-600: oklch(0.442 0.017 50);
+	--color-charcoal-700: oklch(0.37 0.013 52);
+	--color-charcoal-800: oklch(0.274 0.006 55);
+	--color-charcoal-900: oklch(0.21 0.006 58);
+	--color-charcoal-950: oklch(0.141 0.005 60);
 
 	/* Define semantic colors in theme so Tailwind generates utilities */
-	--color-bg: var(--color-stone-50);
-	--color-fg: var(--color-sage-950);
-	--color-fg-secondary: var(--color-sage-950);
-	--color-muted-fg: var(--color-stone-500);
-	--color-link-fg: var(--color-sage-600);
-	--color-border: var(--color-stone-200);
+	--color-bg: var(--color-charcoal-100);
+	--color-fg: var(--color-forest-950);
+	--color-fg-secondary: var(--color-charcoal-500);
+	--color-muted-fg: var(--color-charcoal-400);
+	--color-link-fg: var(--color-forest-500);
+	--color-link-fg-hover: var(--color-forest-400);
+	--color-border: var(--color-charcoal-300);
 }
 
 /* Theme colors - override for dark mode */
 :root {
-	--color-bg: var(--color-stone-50);
-	--color-fg: var(--color-sage-950);
-	--color-fg-secondary: color-mix(in srgb, var(--color-sage-950) 80%, transparent);
-	--color-muted-fg: var(--color-stone-500);
-	--color-link-fg: var(--color-sage-600);
-	--color-border: var(--color-stone-200);
+	--color-bg: var(--color-charcoal-100);
+	--color-fg: var(--color-forest-950);
+	--color-fg-secondary: var(--color-charcoal-500);
+	--color-muted-fg: var(--color-charcoal-400);
+	--color-link-fg: var(--color-forest-500);
+	--color-link-fg-hover: var(--color-forest-400);
+	--color-border: var(--color-charcoal-300);
 }
 
-:root.dark {
+/* :root.dark {
 	--color-bg: var(--color-sage-950);
 	--color-fg: var(--color-stone-50);
 	--color-fg-secondary: var(--color-stone-100);
 	--color-muted-fg: var(--color-sage-400);
 	--color-link-fg: var(--color-stone-400);
 	--color-border: var(--color-sage-800);
-}
+} */
+
 body {
 	background-color: var(--color-bg);
 	color: var(--color-fg);
 	font-family: var(--font-sans);
 	line-height: 1.75;
-	letter-spacing: 0.04em;
 	transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -75,7 +80,12 @@ body {
 	background-color: var(--color-sage-200);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-heading);
 }
 
@@ -94,4 +104,3 @@ a:hover {
 code {
 	font-family: var(--font-mono);
 }
-
