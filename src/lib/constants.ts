@@ -1,9 +1,28 @@
+export const LINKS = [
+	{
+		label: 'github',
+		href: 'https://github.com/cheesetosht'
+	},
+	{
+		label: 'twitter/x',
+		href: 'https://x.com/cheesetosht'
+	},
+	{
+		label: 'linkedin',
+		href: 'https://www.linkedin.com/in/cheesetosht'
+	},
+	{
+		label: 'resume',
+		href: '/resume.pdf'
+	}
+] as const;
+
 export const EXPERIENCE = [
 	{
 		year: 2025,
 		company: 'induced.ai',
 		link: 'https://www.induced.ai',
-		title: 'Software Engineer',
+		title: 'Product Engineer',
 		points: [
 			'Small team of engineers hacking our way to an AI-native future, one product at a time',
 			'Built AI-powered products across wildly different domains (financial research, healthcare, security)',
@@ -16,7 +35,7 @@ export const EXPERIENCE = [
 		year: 2024,
 		company: 'loop health',
 		link: 'https://www.loophealth.com',
-		title: 'Software Engineer II',
+		title: 'SWE II',
 		points: [
 			'After bluelearn shut down, i still wanted to get my hands dirty but with some real stakes this time',
 			'Built tools that saved thousands hours for support agents',
@@ -40,10 +59,22 @@ export const EXPERIENCE = [
 	},
 	{
 		year: 2020,
-		company: 'misc.',
-		title: 'Freelance Developer',
+		company: 'freelancing',
+		title: 'Freelance Dev',
 		points: [
-			'I started as a freelance developer for a year or so, designing & building websites for startups & small businesses.'
+			'I started as a freelance developer for a year or so, designing & building websites for startups & small businesses'
+		]
+	},
+	{
+		year: 2020,
+		company: 'hack club svit',
+		title: 'Co-lead',
+		link: 'https://apacdirectory.hackclub.com/club/svit',
+		points: [
+			'Drove a Hack Club chapter for our college from scratch',
+			'Organized a national level in-person hackathon impacting 1000+ builders',
+			'Led the development, design, branding & mentorship initiatives for multiple talks, workshops & hackathons',
+			'I was also a Microsoft Learn Student Ambassador for a year'
 		]
 	}
 ] as const;
@@ -53,9 +84,12 @@ export const TOOLS = [
 	{ name: 'React', icon: 'logos:react' },
 	{ name: 'Svelte', icon: 'logos:svelte-icon' },
 	{ name: 'Node.js', icon: 'logos:nodejs-icon' },
-	{ name: 'Go', icon: 'logos:go' },
 	{ name: 'PostgreSQL', icon: 'logos:postgresql' },
 	{ name: 'Redis', icon: 'logos:redis' },
+	{ name: 'Go', icon: 'logos:go' },
+	{ name: 'Flutter', icon: 'logos:go' },
+	{ name: 'Ruby', icon: 'logos:go' },
+	{ name: 'Laravel', icon: 'logos:go' },
 	{ name: 'Docker', icon: 'logos:docker-icon' },
 	{ name: 'Vim', icon: 'logos:vim-icon' },
 	{ name: 'Arch(Btw)', icon: 'logos:arch-linux-icon' }
@@ -79,7 +113,7 @@ export const PHOTOS = [
 	{
 		src: '/inspiring.webp',
 		alt: 'speaking at a bluelearn hackathon',
-		caption: 'shaping "young minds"',
+		caption: 'shaping the future xD',
 		orientation: 'horizontal',
 		class: 'aspect-4/3 sm:aspect-3/4'
 	},

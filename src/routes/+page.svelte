@@ -1,14 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
-	import { EXPERIENCE, TOOLS, PHOTOS } from '$lib/constants';
+	import { EXPERIENCE, TOOLS, PHOTOS, LINKS } from '$lib/constants';
 	import Icon from '@iconify/svelte';
 	import Eyes from '../components/eyes.svelte';
 	import ExperienceItem from '../components/experience-item.svelte';
 	import Tooltip from '../components/tooltip.svelte';
 </script>
 
-<header class="border-y border-border border-dashed flex h-20 sm:h-24 mt-24 sm:mt-32">
-	<div class="size-20 sm:size-24">
+<header class="border-y border-border border-dashed flex h-16 sm:h-24 mt-24 sm:mt-32">
+	<div class="size-16 sm:size-24">
 		<img
 			src="/illustration.png"
 			alt="illustration"
@@ -19,34 +19,46 @@
 		class="flex-1 border-x border-border border-dashed px-4 sm:px-6 flex flex-col justify-center"
 	>
 		<h1
-			class="select-none cursor-default text-lg sm:text-xl font-semibold tracking-wide leading-none"
+			class="select-none cursor-default text-lg sm:text-xl font-semibold tracking-wide leading-none mb-0.5"
 		>
 			vraj shah
 		</h1>
-		<p class="cursor-default select-none text-fg-secondary">product engineer</p>
+		<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">product engineer</p>
 	</div>
-	<div class="relative flex justify-center items-center size-20 sm:size-24">
+	<div class="relative flex justify-center items-center size-16 sm:size-24">
 		<Eyes />
 		<span
-			class="hint-fade text-right w-40 absolute top-1/2 -translate-y-1/2 -left-44 text-2xs text-muted-fg italic sm:hidden"
-			>tap anywhere</span
+			class="hint-fade text-right w-16 absolute -top-8 right-2 text-2xs text-forest-400 italic sm:hidden"
+		>
+			tap anywhere</span
 		>
 	</div>
 </header>
-<main class="space-y-6 py-8 px-4 sm:px-6">
-	<section>
-		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
-			what i do
-		</h2> -->
-		<p class="text-fg-secondary">
-			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
-		</p>
-		<!-- <p class="text-fg-secondary text-xs font-mono">web, ai, infrastructure</p> -->
-	</section>
-	<section>
-		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
-			experience
+<main>
+	<section class="py-6 px-4 sm:px-6">
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+			currently
 		</h2>
+		<p class="text-fg-secondary mb-2">
+			working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
+		</p>
+		<p class="text-fg-secondary">focusing on the depth part of my T-shaped skillset</p>
+	</section>
+	<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
+		<div class="text-xs font-mono font-medium leading-normal flex gap-3 items-center flex-wrap">
+			{#each LINKS as link}
+				<a class="group hover:no-underline!" href={link.href} target="_blank">
+					{link.label}
+					<Icon
+						icon="tabler:arrow-up-right"
+						class="size-3 inline-block group-hover:rotate-45 transition-transform duration-300"
+					/>
+				</a>
+			{/each}
+		</div>
+	</section>
+	<section class="px-4 sm:px-6 pt-6">
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1">work</h2>
 		{#each EXPERIENCE as experience, index}
 			<ExperienceItem
 				{index}
@@ -58,27 +70,7 @@
 			/>
 		{/each}
 	</section>
-	<section>
-		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
-			side-quests & projects
-		</h2>
-		<ul class="pl-6 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
-			<li>i like tinkering with databases, networks & linuxes</li>
-			<li>
-				<a href="https://hack-svit.pages.dev/" target="_blank">hack svit</a> - organized a national level
-				hackathon impacting 1000+ builders
-			</li>
-			<li>
-				<a href="https://github.com/cheesetosht/hackathon-backend" target="_blank"
-					>hackathon checkin app</a
-				> - a react native x go app to power qr-based checkins for our hackathons
-			</li>
-		</ul>
-	</section>
-	<section class="">
-		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2 sm:mb-4">
-		photos
-	</h2> -->
+	<section class="px-4 sm:px-6 py-6">
 		<div class="columns-2 sm:columns-3 gap-2 space-y-2">
 			{#each PHOTOS as photo}
 				<div class="break-inside-avoid relative overflow-hidden">
@@ -94,46 +86,50 @@
 			{/each}
 		</div>
 	</section>
-</main>
-<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
-	<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
-		<div class="marquee-content space-x-3">
-			{#each TOOLS as tool}
-				<span>{tool.name}</span>
-				<span>&#10033;</span>
-			{/each}
-		</div>
-		<div class="marquee-content space-x-3" aria-hidden="true">
-			{#each TOOLS as tool}
-				<span>{tool.name}</span>
-				<span>&#10033;</span>
-			{/each}
-		</div>
-	</div>
-</section>
 
-<section class="py-6 sm:py-8 px-4 sm:px-6">
-	<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
-		links
-	</h2>
-	<div class="text-xs font-mono font-medium leading-normal">
-		<a href="https://github.com/cheesetosht" target="_blank">github</a>
-		&middot;
-		<a href="https://x.com/cheesetosht" target="_blank">twitter/x</a>
-		&middot;
-		<a href="https://www.linkedin.com/in/cheesetosht" target="_blank">linkedin</a>
-		&middot;
-		<a href="/resume.pdf" target="_blank">resume</a>
-	</div>
-</section>
+	<section class="px-4 sm:px-6 pb-6">
+		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">
+			side-quests & projects
+		</h2>
+		<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
+			<li>
+				<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
+				neighborhood security app
+			</li>
+			<li>
+				<a href="https://github.com/cheesetosht/hackathon-backend" target="_blank"
+					>hackathon checkin app</a
+				> - a react native x go app to power qr-based checkins for our hackathons
+			</li>
+			<li>i like tinkering with databases, networks & linuxes</li>
+		</ul>
+	</section>
+	<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
+		<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
+			<div class="marquee-content space-x-3">
+				{#each TOOLS as tool}
+					<span>{tool.name}</span>
+					<span>&#10033;</span>
+				{/each}
+			</div>
+			<div class="marquee-content space-x-3" aria-hidden="true">
+				{#each TOOLS as tool}
+					<span>{tool.name}</span>
+					<span>&#10033;</span>
+				{/each}
+			</div>
+		</div>
+	</section>
+</main>
+
 <footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
 	<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
 	<div class="flex items-center gap-2 justify-between">
 		<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-11)</small>
 		<small class="text-2xs text-muted-fg font-light"
 			>built with sveltekit&nbsp;<Icon
-				icon="logos:svelte-icon"
-				class="size-3 inline-block grayscale align-bottom"
+				icon="ri:svelte-line"
+				class="size-3 inline-block align-bottom"
 			/></small
 		>
 	</div>
@@ -141,7 +137,7 @@
 
 <style>
 	.hint-fade {
-		animation: hintFade 3s ease-out forwards;
+		animation: hintFade 5s ease-in-out forwards;
 	}
 
 	@keyframes hintFade {
@@ -151,8 +147,20 @@
 		15% {
 			opacity: 1;
 		}
-		70% {
+		30% {
+			opacity: 0.6;
+		}
+		45% {
 			opacity: 1;
+		}
+		60% {
+			opacity: 0.6;
+		}
+		75% {
+			opacity: 1;
+		}
+		90% {
+			opacity: 0.6;
 		}
 		100% {
 			opacity: 0;

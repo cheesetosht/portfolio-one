@@ -22,7 +22,7 @@
 	on:mouseleave={() => (isHovered = false)}
 >
 	<div class="flex items-baseline gap-2 sm:gap-4">
-		<div class="text-xs text-muted-fg font-mono">{year}</div>
+		<div class="text-2xs sm:text-xs text-muted-fg font-mono">{year}</div>
 		<div class="flex-1 text-fg-secondary! hover:no-underline!">
 			{company}
 			<a
