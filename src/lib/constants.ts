@@ -67,35 +67,35 @@ export const TOOLS = [
 
 export const PHOTOS = [
 	{
-		src: '/sales.jpeg',
+		src: '/sales.webp',
 		alt: 'hack svit marketing booth',
 		caption: 'marketing 101',
 		orientation: 'horizontal',
 		class: 'aspect-4/3'
 	},
 	{
-		src: '/wifi-guy.jpeg',
+		src: '/wifi-guy.webp',
 		alt: 'me fixing the office wifi',
 		caption: 'infrastructure engineer\n(wifi guy)',
 		orientation: 'vertical',
 		class: 'aspect-3/4'
 	},
 	{
-		src: '/inspiring.jpeg',
+		src: '/inspiring.webp',
 		alt: 'speaking at a bluelearn hackathon',
 		caption: 'shaping "young minds"',
 		orientation: 'horizontal',
 		class: 'aspect-4/3 sm:aspect-3/4'
 	},
 	{
-		src: '/team.jpeg',
+		src: '/team.webp',
 		alt: 'the team at bluelearn',
 		caption: 'building with friends',
 		orientation: 'horizontal',
 		class: 'aspect-4/3'
 	},
 	{
-		src: '/actor-1.jpeg',
+		src: '/actor-1.webp',
 		alt: 'me a bluelearn launch video',
 		caption: 'professional actor',
 		orientation: 'horizontal',
@@ -103,7 +103,7 @@ export const PHOTOS = [
 	},
 
 	{
-		src: '/actor-2.png',
+		src: '/actor-2.webp',
 		alt: 'me in a bluelearn reel',
 		caption: 'marketing prop',
 		orientation: 'vertical',
