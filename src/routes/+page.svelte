@@ -6,7 +6,7 @@
 	import ExperienceItem from '../components/experience-item.svelte';
 </script>
 
-<header class="border-y border-border border-dashed flex h-20 sm:h-24 mt-16 sm:mt-32">
+<header class="border-y border-border border-dashed flex h-20 sm:h-24 mt-24 sm:mt-32">
 	<div class="size-20 sm:size-24">
 		<img
 			src="/illustration.png"
@@ -32,7 +32,7 @@
 		>
 	</div>
 </header>
-<main class="space-y-4 sm:space-y-6 py-6 sm:py-8 px-4 sm:px-6">
+<main class="space-y-6 py-8 px-4 sm:px-6">
 	<section>
 		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
 			what i do
@@ -46,12 +46,13 @@
 		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
 			experience
 		</h2>
-		{#each EXPERIENCE as experience}
+		{#each EXPERIENCE as experience, index}
 			<ExperienceItem
+				{index}
 				year={experience.year}
 				company={experience.company}
 				title={experience.title}
-				description={experience.description}
+				points={experience.points}
 				link={experience.link}
 			/>
 		{/each}
@@ -60,8 +61,8 @@
 		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
 			side-quests & projects
 		</h2>
-		<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
-			<li>i like tinkering with server infra & linux distros</li>
+		<ul class="pl-6 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
+			<li>i like tinkering with databases, networks & linuxes</li>
 			<li>
 				<a href="https://hack-svit.pages.dev/" target="_blank">hack svit</a> - organized a national level
 				hackathon impacting 1000+ builders
@@ -76,13 +77,13 @@
 </main>
 <section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
 	<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
-		<div class="marquee-content space-x-1.5 sm:space-x-3">
+		<div class="marquee-content space-x-3">
 			{#each TOOLS as tool}
 				<span>{tool.name}</span>
 				<span>&#10033;</span>
 			{/each}
 		</div>
-		<div class="marquee-content space-x-1.5 sm:space-x-3" aria-hidden="true">
+		<div class="marquee-content space-x-3" aria-hidden="true">
 			{#each TOOLS as tool}
 				<span>{tool.name}</span>
 				<span>&#10033;</span>
@@ -104,7 +105,15 @@
 </section>
 <footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
 	<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
-	<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-09)</small>
+	<div class="flex items-center gap-2 justify-between">
+		<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-11)</small>
+		<small class="text-2xs text-muted-fg font-light"
+			>built with sveltekit&nbsp;<Icon
+				icon="logos:svelte-icon"
+				class="size-3 inline-block grayscale align-bottom"
+			/></small
+		>
+	</div>
 </footer>
 
 <style>

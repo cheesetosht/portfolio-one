@@ -4,6 +4,11 @@ export const EXPERIENCE = [
 		company: 'induced.ai',
 		link: 'https://www.induced.ai',
 		title: 'Software Engineer',
+		points: [
+			'Built AI-powered products across wildly different domains (financial research, healthcare, security)',
+			'Security infrastructure processing production AI traffic at scale',
+			'Complete ownership over product thinking, design, code & deployment with no dedicated designer or product manager'
+		],
 		description:
 			'building ai-powered products across wildly different domains - research tools that turn weeks into minutes, healthcare platforms serving multi-state operations, and security infrastructure processing production ai traffic. the role requires complete ownership over product thinking, design, code & deployment'
 	},
@@ -12,6 +17,12 @@ export const EXPERIENCE = [
 		company: 'loop health',
 		link: 'https://www.loophealth.com',
 		title: 'Software Engineer II',
+		points: [
+			'After bluelearn shut down, i still wanted to get my hands dirty but with some real stakes this time',
+			'Built tools that saved thousands of agent(human) hours',
+			'Architected claim processing services integrated with 10+ insurance third parties',
+			'Learned what it means to ship quality code when bugs actually cost money'
+		],
 		description:
 			'after bluelearn shut down, i joined loop, a series-b healthtech with real stakes. built tools that saved thousands of agent hours, designed claim processing services integrated with 10+ third parties, and learned how to ship quality code under pressure when bugs actually cost money.'
 	},
@@ -20,6 +31,14 @@ export const EXPERIENCE = [
 		company: 'bluelearn',
 		link: 'https://web.archive.org/web/20250117144119/https://www.bluelearn.in/',
 		title: 'Founding Engineer',
+		points: [
+			'Built the entire platforms from scratch: infrastructure, APIs, frontends',
+			'One of the first engineers; deployed to prod from day one',
+			'Architected systems handling 500k+ traffic surges',
+			'Grew and led a team of 4 engineers',
+			'Shipped, scrapped, and rebuilt several products',
+			'A perfect place for a generalist who likes getting their hands dirty'
+		],
 		description:
 			'i officially started my career as one of the first engineers at bluelearn, where i built the entire platform from scratch - infrastructure, APIs, frontends, and everything in between. grew and led a team of 4 engineers, learning management the hard way: hiring, firing, mentoring, and running way too many interviews. it was the perfect place for a generalist: i got to deploy to prod from day one, architect systems handling 500k+ users, and ship (then scrap, then rebuild) several products in rapid succession'
 	},
@@ -27,10 +46,11 @@ export const EXPERIENCE = [
 		year: 2020,
 		company: 'misc.',
 		title: 'Freelance Developer',
-		description:
-			'i was a freelance developer for a few years, designing & building websites for startups & small businesses.'
+		points: [
+			'I started as a freelance developer for a year or so, designing & building websites for startups & small businesses.'
+		]
 	}
-];
+] as const;
 
 export const TOOLS = [
 	{ name: 'TypeScript', icon: 'logos:typescript-icon' },
