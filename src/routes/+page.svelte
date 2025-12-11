@@ -1,9 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
-	import { EXPERIENCE, TOOLS } from '$lib/constants';
+	import { EXPERIENCE, TOOLS, PHOTOS } from '$lib/constants';
 	import Icon from '@iconify/svelte';
 	import Eyes from '../components/eyes.svelte';
 	import ExperienceItem from '../components/experience-item.svelte';
+	import Tooltip from '../components/tooltip.svelte';
 </script>
 
 <header class="border-y border-border border-dashed flex h-20 sm:h-24 mt-24 sm:mt-32">
@@ -74,6 +75,29 @@
 			</li>
 		</ul>
 	</section>
+	<section class="">
+		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2 sm:mb-4">
+		photos
+	</h2> -->
+		<div class="grid grid-cols-2 sm:grid-cols-6 gap-2">
+			{#each PHOTOS as photo}
+				<div
+					class={'group overflow-hidden ' +
+						(photo.orientation === 'vertical'
+							? 'sm:col-span-2 aspect-3/4'
+							: 'sm:col-span-3 aspect-4/3')}
+				>
+					<Tooltip caption={photo.caption} class="w-full h-full text-center leading-3">
+						<img
+							src={photo.src}
+							alt={photo.alt}
+							class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-600 group-hover:scale-105"
+						/>
+					</Tooltip>
+				</div>
+			{/each}
+		</div>
+	</section>
 </main>
 <section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
 	<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
@@ -91,6 +115,7 @@
 		</div>
 	</div>
 </section>
+
 <section class="py-6 sm:py-8 px-4 sm:px-6">
 	<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-0.5 sm:mb-1">
 		links

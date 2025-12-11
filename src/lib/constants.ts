@@ -64,3 +64,37 @@ export const TOOLS = [
 	{ name: 'Vim', icon: 'logos:vim-icon' },
 	{ name: 'Arch(Btw)', icon: 'logos:arch-linux-icon' }
 ];
+
+export const PHOTOS = [
+	{
+		src: '/wifi-guy.jpeg',
+		alt: 'infrastructure engineer (wifi guy)',
+		caption: 'infrastructure engineer\n(wifi guy)',
+		orientation: 'vertical'
+	},
+	{
+		src: '/actor-2.png',
+		alt: 'social media prop',
+		caption: 'marketing prop',
+		orientation: 'vertical'
+	},
+	{
+		src: '/inspiring.jpeg',
+		alt: 'shaping young minds',
+		caption: 'shaping "young minds"',
+		orientation: 'vertical'
+	},
+
+	{
+		src: '/actor-1.jpeg',
+		alt: 'professional actor',
+		caption: 'professional actor',
+		orientation: 'horizontal'
+	},
+	{
+		src: '/team.jpeg',
+		alt: 'building with friends',
+		caption: 'building with friends',
+		orientation: 'horizontal'
+	}
+] as const;
