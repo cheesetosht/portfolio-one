@@ -5,8 +5,8 @@ export const EXPERIENCE = [
 		link: 'https://www.induced.ai',
 		title: 'Software Engineer',
 		points: [
+			'Small team of engineers hacking our way to an AI-native future, one product at a time',
 			'Built AI-powered products across wildly different domains (financial research, healthcare, security)',
-			'Security infrastructure processing production AI traffic at scale',
 			'Complete ownership over product thinking, design, code & deployment with no dedicated designer or product manager'
 		],
 		description:
