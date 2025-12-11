@@ -36,13 +36,13 @@
 </header>
 <main>
 	<section class="py-6 px-4 sm:px-6">
-		<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
+		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
 			currently
-		</h2>
+		</h2> -->
 		<p class="text-fg-secondary mb-2">
-			working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
+			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
 		</p>
-		<p class="text-fg-secondary">focusing on the depth part of my T-shaped skillset</p>
+		<p class="text-fg-secondary">a generalist engineer who ships 0→1 products with taste & speed</p>
 	</section>
 	<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
 		<div class="text-xs font-mono font-medium leading-normal flex gap-3 items-center flex-wrap">
