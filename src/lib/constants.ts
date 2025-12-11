@@ -19,12 +19,10 @@ export const EXPERIENCE = [
 		title: 'Software Engineer II',
 		points: [
 			'After bluelearn shut down, i still wanted to get my hands dirty but with some real stakes this time',
-			'Built tools that saved thousands of agent(human) hours',
+			'Built tools that saved thousands hours for support agents',
 			'Architected claim processing services integrated with 10+ insurance third parties',
 			'Learned what it means to ship quality code when bugs actually cost money'
-		],
-		description:
-			'after bluelearn shut down, i joined loop, a series-b healthtech with real stakes. built tools that saved thousands of agent hours, designed claim processing services integrated with 10+ third parties, and learned how to ship quality code under pressure when bugs actually cost money.'
+		]
 	},
 	{
 		year: 2021,
@@ -32,15 +30,13 @@ export const EXPERIENCE = [
 		link: 'https://web.archive.org/web/20250117144119/https://www.bluelearn.in/',
 		title: 'Founding Engineer',
 		points: [
-			'Built the entire platforms from scratch: infrastructure, APIs, frontends',
-			'One of the first engineers; deployed to prod from day one',
+			'One of the first engineers, deployed to prod from day one',
+			'Built entire platforms from scratch: infrastructure, APIs, frontends',
 			'Architected systems handling 500k+ traffic surges',
 			'Grew and led a team of 4 engineers',
 			'Shipped, scrapped, and rebuilt several products',
 			'A perfect place for a generalist who likes getting their hands dirty'
-		],
-		description:
-			'i officially started my career as one of the first engineers at bluelearn, where i built the entire platform from scratch - infrastructure, APIs, frontends, and everything in between. grew and led a team of 4 engineers, learning management the hard way: hiring, firing, mentoring, and running way too many interviews. it was the perfect place for a generalist: i got to deploy to prod from day one, architect systems handling 500k+ users, and ship (then scrap, then rebuild) several products in rapid succession'
+		]
 	},
 	{
 		year: 2020,

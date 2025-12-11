@@ -122,6 +122,8 @@
 		<a href="https://x.com/cheesetosht" target="_blank">twitter/x</a>
 		&middot;
 		<a href="https://www.linkedin.com/in/cheesetosht" target="_blank">linkedin</a>
+		&middot;
+		<a href="/resume.pdf" target="_blank">resume</a>
 	</div>
 </section>
 <footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
