@@ -81,12 +81,12 @@
 	</h2> -->
 		<div class="columns-2 sm:columns-3 gap-2 space-y-2">
 			{#each PHOTOS as photo}
-				<div class="break-inside-avoid relative group overflow-hidden">
+				<div class="break-inside-avoid relative overflow-hidden">
 					<Tooltip caption={photo.caption} class="w-full h-full text-center leading-3">
 						<img
 							src={photo.src}
 							alt={photo.alt}
-							class={'w-full object-cover grayscale hover:grayscale-0 transition-all duration-600 group-hover:scale-105 ' +
+							class={'w-full object-cover grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-600 group-hover:scale-105 group-focus:scale-105 ' +
 								photo.class}
 						/>
 					</Tooltip>
