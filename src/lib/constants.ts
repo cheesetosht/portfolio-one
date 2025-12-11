@@ -67,34 +67,46 @@ export const TOOLS = [
 
 export const PHOTOS = [
 	{
-		src: '/wifi-guy.jpeg',
-		alt: 'infrastructure engineer (wifi guy)',
-		caption: 'infrastructure engineer\n(wifi guy)',
-		orientation: 'vertical'
+		src: '/sales.jpeg',
+		alt: 'hack svit marketing booth',
+		caption: 'marketing 101',
+		orientation: 'horizontal',
+		class: 'aspect-4/3'
 	},
 	{
-		src: '/actor-2.png',
-		alt: 'social media prop',
-		caption: 'marketing prop',
-		orientation: 'vertical'
+		src: '/wifi-guy.jpeg',
+		alt: 'me fixing the office wifi',
+		caption: 'infrastructure engineer\n(wifi guy)',
+		orientation: 'vertical',
+		class: 'aspect-3/4'
 	},
 	{
 		src: '/inspiring.jpeg',
-		alt: 'shaping young minds',
+		alt: 'speaking at a bluelearn hackathon',
 		caption: 'shaping "young minds"',
-		orientation: 'vertical'
-	},
-
-	{
-		src: '/actor-1.jpeg',
-		alt: 'professional actor',
-		caption: 'professional actor',
-		orientation: 'horizontal'
+		orientation: 'horizontal',
+		class: 'aspect-4/3 sm:aspect-3/4'
 	},
 	{
 		src: '/team.jpeg',
-		alt: 'building with friends',
+		alt: 'the team at bluelearn',
 		caption: 'building with friends',
-		orientation: 'horizontal'
+		orientation: 'horizontal',
+		class: 'aspect-4/3'
+	},
+	{
+		src: '/actor-1.jpeg',
+		alt: 'me a bluelearn launch video',
+		caption: 'professional actor',
+		orientation: 'horizontal',
+		class: 'aspect-4/3'
+	},
+
+	{
+		src: '/actor-2.png',
+		alt: 'me in a bluelearn reel',
+		caption: 'marketing prop',
+		orientation: 'vertical',
+		class: 'aspect-3/4'
 	}
 ] as const;

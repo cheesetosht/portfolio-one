@@ -79,19 +79,15 @@
 		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2 sm:mb-4">
 		photos
 	</h2> -->
-		<div class="grid grid-cols-2 sm:grid-cols-6 gap-2">
+		<div class="columns-2 sm:columns-3 gap-2 space-y-2">
 			{#each PHOTOS as photo}
-				<div
-					class={'group overflow-hidden ' +
-						(photo.orientation === 'vertical'
-							? 'sm:col-span-2 aspect-3/4'
-							: 'sm:col-span-3 aspect-4/3')}
-				>
+				<div class="break-inside-avoid relative group overflow-hidden">
 					<Tooltip caption={photo.caption} class="w-full h-full text-center leading-3">
 						<img
 							src={photo.src}
 							alt={photo.alt}
-							class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-600 group-hover:scale-105"
+							class={'w-full object-cover grayscale hover:grayscale-0 transition-all duration-600 group-hover:scale-105 ' +
+								photo.class}
 						/>
 					</Tooltip>
 				</div>
