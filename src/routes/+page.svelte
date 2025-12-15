@@ -42,7 +42,10 @@
 		<p class="text-fg-secondary mb-2">
 			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
 		</p>
-		<p class="text-fg-secondary">a generalist engineer who ships 0→1 products with taste & speed</p>
+		<p class="text-fg-secondary">
+			a generalist engineer who ships 0→1 products with taste & speed. experienced in edtech,
+			healthcare, ai, web3 & more
+		</p>
 	</section>
 	<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
 		<div class="text-xs font-mono font-medium leading-normal flex gap-3 items-center flex-wrap">
@@ -92,6 +95,11 @@
 			side-quests & projects
 		</h2>
 		<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
+			<li>
+				freelancing - <a href="https://hypersift.ai" target="_blank">hypersift.ai</a>,
+				<a href="https://www.fibswap.io/swap" target="_blank">FibSwap DEx</a>,
+				<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
+			</li>
 			<li>
 				<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
 				neighborhood security app
