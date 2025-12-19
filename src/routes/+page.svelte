@@ -43,8 +43,8 @@
 			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
 		</p>
 		<p class="text-fg-secondary">
-			a generalist engineer who ships 0→1 products with taste & speed. experienced in edtech,
-			healthcare, ai, web3 & more
+			a generalist engineer who ships 0→1 products with <b class="shimmer">taste</b> &
+			<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai, web3 & more
 		</p>
 	</section>
 	<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">

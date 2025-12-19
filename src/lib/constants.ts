@@ -84,6 +84,7 @@ export const TOOLS = [
 	{ name: 'React', icon: 'logos:react' },
 	{ name: 'Next.js', icon: 'logos:nextjs-icon' },
 	{ name: 'Svelte', icon: 'logos:svelte-icon' },
+	{ name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
 	{ name: 'Node.js', icon: 'logos:nodejs-icon' },
 	{ name: 'PostgreSQL', icon: 'logos:postgresql' },
 	{ name: 'Redis', icon: 'logos:redis' },
@@ -93,7 +94,6 @@ export const TOOLS = [
 	// { name: 'Laravel', icon: 'logos:go' },
 	{ name: 'Docker', icon: 'logos:docker-icon' },
 	{ name: 'WAGMI', icon: 'logos:wagmi-icon' },
-	{ name: 'ethers.js', icon: 'logos:ethersjs-icon' },
 	{ name: 'Solidity', icon: 'logos:solidity-icon' },
 	{ name: 'Vim', icon: 'logos:vim-icon' },
 	{ name: 'Arch(Btw)', icon: 'logos:arch-linux-icon' }

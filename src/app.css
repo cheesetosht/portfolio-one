@@ -51,6 +51,7 @@
 /* Theme colors - override for dark mode */
 :root {
 	--color-bg: var(--color-charcoal-100);
+	--color-bg-secondary: var(--color-charcoal-200);
 	--color-fg: var(--color-forest-950);
 	--color-fg-secondary: var(--color-charcoal-500);
 	--color-muted-fg: var(--color-charcoal-400);
@@ -102,4 +103,98 @@ a:hover {
 
 code {
 	font-family: var(--font-mono);
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 0px;
+	background-color: transparent;
+	transition: background-color 0.3s ease-in-out;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background-color: transparent;
+	border: 1px solid var(--color-border);
+	transition: opacity 0.3s ease-in-out;
+}
+
+*::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:active {
+	background-color: var(--color-forest-400);
+}
+
+/* text shimmer effect */
+
+.shimmer {
+	text-align: center;
+	color: inherit;
+	background: linear-gradient(to right,
+			currentColor 0%,
+			currentColor 35%,
+			#fff 50%,
+			currentColor 65%,
+			currentColor 100%);
+	background-size: 125px 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-webkit-animation-name: shimmer;
+	-moz-animation-name: shimmer;
+	animation-name: shimmer;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes shimmer {
+	0% {
+		background-position: top right;
+	}
+
+	100% {
+		background-position: top left;
+	}
+}
+
+@-webkit-keyframes shimmer {
+	0% {
+		background-position: top right;
+	}
+
+	100% {
+		background-position: top left;
+	}
+}
+
+@-o-keyframes shimmer {
+	0% {
+		background-position: top right;
+	}
+
+	100% {
+		background-position: top left;
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: top right;
+	}
+
+	100% {
+		background-position: top left;
+	}
 }
