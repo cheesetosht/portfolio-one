@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import { EXPERIENCE, TOOLS, PHOTOS, LINKS } from '$lib/constants';
 	import Icon from '@iconify/svelte';
 	import Eyes from '../components/eyes.svelte';
@@ -23,7 +22,9 @@
 		>
 			vraj shah
 		</h1>
-		<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">product engineer</p>
+		<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">
+			generalist engineer
+		</p>
 	</div>
 	<div class="relative flex justify-center items-center size-16 sm:size-24">
 		<Eyes />
@@ -35,16 +36,19 @@
 	</div>
 </header>
 <main>
-	<section class="py-6 px-4 sm:px-6">
+	<section class="py-6 px-4 sm:px-6 space-y-2">
 		<!-- <h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1 sm:mb-2">
 			currently
 		</h2> -->
-		<p class="text-fg-secondary mb-2">
-			currently working at <a href="https://www.induced.ai" target="_blank">induced.ai</a>
-		</p>
 		<p class="text-fg-secondary">
-			a generalist engineer who ships 0→1 products with <b class="shimmer">taste</b> &
-			<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai, web3 & more
+			i ship 0→1 products with <b class="shimmer">taste</b> &
+			<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai & web3
+		</p>
+		<p class="text-fg-secondary mb-2">
+			currently building orchestrated agentic workflows and the UX around them at <a
+				href="https://www.induced.ai"
+				target="_blank">induced.ai</a
+			>
 		</p>
 	</section>
 	<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
