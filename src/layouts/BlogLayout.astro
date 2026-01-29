@@ -1,0 +1,146 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Icon from '@iconify/svelte';
+
+interface Props {
+	title: string;
+	description: string;
+	publishedAt: Date;
+	updatedAt?: Date;
+	tags?: string[];
+}
+
+const { title, description, publishedAt, updatedAt, tags = [] } = Astro.props;
+
+const formatDate = (date: Date) => {
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	});
+};
+---
+
+<BaseLayout title={`${title} - Vraj Shah`} description={description}>
+	<article class="py-6 px-4 sm:px-6">
+		<header class="mb-8">
+			<a
+				href="/blog"
+				class="text-xs text-muted-fg hover:text-fg-secondary inline-flex items-center gap-1 mb-4"
+			>
+				<Icon icon="tabler:arrow-left" class="size-3" />
+				back to blog
+			</a>
+			<h1 class="text-2xl sm:text-3xl font-semibold tracking-wide leading-tight mb-2">
+				{title}
+			</h1>
+			<p class="text-fg-secondary mb-3">{description}</p>
+			<div class="flex flex-wrap items-center gap-2 text-2xs text-muted-fg font-mono">
+				<time datetime={publishedAt.toISOString()}>
+					{formatDate(publishedAt)}
+				</time>
+				{updatedAt && (
+					<>
+						<span>•</span>
+						<span>updated {formatDate(updatedAt)}</span>
+					</>
+				)}
+				{tags.length > 0 && (
+					<>
+						<span>•</span>
+						{tags.map((tag) => (
+							<span class="bg-charcoal-200 px-1.5 py-0.5">{tag}</span>
+						))}
+					</>
+				)}
+			</div>
+		</header>
+		<div class="prose prose-sm max-w-none text-fg-secondary">
+			<slot />
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	.prose :global(h2) {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-top: 2rem;
+		margin-bottom: 0.75rem;
+		color: var(--color-fg);
+	}
+
+	.prose :global(h3) {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--color-fg);
+	}
+
+	.prose :global(p) {
+		margin-bottom: 1rem;
+		line-height: 1.75;
+	}
+
+	.prose :global(ul),
+	.prose :global(ol) {
+		margin-bottom: 1rem;
+		padding-left: 1.25rem;
+	}
+
+	.prose :global(li) {
+		margin-bottom: 0.25rem;
+	}
+
+	.prose :global(code) {
+		font-family: var(--font-mono);
+		font-size: 0.875em;
+		background-color: var(--color-charcoal-200);
+		padding: 0.125rem 0.25rem;
+	}
+
+	.prose :global(pre) {
+		background-color: var(--color-charcoal-200);
+		padding: 1rem;
+		overflow-x: auto;
+		margin-bottom: 1rem;
+		font-size: 0.875rem;
+	}
+
+	.prose :global(pre code) {
+		background: none;
+		padding: 0;
+	}
+
+	.prose :global(blockquote) {
+		border-left: 2px solid var(--color-border);
+		padding-left: 1rem;
+		margin-left: 0;
+		margin-bottom: 1rem;
+		color: var(--color-muted-fg);
+		font-style: italic;
+	}
+
+	.prose :global(a) {
+		color: var(--color-link-fg);
+		text-decoration: underline;
+		text-underline-offset: 0.25em;
+	}
+
+	.prose :global(a:hover) {
+		color: var(--color-link-fg-hover);
+	}
+
+	.prose :global(img) {
+		max-width: 100%;
+		height: auto;
+		margin: 1rem 0;
+	}
+
+	.prose :global(hr) {
+		border: none;
+		border-top: 1px dashed var(--color-border);
+		margin: 2rem 0;
+	}
+</style>

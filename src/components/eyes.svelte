@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { debounce } from '$lib';
+	import { debounce } from '../lib/js-utils.js';
 	import { onMount } from 'svelte';
 	import { spring } from 'svelte/motion';
 

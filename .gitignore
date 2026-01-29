@@ -1,10 +1,29 @@
-.DS_Store
+# dependencies
 node_modules
-/build
-/.svelte-kit
-/package
+
+# yarn v4
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# build output
+dist
+.astro
+
+# environment
 .env
 .env.*
 !.env.example
+
+# cloudflare
+.wrangler
+.dev.vars
+
+# misc
+.DS_Store
+*.log
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
