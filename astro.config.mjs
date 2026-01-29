@@ -9,5 +9,7 @@ export default defineConfig({
 		plugins: [tailwindcss()]
 	},
 	output: 'static',
-	adapter: cloudflare()
+	adapter: cloudflare({
+		imageService: 'compile'
+	})
 });
