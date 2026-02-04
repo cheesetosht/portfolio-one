@@ -7,7 +7,7 @@
 	export let company: string;
 	export let title: string;
 	export let points: string[];
-	export let link: string;
+	export let link: string | undefined = undefined;
 
 	let isHovered = false;
 </script>
@@ -25,11 +25,17 @@
 		<div class="text-2xs sm:text-xs text-muted-fg font-mono">{year}</div>
 		<div class="flex-1 text-fg-secondary! hover:no-underline!">
 			{company}
-			<a
-				class="group-hover:opacity-100 group-focus:opacity-100 opacity-0 transition-opacity duration-300"
-				href={link}
-				target="_blank"><Icon icon="radix-icons:external-link" class="size-3.5 inline-block" /></a
-			>
+			{#if link}
+				<a
+					class="group-hover:opacity-100 group-focus:opacity-100 opacity-0 transition-opacity duration-300"
+					href={link}
+					target="_blank"
+					><Icon
+						icon="tabler:arrow-up-right"
+						class="size-3.5 inline-block transition duration-300 hover:translate-x-0.5 hover:-translate-y-0.5"
+					/></a
+				>
+			{/if}
 		</div>
 		<div class="text-xs text-fg-secondary text-right">{title}</div>
 	</div>

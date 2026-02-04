@@ -77,7 +77,7 @@ export const EXPERIENCE = [
 			'I was also a Microsoft Learn Student Ambassador for a year'
 		]
 	}
-] as const;
+];
 
 export const TOOLS = [
 	{ name: 'TypeScript', icon: 'logos:typescript-icon' },

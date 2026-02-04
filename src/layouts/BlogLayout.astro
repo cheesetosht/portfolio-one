@@ -28,7 +28,8 @@ const formatDate = (date: Date) => {
 				href="/blog"
 				class="text-xs text-muted-fg hover:text-fg-secondary inline-flex items-center gap-1 mb-4"
 			>
-				<Icon icon="tabler:arrow-left" class="size-3" />
+				{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+				<Icon client:load icon="tabler:arrow-left" class="size-3" />
 				back to blog
 			</a>
 			<h1 class="text-2xl sm:text-3xl font-semibold tracking-wide leading-tight mb-2">

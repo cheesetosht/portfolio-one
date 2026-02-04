@@ -55,9 +55,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				{LINKS.map((link) => (
 					<a class="group hover:no-underline!" href={link.href} target="_blank">
 						{link.label}
+						{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
 						<Icon
+							client:load
 							icon="tabler:arrow-up-right"
-							class="size-3 inline-block group-hover:rotate-45 transition-transform duration-300"
+							class="size-3 inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
 						/>
 					</a>
 				))}
@@ -65,10 +67,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		</section>
 		<section class="px-4 sm:px-6 pt-6">
 			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1">work</h2>
-			{EXPERIENCE.map((experience, index) => (
+			{EXPERIENCE.map((experience) => (
 				<ExperienceItem
 					client:visible
-					index={index}
 					year={experience.year}
 					company={experience.company}
 					title={experience.title}
@@ -143,7 +144,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<div class="flex items-center gap-2 justify-between">
 			<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-11)</small>
 			<small class="text-2xs text-muted-fg font-light"
-				>built with astro&nbsp;<Icon
+				>built with astro&nbsp;
+				{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+				<Icon
+					client:load
 					icon="simple-icons:astro"
 					class="size-3 inline-block align-bottom"
 				/></small
