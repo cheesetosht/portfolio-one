@@ -59,14 +59,6 @@ export const EXPERIENCE = [
 	},
 	{
 		year: 2020,
-		company: 'freelancing',
-		title: 'Freelance Dev',
-		points: [
-			'I started as a freelance developer for a year or so, designing & building websites for startups & small businesses'
-		]
-	},
-	{
-		year: 2020,
 		company: 'hack club svit',
 		title: 'Co-lead',
 		link: 'https://apacdirectory.hackclub.com/club/svit',
