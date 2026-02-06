@@ -7,6 +7,7 @@
         "@fontsource-variable/bricolage-grotesque": "^5.2.10",
         "@fontsource-variable/quicksand": "^5.2.10",
         "@fontsource-variable/work-sans": "^5.2.8",
+        "@fontsource/fragment-mono": "^5.2.8",
         "@fontsource/geist-mono": "^5.2.7",
         "@fontsource/montserrat": "^5.2.8",
         "@iconify/svelte": "^5.2.1",
@@ -171,6 +172,8 @@
     "@fontsource-variable/quicksand": ["@fontsource-variable/quicksand@5.2.10", "", {}, "sha512-1uzkzGDwWgtFnxquAXuD7fZV9wHkALb49UPzRXxGTVeeLsNrGnIU0O/pcz6m1U7RDtpHz2qx77JhCpKaq7FrUg=="],
 
     "@fontsource-variable/work-sans": ["@fontsource-variable/work-sans@5.2.8", "", {}, "sha512-8uWtTt0/B5NxGie9xUVD5y5Ch4Q+Hy7kFYKtUpwYbzSAgJEoaMxT8rMnfnK7zfAYSLC8GnGO1/tXrFtKIYYQVQ=="],
+
+    "@fontsource/fragment-mono": ["@fontsource/fragment-mono@5.2.8", "", {}, "sha512-m+aRQ+c9GghoUtEdSFIPM/ylCxDhY5ESeVzuvF+eSCqkR85VSCWM7jnNWZ+OrC9K2+xp6f0uallDDAjmPLQNrQ=="],
 
     "@fontsource/geist-mono": ["@fontsource/geist-mono@5.2.7", "", {}, "sha512-xVPVFISJg/K0VVd+aQN0Y7X/sw9hUcJPyDWFJ5GpyU3bHELhoRsJkPSRSHXW32mOi0xZCUQDOaPj1sqIFJ1FGg=="],
 
