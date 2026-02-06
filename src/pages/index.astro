@@ -25,7 +25,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				vraj shah
 			</h1>
 			<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">
-				generalist engineer
+				product engineer
 			</p>
 		</div>
 		<div class="relative flex justify-center items-center size-16 sm:size-24">
@@ -39,15 +39,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	</header>
 	<main>
 		<section class="py-6 px-4 sm:px-6 space-y-2">
+<p class="text-fg-secondary mb-2">
+				currently building an ai companion & matchmaker with <a
+					href="https://www.heywavelength.com"
+					target="_blank">wavelength</a
+				>
+			</p>
 			<p class="text-fg-secondary">
 				i ship 0→1 products with <b class="shimmer">taste</b> &
 				<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai & web3
-			</p>
-			<p class="text-fg-secondary mb-2">
-				currently building orchestrated agentic workflows and the UX around them at <a
-					href="https://www.induced.ai"
-					target="_blank">induced.ai</a
-				>
 			</p>
 		</section>
 		<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
@@ -101,9 +101,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			</h2>
 			<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
 				<li>
-					freelancing - <a href="https://hypersift.ai" target="_blank">hypersift.ai</a>,
-					<a href="https://www.fibswap.io/swap" target="_blank">FibSwap DEx</a>,
-					<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
+					<a href="https://startup-simulator.cheesetoast.workers.dev" target="_blank">startup simulator</a> - a quirky game
 				</li>
 				<li>
 					<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
@@ -114,7 +112,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 						>hackathon checkin app</a
 					> - a react native x go app to power qr-based checkins for our hackathons
 				</li>
-				<li>i like tinkering with databases, networks & linuxes</li>
+				<li>
+					freelance - <a href="https://hypersift.ai" target="_blank">hypersift.ai</a>,
+					<a href="https://www.fibswap.io/swap" target="_blank">FibSwap DEx</a>,
+					<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
+				</li>
 			</ul>
 		</section>
 		<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
@@ -137,12 +139,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				</div>
 			</div>
 		</section>
+		<!-- <section class="px-4 sm:px-6 py-6">
+			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">
+				more about me
+			</h2>
+			<p class="text-fg-secondary">
+			</p>
+			</section> -->
 	</main>
 
 	<footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
-		<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
 		<div class="flex items-center gap-2 justify-between">
-			<small class="text-2xs text-muted-fg font-light">(last updated: 2025-12-11)</small>
+			<small class="text-2xs text-muted-fg font-light">(last updated: 2026-02-06)
+				<br/>
+			<a href="https://0708eb8c.portfolio-one-6z5.pages.dev/" target="_blank">visit previous version</a>
+			</small>
+		<div class="text-right">
+		<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
 			<small class="text-2xs text-muted-fg font-light"
 				>built with astro&nbsp;
 				{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
@@ -150,8 +163,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					client:load
 					icon="simple-icons:astro"
 					class="size-3 inline-block align-bottom"
-				/></small
-			>
+				/>
+			</small>
+		</div>
 		</div>
 	</footer>
 </BaseLayout>
