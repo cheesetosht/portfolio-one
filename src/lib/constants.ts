@@ -5,11 +5,11 @@ export const LINKS = [
 	},
 	{
 		label: 'twitter/x',
-		href: 'https://x.com/cheesetosht'
+		href: 'https://x.com/vraj_sh'
 	},
 	{
 		label: 'linkedin',
-		href: 'https://www.linkedin.com/in/cheesetosht'
+		href: 'https://www.linkedin.com/in/vraj-sh'
 	},
 	{
 		label: 'resume',
