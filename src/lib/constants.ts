@@ -6,7 +6,7 @@ export const LINKS = [
 	{
 		label: 'instagram',
 		href: 'https://instagram.com/vrajcodes	'
-	}
+	},
 	{
 		label: 'twitter/x',
 		href: 'https://x.com/vraj_sh'
