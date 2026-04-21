@@ -17,7 +17,7 @@ export const LINKS = [
 	},
 	{
 		label: 'resume',
-		href: '/resume.pdf'
+		href: 'https://registry.jsonresume.org/cheesetosht'
 	}
 ] as const;
 
@@ -85,9 +85,6 @@ export const TOOLS = [
 	{ name: 'PostgreSQL', icon: 'logos:postgresql' },
 	{ name: 'Redis', icon: 'logos:redis' },
 	{ name: 'Go', icon: 'logos:go' },
-	{ name: 'Flutter', icon: 'logos:go' },
-	{ name: 'Ruby on Rails', icon: 'logos:go' },
-	// { name: 'Laravel', icon: 'logos:go' },
 	{ name: 'Docker', icon: 'logos:docker-icon' },
 	{ name: 'WAGMI', icon: 'logos:wagmi-icon' },
 	{ name: 'Solidity', icon: 'logos:solidity-icon' },
