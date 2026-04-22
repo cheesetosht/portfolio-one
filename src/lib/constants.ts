@@ -17,7 +17,7 @@ export const LINKS = [
 	},
 	{
 		label: 'resume',
-		href: 'https://registry.jsonresume.org/cheesetosht'
+		href: '/resume'
 	}
 ] as const;
 
