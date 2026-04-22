@@ -28,7 +28,7 @@
   "work": [
     {
       "name": "Wavelength",
-      "position": "Product Engineer",
+      "position": "Product Engineer (Contract)",
       "url": "https://www.heywavelength.com",
       "startDate": "2026-01-01",
       "endDate": "2026-02-01",
@@ -63,7 +63,7 @@
       "highlights": [
         "Built fullstack claims support tool saving ~9,000 agent hours monthly reducing context switching dependency on external tools",
         "Designed a claim status normalisation layer integrated with 10+ TPAs for accurate claim status tracking, reducing support tickets by 50%",
-        "Implemented feature flagging and A/B testing infrastructure using Flagsmith, enabling controlled rollouts and data-driven product decisions across teams",
+        "Implemented feature flagging and A/B testing infrastructure using Flagsmith, enabling controlled rollouts, experimentation and data-driven product decisions across teams",
         "Owned features across 8 different projects along with initiatives in product excellence & developer experience"
       ]
     },
@@ -89,7 +89,7 @@
       "url": "https://hypersift.ai",
       "startDate": "2024-10-01",
       "endDate": "2024-11-30",
-      "description": "Real-time video calling platform for automated recruitment screening, built as a freelance engagement",
+      "description": "Real-time communication platform for AI-driven recruitment screening: captures and stores AV recordings, streams audio to Deepgram for live transcription, and pipes transcripts through an LLM for candidate evaluation. Built as a freelance engagement.",
       "keywords": [
         "WebRTC",
         "WebSockets",
