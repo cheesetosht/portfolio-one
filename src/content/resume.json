@@ -1,0 +1,255 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "theme": "professional",
+    "lastModified": "2026-03-22T00:05:00.000Z"
+  },
+  "basics": {
+    "name": "Vraj Shah",
+    "label": "Product Engineer",
+    "email": "cheesetosht@gmail.com",
+    "url": "https://vrajshah.in",
+    "summary": "Product engineer specialising in frontend with 6 years at high-growth startups. Built component libraries, server-driven UI systems, and real-time interfaces from scratch. I care deeply about performance, visual craft, and code that scales.",
+    "location": {
+      "city": "Bengaluru",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "cheesetosht"
+      },
+      {
+        "network": "Linkedin",
+        "username": "vraj-sh"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Wavelength",
+      "position": "Product Engineer",
+      "url": "https://www.heywavelength.com",
+      "startDate": "2026-01-01",
+      "endDate": "2026-02-01",
+      "summary": "",
+      "highlights": [
+        "Designed and developed a user modeling agent that builds vector images of users from scratch from both product & tech aspects",
+        "Architected a rudimentary custom memory system for the agents"
+      ]
+    },
+    {
+      "name": "Induced AI (Backed by Sam Altman, shut down Dec 2025)",
+      "position": "Product Engineer",
+      "url": "https://www.induced.ai",
+      "startDate": "2025-06-01",
+      "endDate": "2025-12-01",
+      "summary": "",
+      "highlights": [
+        "Worked directly with founder & COO across backend, DevOps, applied AI, and design engineering on multiple client products",
+        "Oximy (enterprise AI observability): Architected LLM API proxy processing production traffic with <50ms overhead; engineered Redis-based distributed policy engine for sub-millisecond rule evaluation; built real-time analytics dashboard for metrics and logs",
+        "Built AI platform reducing analyst research from weeks to minutes — structured company profiling, RAG-based agents, long-running workflow harness with step-level traceability across Frontend, Backend, and Worker layers, persistent agent state in MongoDB, and migrated to S3 for horizontal scaling",
+        "DNTEL: Built dynamic form rendering framework and document processing pipeline",
+        "Induced Stack: Authored internal reusable package system covering email, auth, and notifications"
+      ]
+    },
+    {
+      "name": "Loop Health (YC W20)",
+      "position": "Software Engineer",
+      "url": "https://www.loophealth.com",
+      "startDate": "2024-05-10",
+      "endDate": "2025-05-10",
+      "summary": "",
+      "highlights": [
+        "Built fullstack claims support tool saving ~9,000 agent hours monthly reducing context switching dependency on external tools",
+        "Designed a claim status normalisation layer integrated with 10+ TPAs for accurate claim status tracking, reducing support tickets by 50%",
+        "Implemented feature flagging and A/B testing infrastructure using Flagsmith, enabling controlled rollouts and data-driven product decisions across teams",
+        "Owned features across 8 different projects along with initiatives in product excellence & developer experience"
+      ]
+    },
+    {
+      "name": "Bluelearn (Shut down Apr 2024)",
+      "position": "Founding Engineer",
+      "url": "https://web.archive.org/web/20250117144119/https://www.bluelearn.in/",
+      "startDate": "2021-10-01",
+      "endDate": "2024-04-01",
+      "summary": "",
+      "highlights": [
+        "First engineering hire, built & led a 5-person team. Established tech stack, coding standards & devops processes from scratch",
+        "Created custom Tailwind-based headless component library (pre-ShadCN era) used across all frontend products enabling consistent UI with minimal duplication",
+        "Built real-time chat system from scratch using Socket.IO (5,000+ messages/day) and Redis-backed reactive ranking system for hiring platform",
+        "Engineered internal services replacing 15L+ in annual external tool costs: IP-based user tracking and custom push notification system with granular SQL-powered targeting",
+        "Architected server-driven UI system for React Native platform; JSON schema from backend controlled dynamic UI rendering enabling rapid product experimentation without app releases"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Hypersift",
+      "url": "https://hypersift.ai",
+      "startDate": "2024-10-01",
+      "endDate": "2024-11-30",
+      "description": "Real-time video calling platform for automated recruitment screening, built as a freelance engagement",
+      "keywords": [
+        "WebRTC",
+        "WebSockets",
+        "Next.js",
+        "Groq",
+        "Deepgram",
+        "OpenAI"
+      ]
+    },
+    {
+      "name": "Dooreye",
+      "startDate": "2024-12-01",
+      "endDate": "2025-01-31",
+      "description": "Privacy-first neighbourhood security app. Backend in Go + Postgres, React Native frontend with Unistyles.",
+      "highlights": [],
+      "url": "https://github.com/cheesetosht/dooreye-app",
+      "keywords": [
+        "Go",
+        "PostgreSQL",
+        "React Native"
+      ]
+    },
+    {
+      "name": "Hackathon Check-in Backend",
+      "url": "https://github.com/cheesetosht/hackathon-backend",
+      "startDate": "2022-04-01",
+      "endDate": "2022-05-31",
+      "description": "Full-stack check-in system for hackathon participant management, built for HackSVIT",
+      "keywords": [
+        "Go",
+        "PostgreSQL",
+        "React Native"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "position": "Co-founder",
+      "organization": "Hack Club SVIT",
+      "startDate": "2021-09-01",
+      "endDate": "2022-10-31",
+      "highlights": [
+        "Built a 1,000-member community",
+        "Directed a national level hackathon (HackSVIT)",
+        "Led branding, tech, and team of 20"
+      ],
+      "url": "https://hack-svit.pages.dev"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Go",
+        "Python"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "React",
+        "Next.js",
+        "Svelte",
+        "Astro",
+        "React Native",
+        "Tailwind",
+        "shadcn",
+        "GSAP",
+        "CSS/SCSS"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "Hono",
+        "GraphQL",
+        "FastAPI",
+        "Flask",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Supabase",
+        "WebSockets",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "AI & LLMs",
+      "keywords": [
+        "OpenAI",
+        "Groq",
+        "Deepgram",
+        "RAG",
+        "LLM proxies",
+        "AI agents",
+        "Agentic workflows",
+        "Agent memory",
+        "Multi-model orchestration",
+        "Voice AI",
+        "LLM guardrails",
+        "AI observability",
+        "Exa",
+        "Prompt engineering",
+        "Structured Outputs",
+        "Embeddings / Vector Search",
+        "RAG Pipelines",
+        "Model Context Protocol (MCP)",
+        "LLM / Computer Vision Training"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [
+        "systemd",
+        "Nginx / Caddy",
+        "Bare Metal Provisioning",
+        "Google Cloud Platform (GCP)",
+        "Kubernetes",
+        "AWS",
+        "Docker",
+        "Vercel",
+        "Railway",
+        "Heroku",
+        "Temporal Workflows",
+        "GitHub Actions",
+        "CI/CD Pipelines",
+        "Serverless",
+        "Cloudflare"
+      ]
+    },
+    {
+      "name": "Architecture & Tooling",
+      "keywords": [
+        "Monorepos (Turborepo)",
+        "System Design",
+        "API Design",
+        "Microservices",
+        "CLI Tools",
+        "npm Package Publishing",
+        "Claude Code",
+        "Vim",
+        "A/B Testing",
+        "Mixpanel",
+        "PostHog",
+        "Figma"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Gujarat Technological University",
+      "url": "https://www.gtu.ac.in",
+      "area": "Computer Engineering",
+      "studyType": "BE",
+      "startDate": "2019-08-01",
+      "endDate": "2023-07-01"
+    }
+  ]
+}
