@@ -137,7 +137,7 @@ const locationStr = [loc.city, loc.region, loc.countryCode].filter(Boolean).join
 				<div class="space-y-3">
 					{education.map((edu: any) => (
 						<article>
-							<h3 class="font-heading font-semibold text-sm text-fg">{edu.studyType} in {edu.area}</h3>
+							<h3 class="font-heading font-semibold text-sm text-fg">{edu.studyType} - {edu.area}</h3>
 							<p class="text-xs text-fg-secondary">
 								{edu.url ? <a href={edu.url} class="text-link-fg hover:text-link-fg-hover">{edu.institution}</a> : edu.institution}
 							</p>
