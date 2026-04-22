@@ -160,7 +160,11 @@
         "Tailwind",
         "shadcn",
         "GSAP",
-        "CSS/SCSS"
+        "CSS / SCSS",
+        "WCAG / accessibility",
+        "PWA",
+        "Media streaming",
+        "Service workers"
       ]
     },
     {
