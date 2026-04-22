@@ -89,7 +89,7 @@
       "url": "https://hypersift.ai",
       "startDate": "2024-10-01",
       "endDate": "2024-11-30",
-      "description": "Real-time communication platform for AI-driven recruitment screening: captures and stores AV recordings, streams audio to Deepgram for live transcription, and pipes transcripts through an LLM for candidate evaluation. Built as a freelance engagement.",
+      "description": "Real-time communication platform for AI-driven recruitment screening: captures and stores audio-video recordings, streams audio to Deepgram for live transcription, and pipes transcripts through an LLM for candidate evaluation. Built as a freelance engagement.",
       "keywords": [
         "WebRTC",
         "WebSockets",
