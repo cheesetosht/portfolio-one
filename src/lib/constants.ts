@@ -86,10 +86,10 @@ export const TOOLS = [
 	{ name: 'Redis', icon: 'logos:redis' },
 	{ name: 'Go', icon: 'logos:go' },
 	{ name: 'Docker', icon: 'logos:docker-icon' },
-	{ name: 'WAGMI', icon: 'logos:wagmi-icon' },
-	{ name: 'Solidity', icon: 'logos:solidity-icon' },
+	// { name: 'WAGMI', icon: 'logos:wagmi-icon' },
+	// { name: 'Solidity', icon: 'logos:solidity-icon' },
 	{ name: 'Vim', icon: 'logos:vim-icon' },
-	{ name: 'Arch(Btw)', icon: 'logos:arch-linux-icon' }
+	{ name: 'Arch', icon: 'logos:arch-linux-icon' }
 ];
 
 export const PHOTOS = [

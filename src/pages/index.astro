@@ -5,13 +5,19 @@ import Eyes from '../components/eyes.svelte';
 import ExperienceItem from '../components/experience-item.svelte';
 import Tooltip from '../components/tooltip.svelte';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import WritingTile from '../components/WritingTile.astro';
+
+const writings = (await getCollection('writings'))
+	.filter((writing: CollectionEntry<'writings'>) => !writing.data.draft)
+	.sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
 ---
 
 <BaseLayout>
 	<header class="border-y border-border border-dashed flex h-16 sm:h-24 mt-24 sm:mt-32">
 		<div class="size-16 sm:size-24">
 			<img
-				src="/illustration.png"
+				src="/illustration.webp"
 				alt="illustration"
 				class="size-full object-cover mix-blend-multiply"
 			/>
@@ -97,7 +103,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				}
 			</div>
 		</section>
-
+		<section id="writings" class="px-4 sm:px-6 pb-6">
+			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">writings</h2>
+			<ul class="space-y-4">
+				{writings.map((writing: CollectionEntry<'writings'>) => <WritingTile data={writing} />)}
+			</ul>
+		</section>
 		<section class="px-4 sm:px-6 pb-6">
 			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">
 				side-quests & projects
@@ -160,7 +171,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			</section> -->
 	</main>
 
-	<footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
+	<footer class="py-6 sm:py-8 px-4 sm:px-6">
 		<div class="flex items-center gap-2 justify-between">
 			<small class="text-2xs text-muted-fg font-light"
 				>(last updated: 2026-02-06)

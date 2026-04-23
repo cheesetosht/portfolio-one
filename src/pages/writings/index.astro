@@ -1,19 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import WritingTile from '../../components/WritingTile.astro';
 import Icon from '@iconify/svelte';
 
-const posts = (await getCollection('writings'))
-	.filter((post) => !post.data.draft)
+const writings = (await getCollection('writings'))
+	.filter((writing: CollectionEntry<'writings'>) => !writing.data.draft)
 	.sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
-
-const formatDate = (date: Date) => {
-	return date.toLocaleDateString('en-US', {
-		year: 'numeric',
-		month: 'short',
-		day: 'numeric'
-	});
-};
 ---
 
 <BaseLayout title="Writings - Vraj Shah" description="Thoughts on engineering, products, and more">
@@ -32,44 +25,12 @@ const formatDate = (date: Date) => {
 		</header>
 
 		{
-			posts.length === 0 ? (
+			writings.length === 0 ? (
 				<p class="text-muted-fg text-sm">no posts yet. check back soon!</p>
 			) : (
 				<ul class="space-y-4">
-					{posts.map((post) => (
-						<li class="group">
-							<article class="relative py-3 flex gap-4 items-baseline border-b border-border border-dashed">
-								<div class="shrink-0 flex flex-col items-end gap-2">
-									<time
-										datetime={post.data.publishedAt.toISOString()}
-										class="text-2xs text-right font-mono text-muted-fg"
-									>
-										{formatDate(post.data.publishedAt)}
-									</time>
-
-									<div class="text-2xs w-fit font-mono bg-charcoal-200 px-1.5 py-0.5 text-muted-fg">
-										{post.data.type}
-									</div>
-								</div>
-								<div>
-									<h2 class="text-sm font-medium text-fg group-hover:text-link-fg transition-colors mb-2">
-										<a href={`/writings/${post.slug}`} class="after:absolute after:inset-0">
-											{post.data.title}
-										</a>
-									</h2>
-									<p class="text-xs text-fg-secondary">{post.data.description}</p>
-									{/* {post.data.tags.length > 0 && (
-										<div class="flex gap-1.5 mt-2">
-											{post.data.tags.map((tag: string) => (
-												<span class="text-2xs font-mono bg-charcoal-200 px-1.5 py-0.5 text-muted-fg">
-													{tag}
-												</span>
-											))}
-										</div>
-									)} */}
-								</div>
-							</article>
-						</li>
+					{writings.map((post: CollectionEntry<'writings'>) => (
+						<WritingTile data={post} />
 					))}
 				</ul>
 			)
