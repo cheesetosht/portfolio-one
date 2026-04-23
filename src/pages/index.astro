@@ -39,9 +39,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	</header>
 	<main>
 		<section class="py-6 px-4 sm:px-6 space-y-2">
-<p class="text-fg-secondary mb-2">
-				figuring out my next quest.
-			</p>
+			<p class="text-fg-secondary mb-2">figuring out my next quest.</p>
 			<p class="text-fg-secondary">
 				i ship 0→1 products with <b class="shimmer">taste</b> &
 				<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai & web3
@@ -49,46 +47,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		</section>
 		<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
 			<div class="text-xs font-mono font-medium leading-normal flex gap-3 items-center flex-wrap">
-				{LINKS.map((link) => (
-					<a class="group hover:no-underline!" href={link.href} target="_blank">
-						{link.label}
-						{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
-						<Icon
-							client:load
-							icon="tabler:arrow-up-right"
-							class="size-3 inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
-						/>
-					</a>
-				))}
+				{
+					LINKS.map((link) => (
+						<a class="group hover:no-underline!" href={link.href} target="_blank">
+							{link.label}
+							{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+							<Icon
+								client:load
+								icon="tabler:arrow-up-right"
+								class="size-3 inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+							/>
+						</a>
+					))
+				}
 			</div>
 		</section>
 		<section class="px-4 sm:px-6 pt-6">
 			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1">work</h2>
-			{EXPERIENCE.map((experience) => (
-				<ExperienceItem
-					client:visible
-					year={experience.year}
-					company={experience.company}
-					title={experience.title}
-					points={experience.points}
-					link={experience.link}
-				/>
-			))}
+			{
+				EXPERIENCE.map((experience) => (
+					<ExperienceItem
+						client:visible
+						year={experience.year}
+						company={experience.company}
+						title={experience.title}
+						points={experience.points}
+						link={experience.link}
+					/>
+				))
+			}
 		</section>
 		<section class="px-4 sm:px-6 py-6">
 			<div class="columns-2 sm:columns-3 gap-2 space-y-2">
-				{PHOTOS.map((photo) => (
-					<div class="break-inside-avoid relative overflow-hidden">
-						<Tooltip caption={photo.caption} class={'w-full h-full text-center leading-3'}>
-							<img
-								src={photo.src}
-								alt={photo.alt}
-								class={'w-full object-cover grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-600 group-hover:scale-105 group-focus:scale-105 ' +
-									photo.class}
-							/>
-						</Tooltip>
-					</div>
-				))}
+				{
+					PHOTOS.map((photo) => (
+						<div class="break-inside-avoid relative overflow-hidden">
+							<Tooltip caption={photo.caption} class={'w-full h-full text-center leading-3'}>
+								<img
+									src={photo.src}
+									alt={photo.alt}
+									class={
+										'w-full object-cover grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-600 group-hover:scale-105 group-focus:scale-105 ' +
+										photo.class
+									}
+								/>
+							</Tooltip>
+						</div>
+					))
+				}
 			</div>
 		</section>
 
@@ -98,7 +104,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			</h2>
 			<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
 				<li>
-					<a href="https://startup-simulator.cheesetoast.workers.dev" target="_blank">startup simulator</a> - a quirky game
+					<a href="https://startup-simulator.cheesetoast.workers.dev" target="_blank"
+						>startup simulator</a
+					> - a quirky game
 				</li>
 				<li>
 					<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
@@ -110,7 +118,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					> - a react native x go app to power qr-based checkins for our hackathons
 				</li>
 				<li>
-					freelance - <a href="https://heywavelength.com" target="_blank">wavelength</a>, <a href="https://hypersift.ai" target="_blank">hypersift.ai</a>,
+					freelance - <a href="https://heywavelength.com" target="_blank">wavelength</a>, <a
+						href="https://hypersift.ai"
+						target="_blank">hypersift.ai</a
+					>,
 					<a href="https://www.fibswap.io/swap" target="_blank">FibSwap DEx</a>,
 					<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
 				</li>
@@ -119,20 +130,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
 			<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
 				<div class="marquee-content space-x-3">
-					{TOOLS.map((tool) => (
-						<>
-							<span>{tool.name}</span>
-							<span>&#10033;</span>
-						</>
-					))}
+					{
+						TOOLS.map((tool) => (
+							<>
+								<span>{tool.name}</span>
+								<span>&#10033;</span>
+							</>
+						))
+					}
 				</div>
 				<div class="marquee-content space-x-3" aria-hidden="true">
-					{TOOLS.map((tool) => (
-						<>
-							<span>{tool.name}</span>
-							<span>&#10033;</span>
-						</>
-					))}
+					{
+						TOOLS.map((tool) => (
+							<>
+								<span>{tool.name}</span>
+								<span>&#10033;</span>
+							</>
+						))
+					}
 				</div>
 			</div>
 		</section>
@@ -147,22 +162,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 	<footer class="py-6 sm:py-8 px-4 sm:px-6 border-t border-border border-dashed">
 		<div class="flex items-center gap-2 justify-between">
-			<small class="text-2xs text-muted-fg font-light">(last updated: 2026-02-06)
-				<br/>
-			<a href="https://0708eb8c.portfolio-one-6z5.pages.dev/" target="_blank">visit previous version</a>
-			</small>
-		<div class="text-right">
-		<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
 			<small class="text-2xs text-muted-fg font-light"
-				>built with astro&nbsp;
-				{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
-				<Icon
-					client:load
-					icon="simple-icons:astro"
-					class="size-3 inline-block align-bottom"
-				/>
+				>(last updated: 2026-02-06)
+				<br />
+				<a href="https://0708eb8c.portfolio-one-6z5.pages.dev/" target="_blank"
+					>visit previous version</a
+				>
 			</small>
-		</div>
+			<div class="text-right">
+				<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
+				<small class="text-2xs text-muted-fg font-light"
+					>built with astro&nbsp;
+					{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+					<Icon client:load icon="simple-icons:astro" class="size-3 inline-block align-bottom" />
+				</small>
+			</div>
 		</div>
 	</footer>
 </BaseLayout>

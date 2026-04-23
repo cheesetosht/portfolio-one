@@ -74,7 +74,9 @@ body {
 	color: var(--color-fg);
 	font-family: var(--font-sans);
 	line-height: 1.75;
-	transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+	transition:
+		color 0.3s ease-in-out,
+		background-color 0.2s ease-in-out;
 }
 
 ::selection {
@@ -134,12 +136,14 @@ code {
 .shimmer {
 	text-align: center;
 	color: inherit;
-	background: linear-gradient(to right,
-			currentColor 0%,
-			currentColor 35%,
-			#fff 50%,
-			currentColor 65%,
-			currentColor 100%);
+	background: linear-gradient(
+		to right,
+		currentColor 0%,
+		currentColor 35%,
+		#fff 50%,
+		currentColor 65%,
+		currentColor 100%
+	);
 	background-size: 125px 100%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
