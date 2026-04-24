@@ -8,6 +8,7 @@
 	export let title: string;
 	export let points: string[];
 	export let link: string | undefined = undefined;
+	export let caption: string | undefined = undefined;
 
 	let isHovered = false;
 </script>
@@ -40,14 +41,19 @@
 		<div class="text-xs text-fg-secondary text-right">{title}</div>
 	</div>
 	{#if isHovered}
-		<ul
-			class="text-sm text-muted-fg pt-2 pl-12 sm:pl-16 pr-4 whitespace-pre-wrap list-disc space-y-1"
+		<div
+			class=" text-muted-fg pt-2"
 			in:slide|local={{ duration: 400, easing: cubicOut }}
 			out:slide|local={{ duration: 200, easing: cubicOut }}
 		>
-			{#each points as point}
-				<li>{point}</li>
-			{/each}
-		</ul>
+			<ul class="text-sm pl-12 sm:pl-16 pr-4 whitespace-pre-wrap list-disc space-y-1">
+				{#each points as point}
+					<li>{point}</li>
+				{/each}
+			</ul>
+			{#if !!caption}
+				<i class="pl-8 sm:pl-12 text-xs">{caption}</i>
+			{/if}
+		</div>
 	{/if}
 </div>

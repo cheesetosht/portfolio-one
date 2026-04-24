@@ -28,12 +28,13 @@ export const EXPERIENCE = [
 		link: 'https://www.induced.ai',
 		title: 'Product Engineer',
 		points: [
-			'Small team of engineers hacking our way to an AI-native future, one product at a time',
-			'Built AI-powered products across wildly different domains (financial research, healthcare, security)',
-			'Complete ownership over product thinking, design, code & deployment with no dedicated designer or product manager'
+			'Small team of engineers shipping AI for enterprises',
+			'Built AI products across wildly different domains (financial research, healthcare, security)',
+			'Worked across design, backend, DevOps, AI & product on multiple products'
 		],
 		description:
-			'building ai-powered products across wildly different domains - research tools that turn weeks into minutes, healthcare platforms serving multi-state operations, and security infrastructure processing production ai traffic. the role requires complete ownership over product thinking, design, code & deployment'
+			'building ai-powered products across wildly different domains - research tools that turn weeks into minutes, healthcare platforms serving multi-state operations, and security infrastructure processing production ai traffic. the role requires complete ownership over product thinking, design, code & deployment',
+		caption: 'Shut down in Dec 2025'
 	},
 	{
 		year: 2024,
@@ -60,19 +61,19 @@ export const EXPERIENCE = [
 			'Shipped, scrapped, and rebuilt several products',
 			'A perfect place for a generalist who likes getting their hands dirty'
 		]
-	},
-	{
-		year: 2020,
-		company: 'hack club svit',
-		title: 'Co-lead',
-		link: 'https://apacdirectory.hackclub.com/club/svit',
-		points: [
-			'Drove a Hack Club chapter for our college from scratch',
-			'Organized a national level in-person hackathon impacting 1000+ builders',
-			'Led the development, design, branding & mentorship initiatives for multiple talks, workshops & hackathons',
-			'I was also a Microsoft Learn Student Ambassador for a year'
-		]
 	}
+	// {
+	// 	year: 2020,
+	// 	company: 'hack club svit',
+	// 	title: 'Co-lead',
+	// 	link: 'https://apacdirectory.hackclub.com/club/svit',
+	// 	points: [
+	// 		'Drove a Hack Club chapter for our college from scratch',
+	// 		'Organized a national level in-person hackathon impacting 1000+ builders',
+	// 		'Led the development, design, branding & mentorship initiatives for multiple talks, workshops & hackathons',
+	// 		'I was also a Microsoft Learn Student Ambassador for a year'
+	// 	]
+	// }
 ];
 
 export const TOOLS = [

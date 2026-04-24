@@ -79,6 +79,7 @@ const writings = (await getCollection('writings'))
 						title={experience.title}
 						points={experience.points}
 						link={experience.link}
+						caption={experience?.caption}
 					/>
 				))
 			}
@@ -115,13 +116,16 @@ const writings = (await getCollection('writings'))
 			</h2>
 			<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
 				<li>
-					<a href="https://startup-simulator.cheesetoast.workers.dev" target="_blank"
-						>startup simulator</a
-					> - a quirky game
-				</li>
-				<li>
 					<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
 					neighborhood security app
+				</li>
+				<li>
+					built <a href="https://apacdirectory.hackclub.com/club/svit" target="_blank"
+						>hack club svit</a
+					>, a community for builders in Gujarat & organised a national level in-person hackthon <a
+						href="https://hack-svit.pages.dev"
+						target="_blank">hack svit</a
+					>
 				</li>
 				<li>
 					<a href="https://github.com/cheesetosht/hackathon-backend" target="_blank"
@@ -133,7 +137,7 @@ const writings = (await getCollection('writings'))
 						href="https://hypersift.ai"
 						target="_blank">hypersift.ai</a
 					>,
-					<a href="https://www.fibswap.io/swap" target="_blank">FibSwap DEx</a>,
+					<a href="https://www.enclave.money" target="_blank">enclave.money</a>,
 					<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
 				</li>
 			</ul>
