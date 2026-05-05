@@ -1,5 +1,5 @@
 ---
-import { EXPERIENCE, TOOLS, PHOTOS, LINKS } from '../lib/constants';
+import { EXPERIENCE, TOOLS, PHOTOS, LINKS, SIDE_QUESTS } from '../lib/constants';
 import Icon from '@iconify/svelte';
 import Eyes from '../components/eyes.svelte';
 import ExperienceItem from '../components/experience-item.svelte';
@@ -7,6 +7,7 @@ import Tooltip from '../components/tooltip.svelte';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import WritingTile from '../components/WritingTile.astro';
+import SideQuests from '../components/SideQuests.astro';
 
 const writings = (await getCollection('writings'))
 	.filter((writing: CollectionEntry<'writings'>) => !writing.data.draft)
@@ -14,7 +15,7 @@ const writings = (await getCollection('writings'))
 ---
 
 <BaseLayout>
-	<header class="border-y border-border border-dashed flex h-16 sm:h-24 mt-24 sm:mt-32">
+	<header class="border-y border-border border-dashed flex h-16 sm:h-24 mt-24 sm:mt-40">
 		<div class="size-16 sm:size-24">
 			<img
 				src="/illustration.webp"
@@ -26,12 +27,12 @@ const writings = (await getCollection('writings'))
 			class="flex-1 border-x border-border border-dashed px-4 sm:px-6 flex flex-col justify-center"
 		>
 			<h1
-				class="select-none cursor-default text-lg sm:text-xl font-semibold tracking-wide leading-none mb-0.5"
+				class="select-none cursor-default text-lg sm:text-xl font-semibold tracking-wide leading-none mb-1"
 			>
 				vraj shah
 			</h1>
 			<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">
-				product engineer
+				engineer. curious about everything.
 			</p>
 		</div>
 		<div class="relative flex justify-center items-center size-16 sm:size-24">
@@ -44,11 +45,24 @@ const writings = (await getCollection('writings'))
 		</div>
 	</header>
 	<main>
-		<section class="py-6 px-4 sm:px-6 space-y-2">
-			<p class="text-fg-secondary mb-2">figuring out my next quest.</p>
+		<section class="py-6 px-4 sm:px-6 space-y-2.5">
 			<p class="text-fg-secondary">
-				i ship 0→1 products with <b class="shimmer">taste</b> &
-				<i class="font-medium">speed</i>. experienced in edtech, healthcare, ai & web3
+				currently vibing <a class="group" target="_blank" href="https://ns.com/cheesetosht/invite"
+					>@ns<Icon
+						client:load
+						icon="tabler:arrow-up-right"
+						class="size-3 inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+					/></a
+				>
+			</p>
+			<p class="text-fg-secondary">
+				i craft products with <b class="shimmer">taste</b> &
+				<i class="font-medium">speed</i>. my recent work sits at an intersection of product, design,
+				& data in industries like consumer apps, finance, healthcare & ai.
+			</p>
+			<p class="text-fg-secondary">
+				i care deeply about the parts others skip over. most of my work starts where someone else
+				stopped thinking.
 			</p>
 		</section>
 		<section class="border-y border-border border-dashed py-4 px-4 sm:px-6">
@@ -85,10 +99,13 @@ const writings = (await getCollection('writings'))
 			}
 		</section>
 		<section class="px-4 sm:px-6 py-6">
-			<div class="columns-2 sm:columns-3 gap-2 space-y-2">
+			<div id="photos-grid" class="columns-2 sm:columns-3 gap-2 space-y-2">
 				{
-					PHOTOS.map((photo) => (
-						<div class="break-inside-avoid relative overflow-hidden">
+					PHOTOS.map((photo, index) => (
+						<div
+							class="photo-item break-inside-avoid relative overflow-hidden"
+							style={`--i: ${index}`}
+						>
 							<Tooltip caption={photo.caption} class={'w-full h-full text-center leading-3'}>
 								<img
 									src={photo.src}
@@ -104,43 +121,17 @@ const writings = (await getCollection('writings'))
 				}
 			</div>
 		</section>
-		<section id="writings" class="px-4 sm:px-6 pb-6">
+		<section id="writings" class="border-y border-border border-dashed px-4 sm:px-6 py-6">
 			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">writings</h2>
 			<ul class="space-y-4">
 				{writings.map((writing: CollectionEntry<'writings'>) => <WritingTile data={writing} />)}
 			</ul>
 		</section>
-		<section class="px-4 sm:px-6 pb-6">
-			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">
+		<section class="px-4 sm:px-6 py-6">
+			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-3">
 				side-quests & projects
 			</h2>
-			<ul class="pl-3 list-disc space-y-0.5 sm:space-y-1 text-fg-secondary">
-				<li>
-					<a href="https://github.com/cheesetosht/dooreye-app" target="_blank">dooreye</a> - a privacy-focused
-					neighborhood security app
-				</li>
-				<li>
-					built <a href="https://apacdirectory.hackclub.com/club/svit" target="_blank"
-						>hack club svit</a
-					>, a community for builders in Gujarat & organised a national level in-person hackthon <a
-						href="https://hack-svit.pages.dev"
-						target="_blank">hack svit</a
-					>
-				</li>
-				<li>
-					<a href="https://github.com/cheesetosht/hackathon-backend" target="_blank"
-						>hackathon checkin app</a
-					> - a react native x go app to power qr-based checkins for our hackathons
-				</li>
-				<li>
-					freelance - <a href="https://heywavelength.com" target="_blank">wavelength</a>, <a
-						href="https://hypersift.ai"
-						target="_blank">hypersift.ai</a
-					>,
-					<a href="https://www.enclave.money" target="_blank">enclave.money</a>,
-					<a href="https://presentstorie.vercel.app" target="_blank">present storie</a>
-				</li>
-			</ul>
+			<SideQuests quests={SIDE_QUESTS} />
 		</section>
 		<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
 			<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
@@ -252,4 +243,51 @@ const writings = (await getCollection('writings'))
 			transform: translateX(-50%);
 		}
 	}
+
+	.photo-item {
+		opacity: 0;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		@keyframes photoIn {
+			0% {
+				opacity: 0;
+				transform: translateY(8px) scale(0.98);
+			}
+			100% {
+				opacity: 1;
+				transform: none;
+			}
+		}
+
+		#photos-grid.in-view .photo-item {
+			animation: photoIn 500ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+			animation-delay: calc(var(--i) * 80ms);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#photos-grid.in-view .photo-item {
+			opacity: 1;
+		}
+	}
 </style>
+
+<script>
+	const grid = document.getElementById('photos-grid');
+	if (grid) {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						grid.classList.add('in-view');
+						observer.disconnect();
+						break;
+					}
+				}
+			},
+			{ threshold: 0.1, rootMargin: '0px 0px -10% 0px' }
+		);
+		observer.observe(grid);
+	}
+</script>

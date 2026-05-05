@@ -1,0 +1,73 @@
+---
+import Icon from '@iconify/svelte';
+import type { SideQuest } from '../lib/constants';
+
+interface Props {
+	quests: SideQuest[];
+}
+
+const { quests } = Astro.props;
+
+const SEP = '\u2731';
+---
+
+<div class="space-y-5">
+	{
+		quests.map((quest) =>
+			quest.kind === 'verse' ? (
+				<div>
+					<p class="text-fg leading-snug">
+						{quest.projects.map((project, idx) => (
+							<>
+								{idx > 0 && <span class="mx-2 font-mono text-muted-fg">{SEP}</span>}
+								{project.href ? (
+									<a
+										href={project.href}
+										target="_blank"
+										class="group inline-flex items-baseline gap-1 hover:no-underline!"
+									>
+										<span class="group-hover:underline underline-offset-4">{project.name}</span>
+										{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+										<Icon
+											client:load
+											icon="tabler:arrow-up-right"
+											class="size-3 inline-block translate-y-px group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+										/>
+									</a>
+								) : (
+									<span>{project.name}</span>
+								)}
+							</>
+						))}
+					</p>
+					<p class="text-xs text-fg-secondary mt-0.5">{quest.description}</p>
+				</div>
+			) : (
+				<p class="text-fg leading-snug flex flex-wrap items-baseline gap-x-2 gap-y-1">
+					<span class="text-fg-secondary">
+						{quest.label}
+						<span class="font-mono text-muted-fg ml-1.5">—</span>
+					</span>
+					{quest.items.map((item, idx) => (
+						<>
+							{idx > 0 && <span class="font-mono text-muted-fg">{SEP}</span>}
+							<a
+								href={item.href}
+								target="_blank"
+								class="group inline-flex items-baseline gap-1 hover:no-underline!"
+							>
+								<span class="group-hover:underline underline-offset-4">{item.name}</span>
+								{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
+								<Icon
+									client:load
+									icon="tabler:arrow-up-right"
+									class="size-3 inline-block translate-y-px group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+								/>
+							</a>
+						</>
+					))}
+				</p>
+			)
+		)
+	}
+</div>

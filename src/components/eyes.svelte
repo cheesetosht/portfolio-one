@@ -8,12 +8,12 @@
 	let container: HTMLDivElement;
 
 	const eyeMovementFactorX: number = 0.05;
-	const eyeMovementFactorY: number = 0.05;
+	const eyeMovementFactorY: number = 0.1;
 	const maxPupilMovement: number = 20;
 	let containerRect: DOMRect;
 
-	const eyePosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.3 });
-	const pupilPosition = spring({ x: 0, y: 0 }, { stiffness: 0.05, damping: 0.3 });
+	const eyePosition = spring({ x: 0, y: 0 }, { stiffness: 0.02, damping: 0.25 });
+	const pupilPosition = spring({ x: 0, y: 0 }, { stiffness: 0.04, damping: 0.25 });
 
 	function calculateEyeMovement(mouseX: number, mouseY: number) {
 		const containerCenterX: number = containerRect.left + containerRect.width / 2;

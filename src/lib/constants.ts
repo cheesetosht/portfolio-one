@@ -93,6 +93,53 @@ export const TOOLS = [
 	{ name: 'Arch', icon: 'logos:arch-linux-icon' }
 ];
 
+type ProjectLink = { name: string; href?: string };
+
+export type SideQuest =
+	| {
+			kind: 'verse';
+			projects: ProjectLink[];
+			description: string;
+	  }
+	| {
+			kind: 'series';
+			label: string;
+			items: ProjectLink[];
+	  };
+
+export const SIDE_QUESTS: SideQuest[] = [
+	{
+		kind: 'verse',
+		projects: [{ name: 'dooreye', href: 'https://github.com/cheesetosht/dooreye-app' }],
+		description: 'a privacy-focused neighborhood security app'
+	},
+	{
+		kind: 'verse',
+		projects: [
+			{ name: 'hack club svit', href: 'https://apacdirectory.hackclub.com/club/svit' },
+			{ name: 'hack svit', href: 'https://hack-svit.pages.dev' }
+		],
+		description: 'community for builders in gujarat, and the national hackathon i organised for it'
+	},
+	{
+		kind: 'verse',
+		projects: [
+			{ name: 'hackathon checkin app', href: 'https://github.com/cheesetosht/hackathon-backend' }
+		],
+		description: 'react native × go powering qr-based checkins'
+	},
+	{
+		kind: 'series',
+		label: 'freelance',
+		items: [
+			{ name: 'wavelength', href: 'https://heywavelength.com' },
+			{ name: 'hypersift.ai', href: 'https://hypersift.ai' },
+			{ name: 'enclave.money', href: 'https://www.enclave.money' },
+			{ name: 'present storie', href: 'https://presentstorie.vercel.app' }
+		]
+	}
+];
+
 export const PHOTOS = [
 	{
 		src: '/sales.webp',
