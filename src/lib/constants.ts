@@ -137,6 +137,11 @@ export const SIDE_QUESTS: SideQuest[] = [
 			{ name: 'enclave.money', href: 'https://www.enclave.money' },
 			{ name: 'present storie', href: 'https://presentstorie.vercel.app' }
 		]
+	},
+	{
+		kind: 'verse',
+		projects: [{ name: 'hackathons', href: 'https://devpost.com/cheesetosht' }],
+		description: 'used participate in a lot of hackathons in college days'
 	}
 ];
 
