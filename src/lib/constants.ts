@@ -25,7 +25,7 @@ export const EXPERIENCE = [
 	{
 		year: 2025,
 		company: 'induced.ai',
-		link: 'https://www.induced.ai',
+		link: 'https://techcrunch.com/2023/10/03/induced-ai/',
 		title: 'Product Engineer',
 		points: [
 			'Small team of engineers shipping AI for enterprises',
@@ -40,7 +40,7 @@ export const EXPERIENCE = [
 		year: 2024,
 		company: 'loop health',
 		link: 'https://www.loophealth.com',
-		title: 'SWE II',
+		title: 'Software Engineer',
 		points: [
 			'After bluelearn shut down, i still wanted to get my hands dirty but with some real stakes this time',
 			'Built tools that saved thousands hours for support agents',
