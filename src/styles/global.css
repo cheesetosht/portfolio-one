@@ -1,18 +1,14 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/quicksand';
 @import '@fontsource-variable/work-sans';
 @import '@fontsource-variable/bricolage-grotesque';
-@import '@fontsource/montserrat/800.css';
 @import '@fontsource/fragment-mono/400.css';
 
 @theme {
 	--text-2xs: 0.625rem;
 
-	/* --font-sans: 'Quicksand Variable', sans-serif; */
 	--font-sans: 'Work Sans Variable', sans-serif;
 	--font-heading: 'Bricolage Grotesque Variable', sans-serif;
 	--font-mono: 'Fragment Mono', monospace;
-	--font-geist: 'Geist', sans-serif;
 
 	--color-forest-50: oklch(0.965 0.012 161);
 	--color-forest-100: oklch(0.932 0.022 160.5);
