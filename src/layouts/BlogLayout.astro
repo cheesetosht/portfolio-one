@@ -26,7 +26,7 @@ const formatDate = (date: Date) => {
 		<header class="px-4 pb-4 sm:px-6 border-b border-border border-dashed">
 			<a
 				href="/#writings"
-				class="text-xs text-muted-fg hover:text-fg-secondary inline-flex items-center gap-1 mb-4"
+				class="text-xs text-muted-foreground hover:text-foreground-secondary inline-flex items-center gap-1 mb-4"
 			>
 				{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
 				<Icon client:load icon="tabler:arrow-left" class="size-3" />
@@ -35,8 +35,8 @@ const formatDate = (date: Date) => {
 			<h1 class="text-2xl sm:text-3xl font-semibold tracking-wide leading-tight mb-2">
 				{title}
 			</h1>
-			<p class="text-fg-secondary mb-3">{description}</p>
-			<div class="flex flex-wrap items-center gap-2 text-2xs text-muted-fg font-mono">
+			<p class="text-foreground-secondary mb-3">{description}</p>
+			<div class="flex flex-wrap items-center gap-2 text-2xs text-muted-foreground font-mono">
 				<time datetime={publishedAt.toISOString()}>
 					{formatDate(publishedAt)}
 				</time>
@@ -53,14 +53,14 @@ const formatDate = (date: Date) => {
 						<>
 							<span>•</span>
 							{tags.map((tag) => (
-								<span class="bg-charcoal-200 px-1.5 py-0.5">{tag}</span>
+								<span class="bg-muted px-1.5 py-0.5">{tag}</span>
 							))}
 						</>
 					)
 				}
 			</div>
 		</header>
-		<div class="prose prose-sm max-w-none text-fg-secondary px-4 py-4 sm:px-6">
+		<div class="prose prose-sm max-w-none text-foreground-secondary px-4 py-4 sm:px-6">
 			<slot />
 		</div>
 	</article>
@@ -72,7 +72,7 @@ const formatDate = (date: Date) => {
 		font-weight: 600;
 		margin-top: 2rem;
 		margin-bottom: 0.75rem;
-		color: var(--color-fg);
+		color: var(--foreground);
 	}
 
 	.prose :global(h3) {
@@ -80,7 +80,7 @@ const formatDate = (date: Date) => {
 		font-weight: 600;
 		margin-top: 1.5rem;
 		margin-bottom: 0.5rem;
-		color: var(--color-fg);
+		color: var(--foreground);
 	}
 
 	.prose :global(p) {
@@ -101,12 +101,12 @@ const formatDate = (date: Date) => {
 	.prose :global(code) {
 		font-family: var(--font-mono);
 		font-size: 0.875em;
-		background-color: var(--color-charcoal-200);
+		background-color: var(--muted);
 		padding: 0.125rem 0.25rem;
 	}
 
 	.prose :global(pre) {
-		background-color: var(--color-charcoal-200);
+		background-color: var(--muted);
 		padding: 1rem;
 		overflow-x: auto;
 		margin-bottom: 1rem;
@@ -119,22 +119,22 @@ const formatDate = (date: Date) => {
 	}
 
 	.prose :global(blockquote) {
-		border-left: 2px solid var(--color-border);
+		border-left: 2px solid var(--border);
 		padding-left: 1rem;
 		margin-left: 0;
 		margin-bottom: 1rem;
-		color: var(--color-muted-fg);
+		color: var(--muted-foreground);
 		font-style: italic;
 	}
 
 	.prose :global(a) {
-		color: var(--color-link-fg);
+		color: var(--link);
 		text-decoration: underline;
 		text-underline-offset: 0.25em;
 	}
 
 	.prose :global(a:hover) {
-		color: var(--color-link-fg-hover);
+		color: var(--link-hover);
 	}
 
 	.prose :global(img) {
@@ -145,7 +145,7 @@ const formatDate = (date: Date) => {
 
 	.prose :global(hr) {
 		border: none;
-		border-top: 1px dashed var(--color-border);
+		border-top: 1px dashed var(--border);
 		margin: 2rem 0;
 	}
 </style>

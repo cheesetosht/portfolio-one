@@ -16,10 +16,10 @@ const SEP = '\u2731';
 		quests.map((quest) =>
 			quest.kind === 'verse' ? (
 				<div>
-					<p class="text-fg leading-snug">
+					<p class="text-foreground leading-snug">
 						{quest.projects.map((project, idx) => (
 							<>
-								{idx > 0 && <span class="mx-2 font-mono text-muted-fg">{SEP}</span>}
+								{idx > 0 && <span class="mx-2 font-mono text-muted-foreground">{SEP}</span>}
 								{project.href ? (
 									<a
 										href={project.href}
@@ -40,17 +40,17 @@ const SEP = '\u2731';
 							</>
 						))}
 					</p>
-					<p class="text-xs text-fg-secondary mt-0.5">{quest.description}</p>
+					<p class="text-xs text-foreground-secondary mt-0.5">{quest.description}</p>
 				</div>
 			) : (
-				<p class="text-fg leading-snug flex flex-wrap items-baseline gap-x-2 gap-y-1">
-					<span class="text-fg-secondary">
+				<p class="text-foreground leading-snug flex flex-wrap items-baseline gap-x-2 gap-y-1">
+					<span class="text-foreground-secondary">
 						{quest.label}
-						<span class="font-mono text-muted-fg ml-1.5">—</span>
+						<span class="font-mono text-muted-foreground ml-1.5">—</span>
 					</span>
 					{quest.items.map((item, idx) => (
 						<>
-							{idx > 0 && <span class="font-mono text-muted-fg">{SEP}</span>}
+							{idx > 0 && <span class="font-mono text-muted-foreground">{SEP}</span>}
 							<a
 								href={item.href}
 								target="_blank"

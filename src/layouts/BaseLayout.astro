@@ -1,4 +1,5 @@
 ---
+import ThemeToggle from '../components/ThemeToggle.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -13,6 +14,65 @@ const { title = 'vraj shah', description = 'hi' } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<script is:inline>
+			(() => {
+				const root = document.documentElement;
+				const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+				const validatePreference = (value) =>
+					value === 'light' || value === 'dark' ? value : null;
+				let preference = null;
+
+				try {
+					preference = validatePreference(localStorage.getItem('theme'));
+				} catch {
+					// Storage may be unavailable; the toggle still works for this page.
+				}
+
+				const syncButton = () => {
+					const button = document.querySelector('[data-theme-toggle]');
+					if (!button) return;
+					const label = root.classList.contains('dark')
+						? 'Switch to light mode'
+						: 'Switch to dark mode';
+					button.setAttribute('aria-label', label);
+					button.setAttribute('title', label);
+					button.hidden = false;
+				};
+
+				const applyTheme = () => {
+					root.classList.toggle('dark', preference ? preference === 'dark' : systemTheme.matches);
+					syncButton();
+				};
+
+				// Resolve the theme before the browser paints the page.
+				applyTheme();
+				document.addEventListener('DOMContentLoaded', syncButton, { once: true });
+				systemTheme.addEventListener('change', () => {
+					if (!preference) applyTheme();
+				});
+				window.addEventListener('storage', (event) => {
+					if (event.key !== 'theme' && event.key !== null) return;
+					try {
+						if (event.storageArea !== localStorage) return;
+					} catch {
+						return;
+					}
+					preference = validatePreference(event.newValue);
+					applyTheme();
+				});
+				document.addEventListener('click', (event) => {
+					if (!(event.target instanceof Element)) return;
+					if (!event.target.closest('[data-theme-toggle]')) return;
+					preference = root.classList.contains('dark') ? 'light' : 'dark';
+					try {
+						localStorage.setItem('theme', preference);
+					} catch {
+						// Retain the explicit choice in memory when it cannot be saved.
+					}
+					applyTheme();
+				});
+			})();
+		</script>
 		<title>{title}</title>
 		<meta name="description" content={description} />
 
@@ -40,6 +100,9 @@ const { title = 'vraj shah', description = 'hi' } = Astro.props;
 			<div class="border-x border-border border-dashed min-h-screen overflow-x-hidden">
 				<slot />
 			</div>
+		</div>
+		<div class="fixed bottom-2 right-2">
+			<ThemeToggle />
 		</div>
 	</body>
 </html>

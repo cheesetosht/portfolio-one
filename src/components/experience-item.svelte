@@ -23,8 +23,8 @@
 	on:mouseleave={() => (isHovered = false)}
 >
 	<div class="flex items-baseline gap-2 sm:gap-4">
-		<div class="text-2xs sm:text-xs text-muted-fg font-mono">{year}</div>
-		<div class="flex-1 text-fg-secondary! hover:no-underline!">
+		<div class="text-2xs sm:text-xs text-muted-foreground font-mono">{year}</div>
+		<div class="flex-1 text-foreground-secondary! hover:no-underline!">
 			{company}
 			{#if link}
 				<a
@@ -38,11 +38,11 @@
 				>
 			{/if}
 		</div>
-		<div class="text-xs text-fg-secondary text-right">{title}</div>
+		<div class="text-xs text-foreground-secondary text-right">{title}</div>
 	</div>
 	{#if isHovered}
 		<div
-			class=" text-muted-fg pt-2"
+			class=" text-muted-foreground pt-2"
 			in:slide|local={{ duration: 400, easing: cubicOut }}
 			out:slide|local={{ duration: 200, easing: cubicOut }}
 		>

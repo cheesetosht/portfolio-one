@@ -8,6 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import WritingTile from '../components/WritingTile.astro';
 import SideQuests from '../components/SideQuests.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 
 const writings = (await getCollection('writings'))
 	.filter((writing: CollectionEntry<'writings'>) => !writing.data.draft)
@@ -20,7 +21,7 @@ const writings = (await getCollection('writings'))
 			<img
 				src="/illustration.webp"
 				alt="illustration"
-				class="size-full object-cover mix-blend-multiply"
+				class="size-full object-cover mix-blend-multiply dark:invert dark:mix-blend-screen dark:opacity-60"
 			/>
 		</div>
 		<div
@@ -31,14 +32,14 @@ const writings = (await getCollection('writings'))
 			>
 				vraj shah
 			</h1>
-			<p class="cursor-default select-none text-fg-secondary text-xs sm:text-sm">
+			<p class="cursor-default select-none text-foreground-secondary text-xs sm:text-sm">
 				engineer. curious about everything.
 			</p>
 		</div>
 		<div class="relative flex justify-center items-center size-16 sm:size-24">
 			<Eyes client:load />
 			<span
-				class="hint-fade text-right w-16 absolute -top-8 right-2 text-2xs text-forest-400 italic sm:hidden"
+				class="hint-fade text-right w-16 absolute -top-8 right-2 text-2xs text-hint italic sm:hidden"
 			>
 				tap anywhere</span
 			>
@@ -46,7 +47,7 @@ const writings = (await getCollection('writings'))
 	</header>
 	<main>
 		<section class="py-6 px-4 sm:px-6 space-y-2.5">
-			<p class="text-fg-secondary">
+			<p class="text-foreground-secondary">
 				building <a class="group" target="_blank" href="https://morphic.io"
 					>morphic<Icon
 						client:load
@@ -55,12 +56,12 @@ const writings = (await getCollection('writings'))
 					/></a
 				>
 			</p>
-			<p class="text-fg-secondary">
+			<p class="text-foreground-secondary">
 				i craft products with <b class="shimmer">taste</b> &
 				<i class="font-medium">speed</i>. my recent work sits at an intersection of product, design,
 				& data in industries like consumer apps, finance, healthcare & ai.
 			</p>
-			<p class="text-fg-secondary">
+			<p class="text-foreground-secondary">
 				i care deeply about the parts others skip over. most of my work starts where your ai agents
 				stop thinking.
 			</p>
@@ -83,7 +84,9 @@ const writings = (await getCollection('writings'))
 			</div>
 		</section>
 		<section class="px-4 sm:px-6 pt-6">
-			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-1">work</h2>
+			<h2 class="cursor-default select-none text-sm text-muted-foreground tracking-wider mb-1">
+				work
+			</h2>
 			{
 				EXPERIENCE.map((experience) => (
 					<ExperienceItem
@@ -122,19 +125,23 @@ const writings = (await getCollection('writings'))
 			</div>
 		</section>
 		<section id="writings" class="border-y border-border border-dashed px-4 sm:px-6 py-6">
-			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">writings</h2>
+			<h2 class="cursor-default select-none text-sm text-muted-foreground tracking-wider mb-2">
+				writings
+			</h2>
 			<ul class="space-y-4">
 				{writings.map((writing: CollectionEntry<'writings'>) => <WritingTile data={writing} />)}
 			</ul>
 		</section>
 		<section class="px-4 sm:px-6 py-6">
-			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-3">
+			<h2 class="cursor-default select-none text-sm text-muted-foreground tracking-wider mb-3">
 				side-quests & projects
 			</h2>
 			<SideQuests quests={SIDE_QUESTS} />
 		</section>
 		<section class="border-y border-border border-dashed px-4 sm:px-6 py-3 overflow-hidden">
-			<div class="marquee font-mono text-2xs uppercase text-muted-fg space-x-1.5 sm:space-x-3">
+			<div
+				class="marquee font-mono text-2xs uppercase text-muted-foreground space-x-1.5 sm:space-x-3"
+			>
 				<div class="marquee-content space-x-3">
 					{
 						TOOLS.map((tool) => (
@@ -158,17 +165,17 @@ const writings = (await getCollection('writings'))
 			</div>
 		</section>
 		<!-- <section class="px-4 sm:px-6 py-6">
-			<h2 class="cursor-default select-none text-sm text-muted-fg tracking-wider mb-2">
+			<h2 class="cursor-default select-none text-sm text-muted-foreground tracking-wider mb-2">
 				more about me
 			</h2>
-			<p class="text-fg-secondary">
+			<p class="text-foreground-secondary">
 			</p>
 			</section> -->
 	</main>
 
 	<footer class="py-6 sm:py-8 px-4 sm:px-6">
 		<div class="flex items-center gap-2 justify-between">
-			<small class="text-2xs text-muted-fg font-light"
+			<small class="text-2xs text-muted-foreground font-light"
 				>(last updated: 2026-07-10)
 				<br />
 				<a href="https://0708eb8c.portfolio-one-6z5.pages.dev/" target="_blank"
@@ -176,8 +183,8 @@ const writings = (await getCollection('writings'))
 				>
 			</small>
 			<div class="text-right">
-				<h6 class="text-xs text-muted-fg">thanks for visiting!</h6>
-				<small class="text-2xs text-muted-fg font-light"
+				<h6 class="text-xs text-muted-foreground">thanks for visiting!</h6>
+				<small class="text-2xs text-muted-foreground font-light"
 					>built with astro&nbsp;
 					{/* @ts-expect-error - Iconify Svelte types not properly recognized in Astro */}
 					<Icon client:load icon="simple-icons:astro" class="size-3 inline-block align-bottom" />

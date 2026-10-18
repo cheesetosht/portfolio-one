@@ -1,0 +1,14 @@
+---
+import Icon from '@iconify/svelte';
+---
+
+<button
+	type="button"
+	data-theme-toggle
+	hidden
+	aria-label="toggle theme"
+	class="inline-flex size-9 cursor-pointer items-center justify-center rounded-md bg-transparent text-muted-foreground hover:bg-accent hover:text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring transition-colors motion-reduce:transition-none print:hidden"
+>
+	<Icon client:load icon="tabler:sun" class="dark:hidden size-4" />
+	<Icon client:load icon="tabler:moon" class="hidden dark:block size-4" />
+</button>

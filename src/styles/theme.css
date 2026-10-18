@@ -1,0 +1,102 @@
+/* Palette primitives stay fixed; customize each theme through semantic tokens below. */
+@theme {
+	--color-forest-50: oklch(0.965 0.012 161);
+	--color-forest-100: oklch(0.932 0.022 160.5);
+	--color-forest-200: oklch(0.872 0.038 160);
+	--color-forest-300: oklch(0.788 0.055 159.5);
+	--color-forest-400: oklch(0.678 0.068 159);
+	--color-forest-500: oklch(0.588 0.072 158.5);
+	--color-forest-600: oklch(0.508 0.066 158);
+	--color-forest-700: oklch(0.428 0.058 157.5);
+	--color-forest-800: oklch(0.348 0.052 157);
+	--color-forest-900: oklch(0.278 0.048 156.5);
+	--color-forest-950: oklch(0.228 0.046 162.5);
+
+	--color-charcoal-50: oklch(0.985 0 0);
+	--color-charcoal-100: oklch(0.967 0.001 60);
+	--color-charcoal-200: oklch(0.92 0.004 58);
+	--color-charcoal-300: oklch(0.871 0.006 56);
+	--color-charcoal-400: oklch(0.705 0.015 54);
+	--color-charcoal-500: oklch(0.552 0.016 52);
+	--color-charcoal-600: oklch(0.442 0.017 50);
+	--color-charcoal-700: oklch(0.37 0.013 52);
+	--color-charcoal-800: oklch(0.274 0.006 55);
+	--color-charcoal-900: oklch(0.21 0.006 58);
+	--color-charcoal-950: oklch(0.141 0.005 60);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-foreground-secondary: var(--foreground-secondary);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-primary-hover: var(--primary-hover);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-link: var(--link);
+	--color-link-hover: var(--link-hover);
+	--color-hint: var(--hint);
+	--color-border: var(--border);
+	--color-ring: var(--ring);
+	--color-selection: var(--selection);
+	--color-selection-foreground: var(--selection-foreground);
+	--color-shimmer-highlight: var(--shimmer-highlight);
+}
+
+/* Share light values with print without duplicating the palette table. */
+:root {
+	--background: var(--color-charcoal-100);
+	--foreground: var(--color-forest-950);
+	--foreground-secondary: var(--color-charcoal-500);
+	--muted: var(--color-charcoal-200);
+	--muted-foreground: var(--color-charcoal-400);
+	--popover: var(--color-charcoal-800);
+	--popover-foreground: var(--color-charcoal-400);
+	--primary: var(--color-forest-950);
+	--primary-foreground: var(--color-charcoal-50);
+	--primary-hover: var(--color-forest-800);
+	--accent: var(--color-charcoal-200);
+	--accent-foreground: var(--color-forest-950);
+	--link: var(--color-forest-500);
+	--link-hover: var(--color-forest-400);
+	--hint: var(--color-forest-400);
+	--border: var(--color-charcoal-300);
+	--ring: var(--color-forest-500);
+	--selection: var(--color-forest-200);
+	--selection-foreground: var(--color-forest-950);
+	--shimmer-highlight: white;
+	color-scheme: light;
+}
+
+@media screen {
+	:root.dark {
+		--background: var(--color-charcoal-900);
+		--foreground: var(--color-forest-50);
+		--foreground-secondary: var(--color-charcoal-300);
+		--muted: var(--color-charcoal-800);
+		--muted-foreground: var(--color-charcoal-400);
+		--popover: var(--color-charcoal-950);
+		--popover-foreground: var(--color-charcoal-300);
+		--primary: var(--color-forest-200);
+		--primary-foreground: var(--color-forest-950);
+		--primary-hover: var(--color-forest-300);
+		--accent: var(--color-charcoal-800);
+		--accent-foreground: var(--color-forest-50);
+		--link: var(--color-forest-300);
+		--link-hover: var(--color-forest-200);
+		--hint: var(--color-forest-400);
+		--border: var(--color-charcoal-700);
+		--ring: var(--color-forest-400);
+		--selection: var(--color-forest-700);
+		--selection-foreground: var(--color-forest-50);
+		--shimmer-highlight: white;
+		color-scheme: dark;
+	}
+}
