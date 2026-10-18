@@ -6,7 +6,7 @@
 	export let year: number;
 	export let company: string;
 	export let title: string;
-	export let points: string[];
+	export let points: string[] | undefined = undefined;
 	export let link: string | undefined = undefined;
 	export let caption: string | undefined = undefined;
 
@@ -46,13 +46,13 @@
 			in:slide|local={{ duration: 400, easing: cubicOut }}
 			out:slide|local={{ duration: 200, easing: cubicOut }}
 		>
-			<ul class="text-sm pl-12 sm:pl-16 pr-4 whitespace-pre-wrap list-disc space-y-1">
+			<ul class="text-xs pl-12 sm:pl-16 pr-4 whitespace-pre-wrap list-disc space-y-1">
 				{#each points as point}
 					<li>{point}</li>
 				{/each}
 			</ul>
 			{#if !!caption}
-				<i class="pl-8 sm:pl-12 text-xs">{caption}</i>
+				<i class="pl-8 sm:pl-12 text-2xs">{caption}</i>
 			{/if}
 		</div>
 	{/if}

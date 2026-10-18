@@ -23,6 +23,12 @@ export const LINKS = [
 
 export const EXPERIENCE = [
 	{
+		year: 2026,
+		company: 'morphic.io',
+		link: 'https://morphic.io',
+		title: 'Product Engineer'
+	},
+	{
 		year: 2025,
 		company: 'induced.ai',
 		link: 'https://techcrunch.com/2023/10/03/induced-ai/',
@@ -33,8 +39,7 @@ export const EXPERIENCE = [
 			'Worked across design, backend, DevOps, AI & product on multiple products'
 		],
 		description:
-			'building ai-powered products across wildly different domains - research tools that turn weeks into minutes, healthcare platforms serving multi-state operations, and security infrastructure processing production ai traffic. the role requires complete ownership over product thinking, design, code & deployment',
-		caption: 'Shut down in Dec 2025'
+			'building ai-powered products across wildly different domains - research tools that turn weeks into minutes, healthcare platforms serving multi-state operations, and security infrastructure processing production ai traffic. the role requires complete ownership over product thinking, design, code & deployment'
 	},
 	{
 		year: 2024,
